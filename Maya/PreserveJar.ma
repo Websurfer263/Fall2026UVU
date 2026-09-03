@@ -1,8 +1,9 @@
 //Maya ASCII 2027 scene
 //Name: PreserveJar.ma
-//Last modified: Thu, Sep 03, 2026 11:15:37 AM
+//Last modified: Thu, Sep 03, 2026 11:25:14 AM
 //Codeset: 1252
 requires maya "2027";
+requires -nodeType "polyDisc" "modelingToolkit" "0.0.0.0";
 requires "mtoa" "5.6.1.1";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
@@ -10,23 +11,23 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "558F161C-4D7D-5445-3579-438F8E4B10C6";
+fileInfo "UUID" "A522E63C-47DB-25C0-97CE-B788D0A3E6CA";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "37662540-40AC-3A13-C47F-DBAD9C4EBA12";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.2732851915086407 1.4802847619955692 3.842386534201693 ;
-	setAttr ".r" -type "double3" -4.8000000000003382 1432.7999999999856 0 ;
-	setAttr ".rpt" -type "double3" -5.0407756647076464e-19 2.4103209664393812e-16 1.6092215689760342e-16 ;
+	setAttr ".t" -type "double3" 1.420110785860853 1.2033462122002423 -0.32162495351425768 ;
+	setAttr ".r" -type "double3" -4.2000000000004514 457.9999999999427 0 ;
+	setAttr ".rpt" -type "double3" 1.6060838898253248e-17 2.3873559051092491e-16 1.4716183383413406e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D8746D38-4D10-6359-1F3F-D98FD97B9C88";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 4.3640592934136944;
+	setAttr ".coi" 2.3171930889798813;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -4.1723251520913199e-08 0.019707920191569306 -4.1723251326120641e-08 ;
+	setAttr ".tp" -type "double3" -0.86836922503933178 1.0336391679669792 -6.2584877058569077e-08 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "E6EA09D7-43A3-68BF-573A-E7B1D9495C4E";
@@ -1802,12 +1803,44 @@ createNode mesh -n "JamFill" -p "pCylinder1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.41402762894795098 0.70995991643103118 ;
+	setAttr ".pv" -type "double2" 0.3982696533203125 0.85720300674438477 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+createNode transform -n "LiquidLine";
+	rename -uid "28F91B33-404F-E66C-E63B-C9AE0E7294C7";
+	setAttr ".t" -type "double3" -0.86778485774993896 1.3342070415214748 0 ;
+	setAttr ".s" -type "double3" 0.30080401309979998 0.30080401309979998 0.30080401309979998 ;
+createNode mesh -n "LiquidLineShape" -p "LiquidLine";
+	rename -uid "14A08BAE-40F5-F29E-B634-7299F730CBA7";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.82894617319107056 0.77052676677703857 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 61 ".pt[0:60]" -type "float3"  0 7.4505806e-08 0 0 3.7252903e-08 
+		0 0 0.014131781 0 0 -2.9802322e-08 0 0.086717688 0.02494367 -0.014190551 0 1.4901161e-08 
+		0 0 0.020225283 2.9791404e-18 0 1.4901161e-08 0 0 0.0030299257 0 0 0.18429759 0 0 
+		-0.10115676 0 0 0.013149728 -1.110223e-16 0 -5.5879354e-08 0 0 6.7055225e-08 0 0.02166469 
+		0.097275041 -0.0035452268 0 0.046164185 0 0.018277571 0.0028713692 -0.0029909562 
+		0 0.00064068823 0 0 0.11250705 -1.110223e-16 0 -0.025939032 0 0 4.4703484e-08 0 0 
+		-0.0048569553 0 0 -0.092662737 -8.5789151e-18 0 -0.015943673 0 0 -4.4703484e-08 0 
+		0 0.0057470547 0 0 0.039088748 -1.110223e-16 0 0.0061609787 0 0 0.0026568538 0 0 
+		0.055784259 0 0 0.059314061 -1.110223e-16 0 0.06746418 -1.110223e-16 0 0.17039067 
+		0 0 -0.10115675 1.3877788e-17 0 -0.045207091 -2.7755576e-17 0 1.3038516e-08 0 0 0.013955287 
+		0 0 0.18003118 0 0 0.028375462 0 0 -7.8231096e-08 0 0 0 0 0 -1.1920929e-07 0 0 2.2351742e-08 
+		0 0.018007513 0.0027477178 -0.0029467635 0.086717688 0.097274952 -0.014190551 0 0.069629416 
+		2.2420512e-17 0.017824249 0.024158446 -0.0029167738 0 0.070758693 2.7755576e-17 0 
+		0.18003118 0 0.086717688 0.0066995979 -0.014190551 0.020891227 0.10940044 -0.0034186565 
+		0.013136152 0.12116168 -0.0021496103 0.086717688 0.12040985 -0.014190551 0 -0.017526157 
+		0 0 -0.017526187 0 0 0.088422909 -1.110223e-16 0 0.061930507 -1.110223e-16 0 -1.4901161e-08 
+		0 0 -0.0016352012 0 0 0.0074830605 0 0 0.022850739 2.7755576e-17;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "18448149-4D67-2526-2466-4D8F7374832D";
 	setAttr -s 4 ".lnk";
@@ -2562,6 +2595,11 @@ createNode polyTweakUV -n "polyTweakUV4";
 		 -0.088149622 -0.010952614 -0.10927208 -0.0076071247 -0.12832697 0.0021017566 -0.14344902
 		 0.017223813 -0.15315796 0.036278643 -0.15650339 0.057401158 -0.085972339 0.55370992
 		 -0.088149622 0.057401158;
+createNode deleteComponent -n "deleteComponent10";
+	rename -uid "3D45196A-434C-7E8D-0F77-1C99D836E2BF";
+	setAttr ".dc" -type "componentList" 1 "f[40:59]";
+createNode polyDisc -n "polyDisc1";
+	rename -uid "050F1A47-4E7D-270A-9970-ABBCF5C73F25";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -2587,7 +2625,7 @@ select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 5 ".dsm";
+	setAttr -s 6 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -2615,8 +2653,9 @@ connectAttr "polyTweakUV3.out" "LidShape.i";
 connectAttr "polyTweakUV3.uvtk[0]" "LidShape.uvst[0].uvtw";
 connectAttr "polyTweakUV1.out" "StrawberryShape.i";
 connectAttr "polyTweakUV1.uvtk[0]" "StrawberryShape.uvst[0].uvtw";
-connectAttr "polyTweakUV4.out" "JamFill.i";
+connectAttr "deleteComponent10.og" "JamFill.i";
 connectAttr "polyTweakUV4.uvtk[0]" "JamFill.uvst[0].uvtw";
+connectAttr "polyDisc1.output" "LiquidLineShape.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
@@ -2668,6 +2707,7 @@ connectAttr "deleteComponent9.og" "polyTweakUV1.ip";
 connectAttr "polySplit1.out" "polyTweakUV2.ip";
 connectAttr "polyBevel4.out" "polyTweakUV3.ip";
 connectAttr "polyCylinder3.out" "polyTweakUV4.ip";
+connectAttr "polyTweakUV4.out" "deleteComponent10.ig";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert2.msg" ":defaultShaderList1.s" -na;
@@ -2678,4 +2718,5 @@ connectAttr "StrawberryShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Strawberry1Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "Strawberry2Shape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "JamFill.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "LiquidLineShape.iog" ":initialShadingGroup.dsm" -na;
 // End of PreserveJar.ma
