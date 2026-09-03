@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: PreserveJar.ma
-//Last modified: Thu, Sep 03, 2026 11:25:14 AM
+//Last modified: Thu, Sep 03, 2026 11:27:48 AM
 //Codeset: 1252
 requires maya "2027";
 requires -nodeType "polyDisc" "modelingToolkit" "0.0.0.0";
@@ -11,19 +11,19 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "A522E63C-47DB-25C0-97CE-B788D0A3E6CA";
+fileInfo "UUID" "B0EF2D57-4024-DD47-F02D-C096D44B671D";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "37662540-40AC-3A13-C47F-DBAD9C4EBA12";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.420110785860853 1.2033462122002423 -0.32162495351425768 ;
-	setAttr ".r" -type "double3" -4.2000000000004514 457.9999999999427 0 ;
+	setAttr ".t" -type "double3" -1.9241887863966494 1.924163080288859 -0.92430021750073477 ;
+	setAttr ".r" -type "double3" -32.399999999902569 588.79999999999666 0 ;
 	setAttr ".rpt" -type "double3" 1.6060838898253248e-17 2.3873559051092491e-16 1.4716183383413406e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D8746D38-4D10-6359-1F3F-D98FD97B9C88";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 2.3171930889798813;
+	setAttr ".coi" 1.6619622621884065;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1794,11 +1794,11 @@ createNode mesh -n "Strawberry2Shape" -p "Strawberry2";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "pCylinder1";
+createNode transform -n "Jamfill";
 	rename -uid "43003333-4A92-30CB-CB60-94A23986C98C";
 	setAttr ".t" -type "double3" -0.86778484138768963 0.90234504725069709 0 ;
 	setAttr ".s" -type "double3" 0.3 0.4333836745612612 0.3 ;
-createNode mesh -n "JamFill" -p "pCylinder1";
+createNode mesh -n "JamFill" -p "Jamfill";
 	rename -uid "262A8FCB-4287-E972-A45C-38BCFBA26BD1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -1818,14 +1818,14 @@ createNode mesh -n "LiquidLineShape" -p "LiquidLine";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.82894617319107056 0.77052676677703857 ;
+	setAttr ".pv" -type "double2" 0.89328300952911377 0.80177679657936096 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 61 ".pt[0:60]" -type "float3"  0 7.4505806e-08 0 0 3.7252903e-08 
-		0 0 0.014131781 0 0 -2.9802322e-08 0 0.086717688 0.02494367 -0.014190551 0 1.4901161e-08 
+		0 0 0.014131781 0 0 -2.9802322e-08 0 0.025536422 0.02494367 0.019783441 0 1.4901161e-08 
 		0 0 0.020225283 2.9791404e-18 0 1.4901161e-08 0 0 0.0030299257 0 0 0.18429759 0 0 
 		-0.10115676 0 0 0.013149728 -1.110223e-16 0 -5.5879354e-08 0 0 6.7055225e-08 0 0.02166469 
 		0.097275041 -0.0035452268 0 0.046164185 0 0.018277571 0.0028713692 -0.0029909562 
@@ -1837,7 +1837,7 @@ createNode mesh -n "LiquidLineShape" -p "LiquidLine";
 		0 0 0.18003118 0 0 0.028375462 0 0 -7.8231096e-08 0 0 0 0 0 -1.1920929e-07 0 0 2.2351742e-08 
 		0 0.018007513 0.0027477178 -0.0029467635 0.086717688 0.097274952 -0.014190551 0 0.069629416 
 		2.2420512e-17 0.017824249 0.024158446 -0.0029167738 0 0.070758693 2.7755576e-17 0 
-		0.18003118 0 0.086717688 0.0066995979 -0.014190551 0.020891227 0.10940044 -0.0034186565 
+		0.18003118 0 0.025536422 0.0066995979 0.019783441 0.020891227 0.10940044 -0.0034186565 
 		0.013136152 0.12116168 -0.0021496103 0.086717688 0.12040985 -0.014190551 0 -0.017526157 
 		0 0 -0.017526187 0 0 0.088422909 -1.110223e-16 0 0.061930507 -1.110223e-16 0 -1.4901161e-08 
 		0 0 -0.0016352012 0 0 0.0074830605 0 0 0.022850739 2.7755576e-17;
