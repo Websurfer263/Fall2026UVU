@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: BallCliff.ma
-//Last modified: Wed, Oct 07, 2026 04:32:36 PM
+//Last modified: Wed, Oct 07, 2026 04:39:10 PM
 //Codeset: 1252
 file -rdi 1 -ns "basicsBall_rig_v0_1_beta" -rfn "basicsBall_rig_v0_1_betaRN"
 		 -op "VERS|2012|UVER|undef|MADE|undef|CHNG|Sat, Oct 01, 2016 12:48:11 AM|ICON|undef|INFO|undef|OBJN|714|INCL|undef(|LUNI|cm|TUNI|pal|AUNI|deg|TDUR|141120000|"
@@ -17,19 +17,19 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "0091A839-48B8-5668-80E4-FA9297C36802";
+fileInfo "UUID" "73E1F7B3-4C50-AAB8-AB0F-BE8B09D6C6D0";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "E17B13CF-4267-6BAD-DF1F-CDA1A0F5838A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.868789401337926 5.7731019656977391 28.891753684633688 ;
-	setAttr ".r" -type "double3" -6.600000000000386 4.800000000000078 4.9871071765928629e-17 ;
+	setAttr ".t" -type "double3" 1.57831116265886 5.5741788220041899 29.042575822670372 ;
+	setAttr ".r" -type "double3" -3.5999999999999899 1.599999999999929 -6.8358881584355682e-17 ;
 	setAttr ".rpt" -type "double3" 1.0764657730273932e-16 3.6796517596337148e-17 1.619061383324367e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "966E7B9B-49EE-F5FE-9A60-6B970350FB49";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 28.670460924858034;
+	setAttr ".coi" 28.670460924857938;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -261,8 +261,8 @@ createNode script -n "sceneConfigurationScriptNode";
 createNode trackInfoManager -n "trackInfoManager1";
 	rename -uid "B2333A20-48F7-AF2F-2AC6-6280057CFB75";
 select -ne :time1;
-	setAttr ".o" 29;
-	setAttr ".unw" 29;
+	setAttr ".o" 30;
+	setAttr ".unw" 30;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
