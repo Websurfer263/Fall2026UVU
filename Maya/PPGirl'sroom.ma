@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: PPGirl'sroom.ma
-//Last modified: Tue, Oct 13, 2026 12:48:03 PM
+//Last modified: Tue, Oct 13, 2026 01:09:52 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "3452586F-4CE9-5FBB-998F-608310F3B4E1";
+fileInfo "UUID" "3D0D3B72-4272-15BD-3289-F790C1826640";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "7B533509-442D-CDEF-2DB4-69A0A359951B";
@@ -215,15 +215,15 @@ createNode mesh -n "RightwallShape" -p "Rightwall";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Characterview";
 	rename -uid "3CF0F845-4D0A-95E8-BC4F-5B938C20B650";
-	setAttr ".t" -type "double3" -0.47121821495804056 11.388485309163116 32.412147677411902 ;
-	setAttr ".r" -type "double3" -7.8000000000004883 -0.80000000000000027 6.2126264441508964e-18 ;
+	setAttr ".t" -type "double3" -0.9702827607937532 8.2176077717145688 17.527738457258391 ;
+	setAttr ".r" -type "double3" -2.4000000000005595 -1.5999999999999954 6.2144437803959713e-18 ;
 createNode camera -n "CharacterviewShape" -p "Characterview";
 	rename -uid "E7FC4FFF-4869-7946-36FD-2C9B7D83FD0E";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
-	setAttr ".coi" 28.632308326466791;
+	setAttr ".coi" 13.524944781190246;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
@@ -31359,6 +31359,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :modelPanel1ViewSelectedSet;
+	setAttr ".ihi" 0;
 connectAttr "polyCube1.out" "ReferenceShape.i";
 connectAttr "polyCube2.out" "BackwallShape.i";
 connectAttr "polyTweakUV7.out" "PlaceholderBedShape.i";
