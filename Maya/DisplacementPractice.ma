@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: DisplacementPractice.ma
-//Last modified: Wed, Oct 21, 2026 09:36:46 AM
+//Last modified: Wed, Oct 21, 2026 09:41:54 AM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "EC4012FD-4BDF-34E9-0978-C29F4A0BBED2";
+fileInfo "UUID" "D203CEAA-4018-9EA7-3834-A6974A347A46";
 createNode transform -s -n "persp";
 	rename -uid "BACB7938-4AD8-8A27-60F0-458B8D7F713D";
 	setAttr ".v" no;
@@ -90,6 +90,8 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_subdiv_type" 1;
+	setAttr ".ai_subdiv_iterations" 8;
 createNode transform -n "pSphere1";
 	rename -uid "49A7DA3A-404D-3926-0BE5-3AB308377672";
 	setAttr ".t" -type "double3" 6.0442425119110084 4.040732354518795 -5.1565530646643083 ;
@@ -104,6 +106,7 @@ createNode mesh -n "pSphereShape1" -p "pSphere1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_subdiv_iterations" 9;
 createNode transform -n "aiSkyDomeLight1";
 	rename -uid "E3E80852-46D9-0C5B-C966-329CFF91CB4D";
 createNode aiSkyDomeLight -n "aiSkyDomeLightShape1" -p "aiSkyDomeLight1";
@@ -137,6 +140,8 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ai_subdiv_type" 1;
+	setAttr ".ai_subdiv_iterations" 4;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "3519B29A-4CD4-6AAE-5E5F-1E9822C7D5F2";
 	setAttr -s 5 ".lnk";
@@ -264,10 +269,10 @@ createNode polyCube -n "polyCube2";
 	rename -uid "D4CFC353-4E95-73D7-6B75-3ABF64E3E7B5";
 	setAttr ".cuv" 4;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "BD75F6A7-4F2C-B984-0042-48A6A9DBC497";
+	rename -uid "3367F0B6-43D5-5734-ADF3-BF9285838266";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" 188.87865885035094 -1994.5176321481035 ;
-	setAttr ".tgi[0].vh" -type "double2" 1486.4976549066498 -675.47006551472555 ;
+	setAttr ".tgi[0].vl" -type "double2" 46.791038358574696 -1806.4844143408327 ;
+	setAttr ".tgi[0].vh" -type "double2" 1765.7338833669357 -697.00024699459652 ;
 	setAttr -s 11 ".tgi[0].ni";
 	setAttr ".tgi[0].ni[0].x" 569.17474365234375;
 	setAttr ".tgi[0].ni[0].y" -1470.634521484375;
