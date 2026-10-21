@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: MMLongAnim.ma
-//Last modified: Tue, Oct 20, 2026 06:05:00 PM
+//Last modified: Tue, Oct 20, 2026 09:47:18 PM
 //Codeset: 1252
 file -rdi 1 -ns "Megaman_Rig_GameReady" -rfn "Megaman_Rig_GameReadyRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/Users/11094677/Downloads/MegaMan_Rig-Angel-Paez-qtpgob/MegaMan_Rig Angel Paez/Megaman_Rig_GameReady.ma";
@@ -16,7 +16,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "AE5CC82F-4302-AA6B-24C7-FBAA1D0F85D0";
+fileInfo "UUID" "96644912-4657-4131-40C1-E18033D3A8C1";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "1AECC026-48B5-61BE-139D-F08B92974387";
@@ -74,15 +74,15 @@ createNode camera -s -n "frontShape" -p "front";
 createNode transform -s -n "side";
 	rename -uid "4A70D8E1-4C0C-8CB0-4BC7-D895982D5A73";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -153.87297967118698 12.552516134788034 -21.80020706274647 ;
-	setAttr ".r" -type "double3" 3.6000000000185031 268.79999999998171 0 ;
+	setAttr ".t" -type "double3" -154.1111838575876 17.220502934008238 -20.766963955870416 ;
+	setAttr ".r" -type "double3" 1.7999999999999643 269.20000000000761 0 ;
 	setAttr ".rpt" -type "double3" -9.1520692496625085e-18 -7.0710258790881234e-17 -1.8844342620671001e-16 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "AADFA1CB-48CC-9193-B765-84ADA4A3C5B9";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 148.75788508429881;
+	setAttr ".coi" 148.75788508425993;
 	setAttr ".ow" 184.14962914484562;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
@@ -119,7 +119,7 @@ createNode camera -n "RenderCamShape" -p "RenderCam";
 	setAttr ".den" -type "string" "camera1_depth";
 	setAttr ".man" -type "string" "camera1_mask";
 createNode fosterParent -n "Megaman_Rig_GameReadyRNfosterParent1";
-	rename -uid "DD013BDF-45B1-DCDE-2EC4-3386CAA6BCDD";
+	rename -uid "A4D565C6-42EE-1A78-5F25-9EB06EF20382";
 createNode transform -n "ctl_main_0_N" -p "Megaman_Rig_GameReadyRNfosterParent1";
 	rename -uid "5BD7845B-4B9F-49FF-13F4-5694C9A707DF";
 	addAttr -ci true -k true -sn "SEP001" -ln "SEP001" -nn " " -min 0 -max 0 -en "attr" 
@@ -697,6 +697,9 @@ createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "AEABE7B0-460C-9FD4-38B9-4C8A0B64168A";
 createNode displayLayerManager -n "layerManager";
 	rename -uid "54F7EED1-45CF-F9D7-B480-7C92D664E4C8";
+	setAttr ".cdl" 1;
+	setAttr ".dli[1]"  1;
+	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "AA222C7A-4CEA-545D-FF4C-06880F91C69C";
 	setAttr ".ufem" -type "stringArray" 0  ;
@@ -707,7 +710,7 @@ createNode renderLayer -n "defaultRenderLayer";
 	setAttr ".g" yes;
 createNode reference -n "Megaman_Rig_GameReadyRN";
 	rename -uid "5E14F9B9-47D1-6A18-D26C-E2A15C0CA98E";
-	setAttr -s 459 ".phl";
+	setAttr -s 460 ".phl";
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
 	setAttr ".phl[4]" 0;
@@ -1167,12 +1170,13 @@ createNode reference -n "Megaman_Rig_GameReadyRN";
 	setAttr ".phl[458]" 0;
 	setAttr ".phl[459]" 0;
 	setAttr ".phl[460]" 0;
+	setAttr ".phl[461]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Megaman_Rig_GameReadyRN"
 		"Megaman_Rig_GameReadyRN" 1
 		5 3 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N.instObjGroups" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[1]" ""
-		"Megaman_Rig_GameReadyRN" 484
+		"Megaman_Rig_GameReadyRN" 485
 		0 "|Megaman_Rig_GameReadyRNfosterParent1|ctl_settings_0_N" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_settings_0_N" 
 		"-s -r "
 		0 "|Megaman_Rig_GameReadyRNfosterParent1|ctl_main_0_N" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N" 
@@ -1251,896 +1255,898 @@ createNode reference -n "Megaman_Rig_GameReadyRN";
 		"Megaman_Rig_GameReadyRN.placeHolderList[14]" ""
 		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[15]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N.drawOverride" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[16]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[17]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[18]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[19]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[20]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[21]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[22]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[23]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[24]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[25]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[26]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[27]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[28]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[29]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[30]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[31]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[32]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[33]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[34]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[35]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[36]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[37]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_pelvis_0_N|Megaman_Rig_GameReady:ctl_pelvis_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[38]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[39]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[40]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[41]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[42]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[43]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[44]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[45]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[46]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[47]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[48]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[49]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_R|Megaman_Rig_GameReady:ctl_Clavicle_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[50]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[51]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[52]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[53]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[54]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[55]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_chest_0_N|Megaman_Rig_GameReady:ctl_chest_0_N|Megaman_Rig_GameReady:offset_Clavicle_0_L|Megaman_Rig_GameReady:ctl_Clavicle_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[56]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[57]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[58]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[59]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[60]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[61]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[62]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[63]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[64]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[65]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[66]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[67]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:offset_spineFK_0_N|Megaman_Rig_GameReady:ctl_spineFK_0_N|Megaman_Rig_GameReady:offset_spineFK_1_N|Megaman_Rig_GameReady:ctl_spineFK_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[68]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[69]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[70]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[71]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[72]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[73]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.World" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Neck_0_N|Megaman_Rig_GameReady:ctl_Neck_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[74]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.SelectFace" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.World" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[75]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.SelectFace" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[76]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[77]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[78]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[79]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[80]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[81]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[82]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.SEP002" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[83]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N.SEP002" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[84]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[85]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[86]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[87]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[88]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[89]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[90]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[91]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[92]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_R|Megaman_Rig_GameReady:auto_lowerlip_0_R|Megaman_Rig_GameReady:ctl_lowerlip_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[93]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[94]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[95]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[96]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[97]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[98]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_L|Megaman_Rig_GameReady:auto_lowerlip_0_L|Megaman_Rig_GameReady:ctl_lowerlip_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[99]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[100]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[101]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[102]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[103]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[104]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_R|Megaman_Rig_GameReady:ctl_eyebrownInt_1_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_yaw_0_N|Megaman_Rig_GameReady:ctl_yaw_0_N|Megaman_Rig_GameReady:offsetC_lowerlip_0_N|Megaman_Rig_GameReady:ctl_lowerlip_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[105]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_R|Megaman_Rig_GameReady:ctl_eyebrownInt_1_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_R|Megaman_Rig_GameReady:ctl_eyebrownInt_1_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[106]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_R|Megaman_Rig_GameReady:ctl_eyebrownInt_1_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_R|Megaman_Rig_GameReady:ctl_eyebrownInt_1_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[107]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_R|Megaman_Rig_GameReady:ctl_eyebrownInt_1_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_R|Megaman_Rig_GameReady:ctl_eyebrownInt_1_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[108]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_R|Megaman_Rig_GameReady:ctl_eyebrownInt_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_R|Megaman_Rig_GameReady:ctl_eyebrownInt_1_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[109]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_R|Megaman_Rig_GameReady:ctl_eyebrownInt_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_R|Megaman_Rig_GameReady:ctl_eyebrownInt_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[110]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_R|Megaman_Rig_GameReady:ctl_eyebrownInt_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_R|Megaman_Rig_GameReady:ctl_eyebrownInt_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[111]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_R|Megaman_Rig_GameReady:ctl_eyebrownInt_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[112]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[113]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[114]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[115]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[116]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[117]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_L|Megaman_Rig_GameReady:ctl_eyebrownInt_1_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_R|Megaman_Rig_GameReady:ctl_upperlip_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[118]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_L|Megaman_Rig_GameReady:ctl_eyebrownInt_1_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_L|Megaman_Rig_GameReady:ctl_eyebrownInt_1_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[119]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_L|Megaman_Rig_GameReady:ctl_eyebrownInt_1_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_L|Megaman_Rig_GameReady:ctl_eyebrownInt_1_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[120]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_L|Megaman_Rig_GameReady:ctl_eyebrownInt_1_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_L|Megaman_Rig_GameReady:ctl_eyebrownInt_1_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[121]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_L|Megaman_Rig_GameReady:ctl_eyebrownInt_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_1_L|Megaman_Rig_GameReady:ctl_eyebrownInt_1_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[122]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_L|Megaman_Rig_GameReady:ctl_eyebrownInt_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_L|Megaman_Rig_GameReady:ctl_eyebrownInt_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[123]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_L|Megaman_Rig_GameReady:ctl_eyebrownInt_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_L|Megaman_Rig_GameReady:ctl_eyebrownInt_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[124]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyebrownInt_0_L|Megaman_Rig_GameReady:ctl_eyebrownInt_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[125]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[126]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[127]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[128]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[129]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[130]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_L|Megaman_Rig_GameReady:ctl_upperlip_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[131]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[132]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[133]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[134]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[135]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[136]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_L|Megaman_Rig_GameReady:auto_cornerlip_0_L|Megaman_Rig_GameReady:ctl_cornerlip_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[137]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[138]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[139]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[140]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[141]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[142]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_cornerlip_0_R|Megaman_Rig_GameReady:auto_cornerlip_0_R|Megaman_Rig_GameReady:ctl_cornerlip_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[143]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[144]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[145]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[146]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[147]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[148]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_upperlip_0_N|Megaman_Rig_GameReady:ctl_upperlip_0_N.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[149]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[150]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.BlinkLeft" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[151]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.BlinkRight" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.BlinkLeft" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[152]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.YellowPupil" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.BlinkRight" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[153]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.YellowPupil" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[154]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N|Megaman_Rig_GameReady:offsetC_eye_0_R|Megaman_Rig_GameReady:ctl_eye_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[155]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N|Megaman_Rig_GameReady:offsetC_eye_0_R|Megaman_Rig_GameReady:ctl_eye_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N|Megaman_Rig_GameReady:offsetC_eye_0_R|Megaman_Rig_GameReady:ctl_eye_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[156]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N|Megaman_Rig_GameReady:offsetC_eye_0_L|Megaman_Rig_GameReady:ctl_eye_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N|Megaman_Rig_GameReady:offsetC_eye_0_R|Megaman_Rig_GameReady:ctl_eye_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[157]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N|Megaman_Rig_GameReady:offsetC_eye_0_L|Megaman_Rig_GameReady:ctl_eye_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N|Megaman_Rig_GameReady:offsetC_eye_0_L|Megaman_Rig_GameReady:ctl_eye_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[158]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_armSwitch_0_L|Megaman_Rig_GameReady:ctl_armSwitch_0_L.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:offset_center_0_N|Megaman_Rig_GameReady:ctl_center_0_N|Megaman_Rig_GameReady:grp_neckHeadCtls_0_N|Megaman_Rig_GameReady:offset_Head_0_N|Megaman_Rig_GameReady:ctl_Head_0_N|Megaman_Rig_GameReady:offsetC_eyes_0_N|Megaman_Rig_GameReady:ctl_eyes_0_N|Megaman_Rig_GameReady:offsetC_eye_0_L|Megaman_Rig_GameReady:ctl_eye_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[159]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.clavicleFollow" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_armSwitch_0_L|Megaman_Rig_GameReady:ctl_armSwitch_0_L.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[160]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.Stretch" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.clavicleFollow" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[161]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.Stretch" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[162]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[163]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[164]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.Stretch" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[165]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.Stretch" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[166]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[167]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[168]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[169]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[170]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[171]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[172]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[173]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[174]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[175]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_Shoulder_0_L|Megaman_Rig_GameReady:ctl_Shoulder_0_L|Megaman_Rig_GameReady:offset_elbow_0_L|Megaman_Rig_GameReady:ctl_elbow_0_L|Megaman_Rig_GameReady:offset_Hand_0_L|Megaman_Rig_GameReady:ctl_Hand_0_L.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[176]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[177]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[178]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[179]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[180]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[181]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L|Megaman_Rig_GameReady:offset_thumb_2_L|Megaman_Rig_GameReady:auto_thumb_2_L|Megaman_Rig_GameReady:ctl_thumb_2_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[182]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L|Megaman_Rig_GameReady:offset_thumb_2_L|Megaman_Rig_GameReady:auto_thumb_2_L|Megaman_Rig_GameReady:ctl_thumb_2_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L|Megaman_Rig_GameReady:offset_thumb_2_L|Megaman_Rig_GameReady:auto_thumb_2_L|Megaman_Rig_GameReady:ctl_thumb_2_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[183]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L|Megaman_Rig_GameReady:offset_thumb_2_L|Megaman_Rig_GameReady:auto_thumb_2_L|Megaman_Rig_GameReady:ctl_thumb_2_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L|Megaman_Rig_GameReady:offset_thumb_2_L|Megaman_Rig_GameReady:auto_thumb_2_L|Megaman_Rig_GameReady:ctl_thumb_2_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[184]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_thumb_0_L|Megaman_Rig_GameReady:auto_thumb_0_L|Megaman_Rig_GameReady:ctl_thumb_0_L|Megaman_Rig_GameReady:offset_thumb_1_L|Megaman_Rig_GameReady:auto_thumb_1_L|Megaman_Rig_GameReady:ctl_thumb_1_L|Megaman_Rig_GameReady:offset_thumb_2_L|Megaman_Rig_GameReady:auto_thumb_2_L|Megaman_Rig_GameReady:ctl_thumb_2_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[185]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[186]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[187]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[188]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[189]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[190]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[191]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[192]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[193]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L|Megaman_Rig_GameReady:offset_pinky_3_L|Megaman_Rig_GameReady:auto_pinky_3_L|Megaman_Rig_GameReady:ctl_pinky_3_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[194]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L|Megaman_Rig_GameReady:offset_pinky_3_L|Megaman_Rig_GameReady:auto_pinky_3_L|Megaman_Rig_GameReady:ctl_pinky_3_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L|Megaman_Rig_GameReady:offset_pinky_3_L|Megaman_Rig_GameReady:auto_pinky_3_L|Megaman_Rig_GameReady:ctl_pinky_3_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[195]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L|Megaman_Rig_GameReady:offset_pinky_3_L|Megaman_Rig_GameReady:auto_pinky_3_L|Megaman_Rig_GameReady:ctl_pinky_3_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L|Megaman_Rig_GameReady:offset_pinky_3_L|Megaman_Rig_GameReady:auto_pinky_3_L|Megaman_Rig_GameReady:ctl_pinky_3_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[196]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_pinky_0_L|Megaman_Rig_GameReady:auto_pinky_0_L|Megaman_Rig_GameReady:ctl_pinky_0_L|Megaman_Rig_GameReady:offset_pinky_1_L|Megaman_Rig_GameReady:auto_pinky_1_L|Megaman_Rig_GameReady:ctl_pinky_1_L|Megaman_Rig_GameReady:offset_pinky_2_L|Megaman_Rig_GameReady:auto_pinky_2_L|Megaman_Rig_GameReady:ctl_pinky_2_L|Megaman_Rig_GameReady:offset_pinky_3_L|Megaman_Rig_GameReady:auto_pinky_3_L|Megaman_Rig_GameReady:ctl_pinky_3_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[197]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[198]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[199]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[200]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[201]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[202]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[203]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[204]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[205]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L|Megaman_Rig_GameReady:offset_ring_3_L|Megaman_Rig_GameReady:auto_ring_3_L|Megaman_Rig_GameReady:ctl_ring_3_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[206]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L|Megaman_Rig_GameReady:offset_ring_3_L|Megaman_Rig_GameReady:auto_ring_3_L|Megaman_Rig_GameReady:ctl_ring_3_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L|Megaman_Rig_GameReady:offset_ring_3_L|Megaman_Rig_GameReady:auto_ring_3_L|Megaman_Rig_GameReady:ctl_ring_3_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[207]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L|Megaman_Rig_GameReady:offset_ring_3_L|Megaman_Rig_GameReady:auto_ring_3_L|Megaman_Rig_GameReady:ctl_ring_3_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L|Megaman_Rig_GameReady:offset_ring_3_L|Megaman_Rig_GameReady:auto_ring_3_L|Megaman_Rig_GameReady:ctl_ring_3_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[208]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_ring_0_L|Megaman_Rig_GameReady:auto_ring_0_L|Megaman_Rig_GameReady:ctl_ring_0_L|Megaman_Rig_GameReady:offset_ring_1_L|Megaman_Rig_GameReady:auto_ring_1_L|Megaman_Rig_GameReady:ctl_ring_1_L|Megaman_Rig_GameReady:offset_ring_2_L|Megaman_Rig_GameReady:auto_ring_2_L|Megaman_Rig_GameReady:ctl_ring_2_L|Megaman_Rig_GameReady:offset_ring_3_L|Megaman_Rig_GameReady:auto_ring_3_L|Megaman_Rig_GameReady:ctl_ring_3_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[209]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[210]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[211]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[212]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[213]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[214]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[215]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[216]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[217]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L|Megaman_Rig_GameReady:offset_middle_3_L|Megaman_Rig_GameReady:auto_middle_3_L|Megaman_Rig_GameReady:ctl_middle_3_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[218]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L|Megaman_Rig_GameReady:offset_middle_3_L|Megaman_Rig_GameReady:auto_middle_3_L|Megaman_Rig_GameReady:ctl_middle_3_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L|Megaman_Rig_GameReady:offset_middle_3_L|Megaman_Rig_GameReady:auto_middle_3_L|Megaman_Rig_GameReady:ctl_middle_3_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[219]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L|Megaman_Rig_GameReady:offset_middle_3_L|Megaman_Rig_GameReady:auto_middle_3_L|Megaman_Rig_GameReady:ctl_middle_3_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L|Megaman_Rig_GameReady:offset_middle_3_L|Megaman_Rig_GameReady:auto_middle_3_L|Megaman_Rig_GameReady:ctl_middle_3_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[220]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_middle_0_L|Megaman_Rig_GameReady:auto_middle_0_L|Megaman_Rig_GameReady:ctl_middle_0_L|Megaman_Rig_GameReady:offset_middle_1_L|Megaman_Rig_GameReady:auto_middle_1_L|Megaman_Rig_GameReady:ctl_middle_1_L|Megaman_Rig_GameReady:offset_middle_2_L|Megaman_Rig_GameReady:auto_middle_2_L|Megaman_Rig_GameReady:ctl_middle_2_L|Megaman_Rig_GameReady:offset_middle_3_L|Megaman_Rig_GameReady:auto_middle_3_L|Megaman_Rig_GameReady:ctl_middle_3_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[221]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[222]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[223]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[224]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[225]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[226]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[227]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[228]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[229]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L|Megaman_Rig_GameReady:offset_index_3_L|Megaman_Rig_GameReady:auto_index_3_L|Megaman_Rig_GameReady:ctl_index_3_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[230]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L|Megaman_Rig_GameReady:offset_index_3_L|Megaman_Rig_GameReady:auto_index_3_L|Megaman_Rig_GameReady:ctl_index_3_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L|Megaman_Rig_GameReady:offset_index_3_L|Megaman_Rig_GameReady:auto_index_3_L|Megaman_Rig_GameReady:ctl_index_3_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[231]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L|Megaman_Rig_GameReady:offset_index_3_L|Megaman_Rig_GameReady:auto_index_3_L|Megaman_Rig_GameReady:ctl_index_3_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L|Megaman_Rig_GameReady:offset_index_3_L|Megaman_Rig_GameReady:auto_index_3_L|Megaman_Rig_GameReady:ctl_index_3_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[232]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:grp_fingerCtls_0_L|Megaman_Rig_GameReady:scl_hand_0_L|Megaman_Rig_GameReady:offset_index_0_L|Megaman_Rig_GameReady:auto_index_0_L|Megaman_Rig_GameReady:ctl_index_0_L|Megaman_Rig_GameReady:offset_index_1_L|Megaman_Rig_GameReady:auto_index_1_L|Megaman_Rig_GameReady:ctl_index_1_L|Megaman_Rig_GameReady:offset_index_2_L|Megaman_Rig_GameReady:auto_index_2_L|Megaman_Rig_GameReady:ctl_index_2_L|Megaman_Rig_GameReady:offset_index_3_L|Megaman_Rig_GameReady:auto_index_3_L|Megaman_Rig_GameReady:ctl_index_3_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[233]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.Fist" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[234]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.Relax" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.Fist" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[235]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.Buster" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.Relax" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[236]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.Buster" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[237]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.SEP002" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[238]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.clavicleFollow" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_L|Megaman_Rig_GameReady:offset_handSettings_0_L|Megaman_Rig_GameReady:ctl_handSettings_0_L.SEP002" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[239]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.Stretch" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.clavicleFollow" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[240]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.Stretch" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[241]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[242]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[243]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.Stretch" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[244]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.Stretch" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[245]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[246]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[247]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[248]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[249]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[250]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[251]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[252]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[253]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[254]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_armSwitch_0_R|Megaman_Rig_GameReady:ctl_armSwitch_0_R.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_Shoulder_0_R|Megaman_Rig_GameReady:ctl_Shoulder_0_R|Megaman_Rig_GameReady:offset_elbow_0_R|Megaman_Rig_GameReady:ctl_elbow_0_R|Megaman_Rig_GameReady:offset_Hand_0_R|Megaman_Rig_GameReady:ctl_Hand_0_R.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[255]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_armSwitch_0_R|Megaman_Rig_GameReady:ctl_armSwitch_0_R.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[256]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[257]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[258]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[259]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[260]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[261]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[262]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[263]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[264]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R|Megaman_Rig_GameReady:offset_index_3_R|Megaman_Rig_GameReady:auto_index_3_R|Megaman_Rig_GameReady:ctl_index_3_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[265]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R|Megaman_Rig_GameReady:offset_index_3_R|Megaman_Rig_GameReady:auto_index_3_R|Megaman_Rig_GameReady:ctl_index_3_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R|Megaman_Rig_GameReady:offset_index_3_R|Megaman_Rig_GameReady:auto_index_3_R|Megaman_Rig_GameReady:ctl_index_3_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[266]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R|Megaman_Rig_GameReady:offset_index_3_R|Megaman_Rig_GameReady:auto_index_3_R|Megaman_Rig_GameReady:ctl_index_3_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R|Megaman_Rig_GameReady:offset_index_3_R|Megaman_Rig_GameReady:auto_index_3_R|Megaman_Rig_GameReady:ctl_index_3_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[267]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_index_0_R|Megaman_Rig_GameReady:auto_index_0_R|Megaman_Rig_GameReady:ctl_index_0_R|Megaman_Rig_GameReady:offset_index_1_R|Megaman_Rig_GameReady:auto_index_1_R|Megaman_Rig_GameReady:ctl_index_1_R|Megaman_Rig_GameReady:offset_index_2_R|Megaman_Rig_GameReady:auto_index_2_R|Megaman_Rig_GameReady:ctl_index_2_R|Megaman_Rig_GameReady:offset_index_3_R|Megaman_Rig_GameReady:auto_index_3_R|Megaman_Rig_GameReady:ctl_index_3_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[268]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[269]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[270]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[271]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[272]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[273]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[274]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[275]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[276]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R|Megaman_Rig_GameReady:offset_middle_3_R|Megaman_Rig_GameReady:auto_middle_3_R|Megaman_Rig_GameReady:ctl_middle_3_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[277]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R|Megaman_Rig_GameReady:offset_middle_3_R|Megaman_Rig_GameReady:auto_middle_3_R|Megaman_Rig_GameReady:ctl_middle_3_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R|Megaman_Rig_GameReady:offset_middle_3_R|Megaman_Rig_GameReady:auto_middle_3_R|Megaman_Rig_GameReady:ctl_middle_3_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[278]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R|Megaman_Rig_GameReady:offset_middle_3_R|Megaman_Rig_GameReady:auto_middle_3_R|Megaman_Rig_GameReady:ctl_middle_3_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R|Megaman_Rig_GameReady:offset_middle_3_R|Megaman_Rig_GameReady:auto_middle_3_R|Megaman_Rig_GameReady:ctl_middle_3_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[279]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_middle_0_R|Megaman_Rig_GameReady:auto_middle_0_R|Megaman_Rig_GameReady:ctl_middle_0_R|Megaman_Rig_GameReady:offset_middle_1_R|Megaman_Rig_GameReady:auto_middle_1_R|Megaman_Rig_GameReady:ctl_middle_1_R|Megaman_Rig_GameReady:offset_middle_2_R|Megaman_Rig_GameReady:auto_middle_2_R|Megaman_Rig_GameReady:ctl_middle_2_R|Megaman_Rig_GameReady:offset_middle_3_R|Megaman_Rig_GameReady:auto_middle_3_R|Megaman_Rig_GameReady:ctl_middle_3_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[280]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[281]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[282]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[283]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[284]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[285]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[286]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[287]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[288]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R|Megaman_Rig_GameReady:offset_ring_3_R|Megaman_Rig_GameReady:auto_ring_3_R|Megaman_Rig_GameReady:ctl_ring_3_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[289]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R|Megaman_Rig_GameReady:offset_ring_3_R|Megaman_Rig_GameReady:auto_ring_3_R|Megaman_Rig_GameReady:ctl_ring_3_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R|Megaman_Rig_GameReady:offset_ring_3_R|Megaman_Rig_GameReady:auto_ring_3_R|Megaman_Rig_GameReady:ctl_ring_3_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[290]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R|Megaman_Rig_GameReady:offset_ring_3_R|Megaman_Rig_GameReady:auto_ring_3_R|Megaman_Rig_GameReady:ctl_ring_3_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R|Megaman_Rig_GameReady:offset_ring_3_R|Megaman_Rig_GameReady:auto_ring_3_R|Megaman_Rig_GameReady:ctl_ring_3_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[291]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_ring_0_R|Megaman_Rig_GameReady:auto_ring_0_R|Megaman_Rig_GameReady:ctl_ring_0_R|Megaman_Rig_GameReady:offset_ring_1_R|Megaman_Rig_GameReady:auto_ring_1_R|Megaman_Rig_GameReady:ctl_ring_1_R|Megaman_Rig_GameReady:offset_ring_2_R|Megaman_Rig_GameReady:auto_ring_2_R|Megaman_Rig_GameReady:ctl_ring_2_R|Megaman_Rig_GameReady:offset_ring_3_R|Megaman_Rig_GameReady:auto_ring_3_R|Megaman_Rig_GameReady:ctl_ring_3_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[292]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[293]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[294]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[295]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[296]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[297]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[298]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[299]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[300]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R|Megaman_Rig_GameReady:offset_pinky_3_R|Megaman_Rig_GameReady:auto_pinky_3_R|Megaman_Rig_GameReady:ctl_pinky_3_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[301]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R|Megaman_Rig_GameReady:offset_pinky_3_R|Megaman_Rig_GameReady:auto_pinky_3_R|Megaman_Rig_GameReady:ctl_pinky_3_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R|Megaman_Rig_GameReady:offset_pinky_3_R|Megaman_Rig_GameReady:auto_pinky_3_R|Megaman_Rig_GameReady:ctl_pinky_3_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[302]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R|Megaman_Rig_GameReady:offset_pinky_3_R|Megaman_Rig_GameReady:auto_pinky_3_R|Megaman_Rig_GameReady:ctl_pinky_3_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R|Megaman_Rig_GameReady:offset_pinky_3_R|Megaman_Rig_GameReady:auto_pinky_3_R|Megaman_Rig_GameReady:ctl_pinky_3_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[303]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_pinky_0_R|Megaman_Rig_GameReady:auto_pinky_0_R|Megaman_Rig_GameReady:ctl_pinky_0_R|Megaman_Rig_GameReady:offset_pinky_1_R|Megaman_Rig_GameReady:auto_pinky_1_R|Megaman_Rig_GameReady:ctl_pinky_1_R|Megaman_Rig_GameReady:offset_pinky_2_R|Megaman_Rig_GameReady:auto_pinky_2_R|Megaman_Rig_GameReady:ctl_pinky_2_R|Megaman_Rig_GameReady:offset_pinky_3_R|Megaman_Rig_GameReady:auto_pinky_3_R|Megaman_Rig_GameReady:ctl_pinky_3_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[304]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[305]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[306]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[307]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[308]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[309]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R|Megaman_Rig_GameReady:offset_thumb_2_R|Megaman_Rig_GameReady:auto_thumb_2_R|Megaman_Rig_GameReady:ctl_thumb_2_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[310]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R|Megaman_Rig_GameReady:offset_thumb_2_R|Megaman_Rig_GameReady:auto_thumb_2_R|Megaman_Rig_GameReady:ctl_thumb_2_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R|Megaman_Rig_GameReady:offset_thumb_2_R|Megaman_Rig_GameReady:auto_thumb_2_R|Megaman_Rig_GameReady:ctl_thumb_2_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[311]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R|Megaman_Rig_GameReady:offset_thumb_2_R|Megaman_Rig_GameReady:auto_thumb_2_R|Megaman_Rig_GameReady:ctl_thumb_2_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R|Megaman_Rig_GameReady:offset_thumb_2_R|Megaman_Rig_GameReady:auto_thumb_2_R|Megaman_Rig_GameReady:ctl_thumb_2_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[312]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:grp_fingerCtls_0_R|Megaman_Rig_GameReady:scl_hand_1_R|Megaman_Rig_GameReady:offset_thumb_0_R|Megaman_Rig_GameReady:auto_thumb_0_R|Megaman_Rig_GameReady:ctl_thumb_0_R|Megaman_Rig_GameReady:offset_thumb_1_R|Megaman_Rig_GameReady:auto_thumb_1_R|Megaman_Rig_GameReady:ctl_thumb_1_R|Megaman_Rig_GameReady:offset_thumb_2_R|Megaman_Rig_GameReady:auto_thumb_2_R|Megaman_Rig_GameReady:ctl_thumb_2_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[313]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.Fist" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[314]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.Relax" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.Fist" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[315]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.Buster" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.Relax" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[316]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.Buster" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[317]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.SEP002" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[318]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.PelvisFollow" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_armsCtls_0_N|Megaman_Rig_GameReady:grp_armCtls_0_R|Megaman_Rig_GameReady:offset_handSettings_0_R|Megaman_Rig_GameReady:ctl_handSettings_0_R.SEP002" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[319]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.FootFollow" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.PelvisFollow" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[320]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.Pin" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.FootFollow" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[321]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.Pin" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[322]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[323]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[324]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[325]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.SEP002" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[326]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.pelvisFollow" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legPole_0_R|Megaman_Rig_GameReady:ctl_legPole_0_R.SEP002" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[327]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.StretchOn" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.pelvisFollow" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[328]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.heelToe" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.StretchOn" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[329]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.BankExtInt" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.heelToe" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[330]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.BallBreak" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.BankExtInt" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[331]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.BallBreak" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[332]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[333]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[334]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[335]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[336]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[337]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[338]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[339]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[340]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[341]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.SEP002" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[342]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legSwitch_0_R|Megaman_Rig_GameReady:ctl_legSwitch_0_R.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_footIK_0_R|Megaman_Rig_GameReady:ctl_footIK_0_R.SEP002" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[343]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_ball_0_R|Megaman_Rig_GameReady:ctl_ball_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_legSwitch_0_R|Megaman_Rig_GameReady:ctl_legSwitch_0_R.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[344]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_ball_0_R|Megaman_Rig_GameReady:ctl_ball_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_ball_0_R|Megaman_Rig_GameReady:ctl_ball_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[345]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_ball_0_R|Megaman_Rig_GameReady:ctl_ball_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_ball_0_R|Megaman_Rig_GameReady:ctl_ball_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[346]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.pelvisFollow" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_R|Megaman_Rig_GameReady:offsetC_ball_0_R|Megaman_Rig_GameReady:ctl_ball_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[347]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.StretchOn" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.pelvisFollow" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[348]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.heelToe" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.StretchOn" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[349]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.BankExtInt" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.heelToe" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[350]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.BallBreak" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.BankExtInt" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[351]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.BallBreak" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[352]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[353]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[354]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[355]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[356]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[357]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[358]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[359]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[360]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[361]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.SEP002" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[362]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.PelvisFollow" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_footIK_0_L|Megaman_Rig_GameReady:ctl_footIK_0_L.SEP002" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[363]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.FootFollow" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.PelvisFollow" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[364]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.Pin" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.FootFollow" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[365]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.Pin" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[366]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[367]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[368]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.SEP001" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[369]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.SEP002" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.SEP001" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[370]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legSwitch_0_L|Megaman_Rig_GameReady:ctl_legSwitch_0_L.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legPole_0_L|Megaman_Rig_GameReady:ctl_legPole_0_L.SEP002" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[371]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_ball_0_L|Megaman_Rig_GameReady:ctl_ball_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_legSwitch_0_L|Megaman_Rig_GameReady:ctl_legSwitch_0_L.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[372]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_ball_0_L|Megaman_Rig_GameReady:ctl_ball_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_ball_0_L|Megaman_Rig_GameReady:ctl_ball_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[373]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_ball_0_L|Megaman_Rig_GameReady:ctl_ball_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_ball_0_L|Megaman_Rig_GameReady:ctl_ball_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[374]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_Body.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:grp_controls_0_N|Megaman_Rig_GameReady:offset_main_0_N|Megaman_Rig_GameReady:ctl_main_0_N|Megaman_Rig_GameReady:offset_local_0_N|Megaman_Rig_GameReady:ctl_local_0_N|Megaman_Rig_GameReady:grp_legsCtls_0_N|Megaman_Rig_GameReady:grp_legCtls_0_L|Megaman_Rig_GameReady:offsetC_ball_0_L|Megaman_Rig_GameReady:ctl_ball_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[375]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_HandArm_R.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_Body.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[376]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_HandArm_L.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_HandArm_R.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[377]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_RArm_Buster.MaxHandle" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_HandArm_L.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[378]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_LArm_Buster.MaxHandle" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_RArm_Buster.MaxHandle" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[379]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_geo_0_N|Megaman_Rig_GameReady:MegaMan_LArm_Buster.MaxHandle" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[380]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[381]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[382]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[383]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[384]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[385]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[386]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[387]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[388]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[389]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_L.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[390]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[391]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[392]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[393]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[394]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[395]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[396]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[397]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[398]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[399]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_L|Megaman_Rig_GameReady:grp_elbowNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_L.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[400]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[401]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[402]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[403]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[404]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[405]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[406]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[407]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[408]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[409]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_shoulderNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_shoulderTwist_0_R.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[410]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[411]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[412]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[413]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[414]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[415]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[416]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[417]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[418]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[419]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_armRig_0_N|Megaman_Rig_GameReady:grp_armNonRoll_0_R|Megaman_Rig_GameReady:grp_elbowNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_elbowTwist_0_R.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[420]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[421]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[422]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[423]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[424]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[425]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[426]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[427]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[428]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[429]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_hipNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_hipTwist_0_R.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[430]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[431]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[432]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[433]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[434]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[435]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[436]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[437]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[438]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[439]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_R|Megaman_Rig_GameReady:grp_kneeNonRoll_0_R|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_R.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[440]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[441]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[442]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[443]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[444]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[445]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[446]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[447]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[448]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[449]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.translateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_hipNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_hipTwist_0_L.scaleZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[450]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.translateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.translateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[451]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.translateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.translateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[452]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.visibility" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.translateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[453]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.rotateX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.visibility" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[454]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.rotateY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.rotateX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[455]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.rotateZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.rotateY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[456]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.scaleX" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.rotateZ" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[457]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.scaleY" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.scaleX" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[458]" ""
-		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.scaleZ" 
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.scaleY" 
 		"Megaman_Rig_GameReadyRN.placeHolderList[459]" ""
+		5 4 "Megaman_Rig_GameReadyRN" "|Megaman_Rig_GameReady:grp_main_0_N|Megaman_Rig_GameReady:NO_TOUCH|Megaman_Rig_GameReady:grp_rig_0_N|Megaman_Rig_GameReady:grp_legRig_0_N|Megaman_Rig_GameReady:grp_legNonRoll_0_L|Megaman_Rig_GameReady:grp_kneeNonRoll_0_L|Megaman_Rig_GameReady:ikCrv_kneeTwist_0_L.scaleZ" 
+		"Megaman_Rig_GameReadyRN.placeHolderList[460]" ""
 		5 4 "Megaman_Rig_GameReadyRN" "Megaman_Rig_GameReady:MegaMan_Controls.dagSetMembers" 
-		"Megaman_Rig_GameReadyRN.placeHolderList[460]" "";
+		"Megaman_Rig_GameReadyRN.placeHolderList[461]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
@@ -2164,8 +2170,8 @@ createNode animCurveTL -n "ctl_local_0_N_translateX";
 	rename -uid "0F6C9786-4651-F0FE-E35B-C7BFA7A888A4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2181,8 +2187,8 @@ createNode animCurveTL -n "ctl_local_0_N_translateY";
 	setAttr -s 16 ".ktv[0:15]"  1 0 6 36.960481694052248 11 22.077267746504504
 		 13 36.336642643971466 16 36.184636003149841 20 36.184636003149841 24 35.665096641714797
 		 30 36.132227227290208 35 34.720154880828225 44 34.36676226657999 49 32.601075049952151
-		 55 32.601075049952151 62 32.601075049952151 72 32.601075049952151 76 32.601075049952151
-		 80 32.601075049952151;
+		 64 32.601075049952151 71 32.601075049952151 81 32.601075049952151 85 32.601075049952151
+		 89 32.601075049952151;
 	setAttr -s 16 ".kit[5:15]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 16 ".kot[5:15]"  1 1 18 18 18 18 18 1 
@@ -2202,8 +2208,8 @@ createNode animCurveTL -n "ctl_local_0_N_translateZ";
 	setAttr -s 16 ".ktv[0:15]"  1 -99.877263018594306 6 -88.05489076203429
 		 10 -49.943046704696364 11 -48.870771581958252 13 -30.281140739201408 16 -28.919923200855933
 		 20 -22.33362130798286 24 -22.33362130798286 33 -30.802052545682688 35 -29.682171131335586
-		 49 -29.682171131335586 55 -29.682171131335586 62 -29.682171131335586 72 -29.682171131335586
-		 76 -29.682171131335586 80 -29.682171131335586;
+		 49 -29.682171131335586 64 -29.682171131335586 71 -29.682171131335586 81 -29.682171131335586
+		 85 -29.682171131335586 89 -29.682171131335586;
 	setAttr -s 16 ".kit[6:15]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 16 ".kot[6:15]"  1 1 18 18 18 18 1 18 
@@ -2216,12 +2222,14 @@ createNode animCurveTU -n "ctl_local_0_N_visibility";
 	rename -uid "9026C64C-4134-AD3E-204F-0593E281B06E";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ctl_local_0_N_rotateX";
 	rename -uid "BC5978BE-4076-B867-555D-90990C41B272";
 	setAttr ".tan" 18;
@@ -2229,8 +2237,8 @@ createNode animCurveTA -n "ctl_local_0_N_rotateX";
 	setAttr -s 17 ".ktv[0:16]"  1 0 6 72.163644605308349 10 111.67034600731949
 		 11 114.21827323364631 13 144.3114163310907 16 144.55220701344314 20 151.98485526459413
 		 24 151.98485526459413 30 148.06605167505325 35 145.19994283423625 44 145.41120563919503
-		 49 147.35562605249206 55 147.35562605249206 62 147.35562605249206 72 147.35562605249206
-		 76 147.35562605249206 80 147.35562605249206;
+		 49 147.35562605249206 64 147.35562605249206 71 147.35562605249206 81 147.35562605249206
+		 85 147.35562605249206 89 147.35562605249206;
 	setAttr -s 17 ".kit[6:16]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 17 ".kot[6:16]"  1 1 18 18 18 18 18 1 
@@ -2250,8 +2258,8 @@ createNode animCurveTA -n "ctl_local_0_N_rotateY";
 	setAttr -s 17 ".ktv[0:16]"  1 0 6 -5.4715119443940496 10 -5.4875090463240594
 		 11 -6.7415062372861883 13 0.087117708042158584 16 0.58821171706079256 20 2.2387632512989009
 		 24 2.2387632512989009 30 -0.21353458450966281 35 3.2100633805487191 44 5.1992620138394843
-		 49 5.1992620138394843 55 5.1992620138394843 62 5.1992620138394843 72 5.1992620138394843
-		 76 5.1992620138394843 80 5.1992620138394843;
+		 49 5.1992620138394843 64 5.1992620138394843 71 5.1992620138394843 81 5.1992620138394843
+		 85 5.1992620138394843 89 5.1992620138394843;
 	setAttr -s 17 ".kit[6:16]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 17 ".kot[6:16]"  1 1 18 18 18 18 18 1 
@@ -2271,8 +2279,8 @@ createNode animCurveTA -n "ctl_local_0_N_rotateZ";
 	setAttr -s 17 ".ktv[0:16]"  1 0 6 -11.018405944377072 10 -11.201769492211382
 		 11 -11.462848543376799 13 -9.9522129837476747 16 -9.2428286710275884 20 -9.2451943746935967
 		 24 -9.2451943746935967 30 -7.4118725068608331 35 2.1643242341663718 44 5.0446921573474972
-		 49 5.0446921573474972 55 5.0446921573474972 62 5.0446921573474972 72 5.0446921573474972
-		 76 5.0446921573474972 80 5.0446921573474972;
+		 49 5.0446921573474972 64 5.0446921573474972 71 5.0446921573474972 81 5.0446921573474972
+		 85 5.0446921573474972 89 5.0446921573474972;
 	setAttr -s 17 ".kit[6:16]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 17 ".kot[6:16]"  1 1 18 18 18 18 18 1 
@@ -2289,8 +2297,8 @@ createNode animCurveTU -n "ctl_local_0_N_scaleX";
 	rename -uid "EE309906-4FCB-B63E-E7E9-72BA77322D60";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2303,8 +2311,8 @@ createNode animCurveTU -n "ctl_local_0_N_scaleY";
 	rename -uid "A27B737E-4372-7559-34D3-02A5865C54CC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2317,8 +2325,8 @@ createNode animCurveTU -n "ctl_local_0_N_scaleZ";
 	rename -uid "5FC8A0C8-4952-87D1-BC3A-C6A9BF3F7D72";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2331,8 +2339,8 @@ createNode animCurveTL -n "ikCrv_elbowTwist_0_L_translateX";
 	rename -uid "F832B67B-4244-B9CB-0F0B-DDA967BADFE0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2346,7 +2354,7 @@ createNode animCurveTL -n "ikCrv_elbowTwist_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0043032328803143116
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2359,8 +2367,8 @@ createNode animCurveTL -n "ikCrv_elbowTwist_0_L_translateZ";
 	rename -uid "2B5C2EE9-4DAD-40FA-4530-8AA40D0270F8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2373,8 +2381,8 @@ createNode animCurveTL -n "ikCrv_shoulderTwist_0_L_translateX";
 	rename -uid "0D1A2FEE-4766-65FB-7EAC-309AB99571C5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2388,7 +2396,7 @@ createNode animCurveTL -n "ikCrv_shoulderTwist_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0043032328803143116
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2401,8 +2409,8 @@ createNode animCurveTL -n "ikCrv_shoulderTwist_0_L_translateZ";
 	rename -uid "004427AB-41A2-214D-A60D-9081A2238E5D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2415,8 +2423,8 @@ createNode animCurveTL -n "ikCrv_elbowTwist_0_R_translateX";
 	rename -uid "8A66D3A0-4FAD-B4D7-8E8A-F1BD7DF36B33";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2430,7 +2438,7 @@ createNode animCurveTL -n "ikCrv_elbowTwist_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0043032328803143116
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2443,8 +2451,8 @@ createNode animCurveTL -n "ikCrv_elbowTwist_0_R_translateZ";
 	rename -uid "86CB7E18-4B60-1ABE-5FE9-99AF61E5C688";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2457,8 +2465,8 @@ createNode animCurveTL -n "ikCrv_shoulderTwist_0_R_translateX";
 	rename -uid "70177FDD-431F-CE1B-BDC1-B6896F900F4E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2472,7 +2480,7 @@ createNode animCurveTL -n "ikCrv_shoulderTwist_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0043032328803143116
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2485,8 +2493,8 @@ createNode animCurveTL -n "ikCrv_shoulderTwist_0_R_translateZ";
 	rename -uid "02D8F33B-4856-06A0-6C96-37838B20504D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2499,8 +2507,8 @@ createNode animCurveTL -n "ikCrv_hipTwist_0_L_translateX";
 	rename -uid "981DEC4C-41A4-C873-9647-13B4A31C5C9A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2514,7 +2522,7 @@ createNode animCurveTL -n "ikCrv_hipTwist_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0043032328803143116
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2527,8 +2535,8 @@ createNode animCurveTL -n "ikCrv_hipTwist_0_L_translateZ";
 	rename -uid "40895D63-4A7B-16A1-F2EA-D088BB826A5D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2541,8 +2549,8 @@ createNode animCurveTL -n "ikCrv_kneeTwist_0_L_translateX";
 	rename -uid "6B0A70A1-4E8B-7957-4D67-959B563414F1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2556,7 +2564,7 @@ createNode animCurveTL -n "ikCrv_kneeTwist_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0043032328803143116
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2569,8 +2577,8 @@ createNode animCurveTL -n "ikCrv_kneeTwist_0_L_translateZ";
 	rename -uid "22A1BFB1-4140-97CF-558C-AC93B9E99AC8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2583,8 +2591,8 @@ createNode animCurveTL -n "ikCrv_hipTwist_0_R_translateX";
 	rename -uid "89E5EB5B-41C8-0BF6-79FC-C8963D2DFCAA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2598,7 +2606,7 @@ createNode animCurveTL -n "ikCrv_hipTwist_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0043032328803143116
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2611,8 +2619,8 @@ createNode animCurveTL -n "ikCrv_hipTwist_0_R_translateZ";
 	rename -uid "BC70DB9F-4971-5BA2-4AAD-5EA90A68A896";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2625,8 +2633,8 @@ createNode animCurveTL -n "ikCrv_kneeTwist_0_R_translateX";
 	rename -uid "06C3E7A0-4415-F313-FA19-5ABE93DA063D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2640,7 +2648,7 @@ createNode animCurveTL -n "ikCrv_kneeTwist_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0043032328803143116
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2653,8 +2661,8 @@ createNode animCurveTL -n "ikCrv_kneeTwist_0_R_translateZ";
 	rename -uid "8E4C458B-4A75-9C0C-4012-A1913208EEEA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2670,21 +2678,21 @@ createNode animCurveTL -n "ctl_footIK_0_L_translateX";
 	setAttr -s 20 ".ktv[0:19]"  1 0 4 1.4701474140390396 6 4.4507672309681432
 		 9 10.931181444360014 11 17.284304224050022 16 24.227361890027659 20 15.880928198947897
 		 24 29.237285060306188 25 23.126391115773973 30 7.9318949483575425 33 5.686707552278925
-		 35 9.1438743540021807 44 4.4459132823234322 49 13.892292498029359 55 17.578886391115805
-		 62 17.578886391115805 72 17.578886391115805 76 17.578886391115805 80 17.578886391115805
-		 90 17.842746221294608;
+		 35 9.1438743540021807 44 4.4459132823234322 49 13.892292498029359 64 17.578886391115805
+		 71 17.578886391115805 81 17.578886391115805 85 17.578886391115805 89 17.578886391115805
+		 99 17.842746221294608;
 	setAttr -s 20 ".kit[6:19]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18 18;
 	setAttr -s 20 ".kot[6:19]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18 18;
 	setAttr -s 20 ".kix[6:19]"  1 1 0.011733312052381043 0.019110006278040707 
-		1 1 1 0.034878200541825201 1 1 1 1 1 1;
+		1 1 1 0.063326158536168214 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[6:19]"  0 0 -0.99993116232482793 -0.99981738715630131 
-		0 0 0 0.99939157047023575 0 0 0 0 0 0;
+		0 0 0 0.99799288456634394 0 0 0 0 0 0;
 	setAttr -s 20 ".kox[6:19]"  1 1 0.011733312052381043 0.019110006278040707 
-		1 1 1 0.034878200541825201 1 1 1 1 1 1;
+		1 1 1 0.063326158536168228 1 1 1 1 1 1;
 	setAttr -s 20 ".koy[6:19]"  0 0 -0.99993116232482793 -0.99981738715630131 
-		0 0 0 0.99939157047023575 0 0 0 0 0 0;
+		0 0 0 0.99799288456634405 0 0 0 0 0 0;
 createNode animCurveTL -n "ctl_footIK_0_L_translateY";
 	rename -uid "BF06BFBE-472A-451B-84AD-F5AF5965D1D3";
 	setAttr ".tan" 18;
@@ -2692,21 +2700,21 @@ createNode animCurveTL -n "ctl_footIK_0_L_translateY";
 	setAttr -s 20 ".ktv[0:19]"  1 0 4 1.7634464740603695 6 3.0248293637411989
 		 9 0.013289349342224376 11 -0.63914427049150213 16 -1.0559346149815372 20 -0.23604192564969517
 		 24 -2.887528548069461 25 -2.6095696544706097 30 -2.9663191091279475 33 -3.4424079375597954
-		 35 0.7332639071738184 44 0.4032468327908123 49 1.4523008906831401 55 1.7531510873384668
-		 62 1.7531510873384668 72 1.7531510873384668 76 1.7531510873384668 80 1.7531510873384668
-		 90 1.7385149266394873;
+		 35 0.7332639071738184 44 0.4032468327908123 49 1.4523008906831401 64 1.7531510873384668
+		 71 1.7531510873384668 81 1.7531510873384668 85 1.7531510873384668 89 1.7531510873384668
+		 99 1.7385149266394873;
 	setAttr -s 20 ".kit[6:19]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18 18;
 	setAttr -s 20 ".kot[6:19]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18 18;
 	setAttr -s 20 ".kix[6:19]"  0.25845498758227775 0.25845498758227775 
-		1 0.37158096294666548 1 1 1 0.32150398910167077 1 1 1 1 1 1;
+		1 0.37158096294666548 1 1 1 0.56930682435254276 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[6:19]"  -0.96602330168264816 -0.96602330168264816 
-		0 -0.92840055362738172 0 0 0 0.9469082241652107 0 0 0 0 0 0;
+		0 -0.92840055362738172 0 0 0 0.82212513630567385 0 0 0 0 0 0;
 	setAttr -s 20 ".kox[6:19]"  0.25845498758227775 0.25845498758227775 
-		1 0.37158096294666548 1 1 1 0.32150398910167077 1 1 1 1 1 1;
+		1 0.37158096294666548 1 1 1 0.56930682435254287 1 1 1 1 1 1;
 	setAttr -s 20 ".koy[6:19]"  -0.96602330168264816 -0.96602330168264816 
-		0 -0.92840055362738172 0 0 0 0.9469082241652107 0 0 0 0 0 0;
+		0 -0.92840055362738172 0 0 0 0.82212513630567408 0 0 0 0 0 0;
 createNode animCurveTL -n "ctl_footIK_0_L_translateZ";
 	rename -uid "33D53743-4547-4247-8561-F99D26577C2C";
 	setAttr ".tan" 18;
@@ -2714,25 +2722,25 @@ createNode animCurveTL -n "ctl_footIK_0_L_translateZ";
 	setAttr -s 20 ".ktv[0:19]"  1 0 4 -5.0950223545613662 6 -10.196538915613065
 		 9 -10.884603074124527 11 -13.272110741566554 16 -10.782481218813553 20 -18.589790974681531
 		 24 -9.7995420121506278 25 -11.203727464859014 30 -11.241523714551342 33 -4.9502751106208454
-		 35 1.9840348908448204 44 5.5472842903955195 49 11.080589300938872 55 16.470486802367294
-		 62 16.470486802367294 72 16.470486802367294 76 16.470486802367294 80 16.470486802367294
-		 90 18.111853913218642;
+		 35 1.9840348908448204 44 5.5472842903955195 49 11.080589300938872 64 16.470486802367294
+		 71 16.470486802367294 81 16.470486802367294 85 16.470486802367294 89 16.470486802367294
+		 99 18.111853913218642;
 	setAttr -s 20 ".kit[6:19]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18 18;
 	setAttr -s 20 ".kot[6:19]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18 18;
 	setAttr -s 20 ".kix[6:19]"  0.089760548540014001 0.089760548540014001 
 		0.87833405960609123 1 0.015750373717711319 0.043619386571882246 0.06399539724110459 
-		0.041922722930843891 1 1 1 1 1 1;
+		0.076069155169010971 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[6:19]"  0.99596337479136043 0.99596337479136043 
 		-0.47804736139412302 0 0.99987595517031636 0.99904822161650075 0.9979501937130697 
-		0.99912085620412505 0 0 0 0 0 0;
+		0.99710254419085342 0 0 0 0 0 0;
 	setAttr -s 20 ".kox[6:19]"  0.089760548540014015 0.089760548540014015 
 		0.87833405960609123 1 0.015750373717711319 0.043619386571882246 0.063995397241104576 
-		0.041922722930843884 1 1 1 1 1 1;
+		0.076069155169010971 1 1 1 1 1 1;
 	setAttr -s 20 ".koy[6:19]"  0.99596337479136043 0.99596337479136043 
 		-0.47804736139412302 0 0.99987595517031636 0.99904822161650075 0.99795019371306948 
-		0.99912085620412494 0 0 0 0 0 0;
+		0.99710254419085353 0 0 0 0 0 0;
 createNode animCurveTL -n "ctl_legPole_0_L_translateX";
 	rename -uid "7D08004B-4934-E887-EDB1-9EB9004B47E7";
 	setAttr ".tan" 18;
@@ -2740,8 +2748,8 @@ createNode animCurveTL -n "ctl_legPole_0_L_translateX";
 	setAttr -s 17 ".ktv[0:16]"  1 0 6 1.1450657945916929 11 2.7522148668721518
 		 13 3.0441133739299149 16 3.0626865412299034 20 3.0626865412299034 24 3.0619900263896729
 		 25 2.7904748891669686 26 -1.0343654788842616 33 3.1003823778210036 35 3.1003823778210036
-		 49 3.1003823778210036 55 3.1003823778210036 62 3.1003823778210036 72 3.1003823778210036
-		 76 3.1003823778210036 80 3.1003823778210036;
+		 49 3.1003823778210036 64 3.1003823778210036 71 3.1003823778210036 81 3.1003823778210036
+		 85 3.1003823778210036 89 3.1003823778210036;
 	setAttr -s 17 ".kit[5:16]"  1 1 18 18 18 18 18 18 
 		1 18 18 18;
 	setAttr -s 17 ".kot[5:16]"  1 1 18 18 18 18 18 18 
@@ -2761,8 +2769,8 @@ createNode animCurveTL -n "ctl_legPole_0_L_translateY";
 	setAttr -s 17 ".ktv[0:16]"  1 0 6 -0.31574850987240466 11 -0.764141134724174
 		 13 -0.83940526932233084 16 -0.73774375568402373 20 -0.73774375568402373 24 -0.73737031027025113
 		 25 -3.9701985134299824 26 10.301801931788184 33 1.526535411714627 35 1.526535411714627
-		 49 1.526535411714627 55 1.526535411714627 62 1.526535411714627 72 1.526535411714627
-		 76 1.526535411714627 80 1.526535411714627;
+		 49 1.526535411714627 64 1.526535411714627 71 1.526535411714627 81 1.526535411714627
+		 85 1.526535411714627 89 1.526535411714627;
 	setAttr -s 17 ".kit[5:16]"  1 1 18 18 18 18 18 18 
 		1 18 18 18;
 	setAttr -s 17 ".kot[5:16]"  1 1 18 18 18 18 18 18 
@@ -2782,8 +2790,8 @@ createNode animCurveTL -n "ctl_legPole_0_L_translateZ";
 	setAttr -s 17 ".ktv[0:16]"  1 0 6 -0.22734938923421319 11 -0.50667673877767549
 		 13 -0.60439960707187723 16 -0.65394532526626836 20 -0.65394532526626836 24 -0.64971528758056307
 		 25 -2.6192988184845607 26 2.1576537957398081 33 -0.92670906737736003 35 -0.92670906737736003
-		 49 -0.92670906737736003 55 -0.92670906737736003 62 -0.92670906737736003 72 -0.92670906737736003
-		 76 -0.92670906737736003 80 -0.92670906737736003;
+		 49 -0.92670906737736003 64 -0.92670906737736003 71 -0.92670906737736003 81 -0.92670906737736003
+		 85 -0.92670906737736003 89 -0.92670906737736003;
 	setAttr -s 17 ".kit[5:16]"  1 1 18 18 18 18 18 18 
 		1 18 18 18;
 	setAttr -s 17 ".kot[5:16]"  1 1 18 18 18 18 18 18 
@@ -2803,8 +2811,8 @@ createNode animCurveTL -n "ctl_footIK_0_R_translateX";
 	setAttr -s 19 ".ktv[0:18]"  1 0 4 0.26305565074041781 6 4.8139647074575844
 		 9 4.9952649800431166 11 12.501697286488696 16 22.18701235095461 20 26.657013063821324
 		 24 33.151015377242452 30 21.337469146610225 32 7.5675424027508953 33 7.4526920632224067
-		 35 10.454813468180047 44 12.093516873862667 49 21.412117584226642 55 21.412117584226642
-		 62 21.412117584226642 72 23.035381262835383 76 22.703038561750997 80 22.370695860666611;
+		 35 10.454813468180047 44 12.093516873862667 49 21.412117584226642 64 21.412117584226642
+		 71 21.412117584226642 81 23.035381262835383 85 22.703038561750997 89 22.370695860666611;
 	setAttr -s 19 ".kit[6:18]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18;
 	setAttr -s 19 ".kot[6:18]"  1 1 18 18 18 18 18 18 
@@ -2824,8 +2832,8 @@ createNode animCurveTL -n "ctl_footIK_0_R_translateY";
 	setAttr -s 19 ".ktv[0:18]"  1 0 4 0.5451823703812575 6 -1.1983405338891255
 		 9 3.8283533911824903 11 3.641254006320676 16 1.786115764349236 20 5.010432610518369
 		 24 -1.3905302029783309 30 -1.5749753058210068 32 -0.94676743452636392 33 3.4709268027495503
-		 35 0.39125159997977066 44 0.45617517250802664 49 1.6846028650318103 55 1.6846028650318103
-		 62 1.6846028650318103 72 1.8549504739636211 76 4.5922640582776069 80 7.2273690772325168;
+		 35 0.39125159997977066 44 0.45617517250802664 49 1.6846028650318103 64 1.6846028650318103
+		 71 1.6846028650318103 81 1.8549504739636211 85 4.5922640582776069 89 7.2273690772325168;
 	setAttr -s 19 ".kit[6:18]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18;
 	setAttr -s 19 ".kot[6:18]"  1 1 18 18 18 18 18 18 
@@ -2845,8 +2853,8 @@ createNode animCurveTL -n "ctl_footIK_0_R_translateZ";
 	setAttr -s 19 ".ktv[0:18]"  1 0 4 -2.6786441578647628 6 0.25381527803364096
 		 9 -3.4937684153253703 11 -11.949623875535506 16 -12.84531267291422 20 -11.423345517406243
 		 24 -4.1506322526504 30 -12.828263237609784 32 -9.3193770978718646 33 -3.6000937714490622
-		 35 3.1120968795748056 44 11.456616679984338 49 9.0083233164516781 55 9.0083233164516781
-		 62 9.0083233164516781 72 10.066624516248996 76 10.202038122363685 80 10.221382923237213;
+		 35 3.1120968795748056 44 11.456616679984338 49 9.0083233164516781 64 9.0083233164516781
+		 71 9.0083233164516781 81 10.066624516248996 85 10.202038122363685 89 10.221382923237213;
 	setAttr -s 19 ".kit[6:18]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18;
 	setAttr -s 19 ".kot[6:18]"  1 1 18 18 18 18 18 18 
@@ -2865,8 +2873,8 @@ createNode animCurveTL -n "ctl_legPole_0_R_translateX";
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 -0.20294181672217473 11 -0.4911383118664121
 		 13 -0.53951301430141207 16 -0.51803227983139155 20 -0.51803227983139155 24 -0.5209080738953823
-		 33 -0.039597739362755242 35 -0.039597739362755242 49 -0.039597739362755242 55 -0.039597739362755242
-		 62 -0.039597739362755242 72 -0.039597739362755242 76 0.16928598317106691 80 0.37816970570488989;
+		 33 -0.039597739362755242 35 -0.039597739362755242 49 -0.039597739362755242 64 -0.039597739362755242
+		 71 -0.039597739362755242 81 -0.039597739362755242 85 0.16928598317106691 89 0.37816970570488989;
 	setAttr -s 15 ".kit[5:14]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 15 ".kot[5:14]"  1 1 18 18 18 18 1 18 
@@ -2885,8 +2893,8 @@ createNode animCurveTL -n "ctl_legPole_0_R_translateY";
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 -1.8095796803108632 11 -4.3793532734179372
 		 13 -4.8106979808879551 16 -4.7046350847712812 20 -4.7046350847712812 24 -4.7064767205894782
-		 33 -2.3423251258090101 35 -2.3423251258090101 49 -2.3423251258090101 55 -2.3423251258090101
-		 62 -2.3423251258090101 72 -2.3423251258090101 76 0.44455597309951589 80 3.2314370720080525;
+		 33 -2.3423251258090101 35 -2.3423251258090101 49 -2.3423251258090101 64 -2.3423251258090101
+		 71 -2.3423251258090101 81 -2.3423251258090101 85 0.44455597309951589 89 3.2314370720080525;
 	setAttr -s 15 ".kit[5:14]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 15 ".kot[5:14]"  1 1 18 18 18 18 1 18 
@@ -2905,8 +2913,8 @@ createNode animCurveTL -n "ctl_legPole_0_R_translateZ";
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 0.18650588839277266 11 0.40533788179017638
 		 13 0.49581873098878626 16 0.63754045525363245 20 0.63754045525363245 24 0.64015885156375629
-		 33 1.835392426357733 35 1.835392426357733 49 1.835392426357733 55 1.835392426357733
-		 62 1.835392426357733 72 1.835392426357733 76 2.9933815249498674 80 4.1513706235420065;
+		 33 1.835392426357733 35 1.835392426357733 49 1.835392426357733 64 1.835392426357733
+		 71 1.835392426357733 81 1.835392426357733 85 2.9933815249498674 89 4.1513706235420065;
 	setAttr -s 15 ".kit[5:14]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 15 ".kot[5:14]"  1 1 18 18 18 18 1 18 
@@ -2925,8 +2933,8 @@ createNode animCurveTL -n "ctl_center_0_N_translateX";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 1.3227703495226144e-07 11 -0.00046616551457610866
 		 16 -0.0013764832790886408 20 -0.0013764832790886408 24 -0.0020673120334223334 35 -0.0030192035386950532
-		 49 -0.0030192035386950532 55 -2.731649729399567 62 -2.731649729399567 72 -2.731649729399567
-		 76 -2.731649729399567 80 -2.731649729399567;
+		 49 -0.0030192035386950532 64 -2.731649729399567 71 -2.731649729399567 81 -2.731649729399567
+		 85 -2.731649729399567 89 -2.731649729399567;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2945,8 +2953,8 @@ createNode animCurveTL -n "ctl_center_0_N_translateY";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 -5.0751793014313283e-05 11 0.17885746921023024
 		 16 0.52812640148180312 20 0.52812640148180312 24 0.52436407069505242 35 1.1584020848316186
-		 49 1.1584020848316186 55 0.82081095272061144 62 0.82081095272061144 72 0.82081095272061144
-		 76 0.82081095272061144 80 0.82081095272061144;
+		 49 1.1584020848316186 64 0.82081095272061144 71 0.82081095272061144 81 0.82081095272061144
+		 85 0.82081095272061144 89 0.82081095272061144;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2965,8 +2973,8 @@ createNode animCurveTL -n "ctl_center_0_N_translateZ";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 7.0658298817168234e-05 11 -0.24901119260100132
 		 16 -0.73527477302321675 20 -0.73527477302321675 24 -0.73724592393206945 35 -1.6127651024534826
-		 49 -1.6127651024534826 55 -1.5341639090943622 62 -1.5341639090943622 72 -1.5341639090943622
-		 76 -1.5341639090943622 80 -1.5341639090943622;
+		 49 -1.6127651024534826 64 -1.5341639090943622 71 -1.5341639090943622 81 -1.5341639090943622
+		 85 -1.5341639090943622 89 -1.5341639090943622;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -2985,7 +2993,7 @@ createNode animCurveTL -n "ctl_Head_0_N_translateX";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0.57667844471160445 16 0.26025004520065181
 		 20 0.26025004520065181 24 0.39829944026831982 33 -0.0016367567413637857 35 0 49 0
-		 55 0 62 0 72 0 76 0 80 0;
+		 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -3003,8 +3011,8 @@ createNode animCurveTL -n "ctl_Head_0_N_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 3.8067512773612493 16 4.0405660991468357
-		 20 4.0405660991468357 24 2.3698602911666411 33 0.40024687780396856 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+		 20 4.0405660991468357 24 2.3698602911666411 33 0.40024687780396856 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -3018,8 +3026,8 @@ createNode animCurveTL -n "ctl_Head_0_N_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 -2.6474488331617403 16 -3.3480197081414653
-		 20 -3.3480197081414653 24 -0.21692428342283587 33 0.27923335791098997 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+		 20 -3.3480197081414653 24 -0.21692428342283587 33 0.27923335791098997 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -3033,7 +3041,7 @@ createNode animCurveTL -n "ctl_cornerlip_0_L_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 -0.0005734182131463695
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0 90 0.058368862992036759;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0 99 0.058368862992036759;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -3047,7 +3055,7 @@ createNode animCurveTL -n "ctl_cornerlip_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 -0.003710608388193962
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0 90 0.31910326961733781;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0 99 0.31910326961733781;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -3061,7 +3069,7 @@ createNode animCurveTL -n "ctl_cornerlip_0_L_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 0.0021024723932824537
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0 90 -0.032240011045206275;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0 99 -0.032240011045206275;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -3075,7 +3083,7 @@ createNode animCurveTL -n "ctl_cornerlip_0_R_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 0.00057341821314636895
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0 90 -0.053950455204748476;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0 99 -0.053950455204748476;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -3089,7 +3097,7 @@ createNode animCurveTL -n "ctl_cornerlip_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 -0.003710608388193962
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0 90 0.29494778158570573;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0 99 0.29494778158570573;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -3103,7 +3111,7 @@ createNode animCurveTL -n "ctl_cornerlip_0_R_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 -0.0021024723932824524
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0 90 0.029799505807273842;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0 99 0.029799505807273842;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -3117,7 +3125,7 @@ createNode animCurveTL -n "ctl_eyebrownInt_0_L_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0005734182131463695
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3131,7 +3139,7 @@ createNode animCurveTL -n "ctl_eyebrownInt_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0037612685031197328
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3145,7 +3153,7 @@ createNode animCurveTL -n "ctl_eyebrownInt_0_L_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0020104387636756529
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3159,7 +3167,7 @@ createNode animCurveTL -n "ctl_eyebrownInt_0_R_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.00057341821314636917
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3173,7 +3181,7 @@ createNode animCurveTL -n "ctl_eyebrownInt_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0037612685031197324
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3187,7 +3195,7 @@ createNode animCurveTL -n "ctl_eyebrownInt_0_R_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0020104387636756525
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3201,8 +3209,8 @@ createNode animCurveTL -n "ctl_eyebrownInt_1_L_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 1.0877048587575126e-31 6 1.0877048587575126e-31
-		 11 1.0877048587575126e-31 16 0 20 0 24 -0.0005734182131463695 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+		 11 1.0877048587575126e-31 16 0 20 0 24 -0.0005734182131463695 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3216,7 +3224,7 @@ createNode animCurveTL -n "ctl_eyebrownInt_1_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0036003248076884194
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3230,8 +3238,8 @@ createNode animCurveTL -n "ctl_eyebrownInt_1_L_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 8.8817841970012523e-16 6 8.8817841970012523e-16
-		 11 8.8817841970012523e-16 16 0 20 0 24 0.0022861902926470468 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+		 11 8.8817841970012523e-16 16 0 20 0 24 0.0022861902926470468 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3245,8 +3253,8 @@ createNode animCurveTL -n "ctl_eyebrownInt_1_R_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 1.0877048587575126e-31 6 1.0877048587575126e-31
-		 11 1.0877048587575126e-31 16 0 20 0 24 0.0005734182131463695 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+		 11 1.0877048587575126e-31 16 0 20 0 24 0.0005734182131463695 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3260,7 +3268,7 @@ createNode animCurveTL -n "ctl_eyebrownInt_1_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0036033923800962617
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3274,7 +3282,7 @@ createNode animCurveTL -n "ctl_eyebrownInt_1_R_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0022813522591030176
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3288,7 +3296,7 @@ createNode animCurveTL -n "ctl_eyes_0_N_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 -0.0005734182131463695
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 1 18 18 
@@ -3302,7 +3310,7 @@ createNode animCurveTL -n "ctl_eyes_0_N_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 -0.0037612685031197333
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 1 18 18 
@@ -3316,7 +3324,7 @@ createNode animCurveTL -n "ctl_eye_0_L_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 -0.0005734182131463695
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 1 18 18 
@@ -3330,7 +3338,7 @@ createNode animCurveTL -n "ctl_eye_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 -0.0037612685031197328
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 1 18 18 
@@ -3344,7 +3352,7 @@ createNode animCurveTL -n "ctl_eye_0_R_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 -0.0005734182131463695
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 1 18 18 
@@ -3358,7 +3366,7 @@ createNode animCurveTL -n "ctl_eye_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 -0.0037612685031197333
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 1 18 18 
@@ -3372,7 +3380,7 @@ createNode animCurveTL -n "ctl_upperlip_0_L_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0005734182131463695
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3386,7 +3394,7 @@ createNode animCurveTL -n "ctl_upperlip_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0037612685031197328
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3400,7 +3408,7 @@ createNode animCurveTL -n "ctl_upperlip_0_L_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0020104387636756529
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3414,7 +3422,7 @@ createNode animCurveTL -n "ctl_upperlip_0_N_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.00057341821314636928
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3428,7 +3436,7 @@ createNode animCurveTL -n "ctl_upperlip_0_N_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0037612685031197328
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3442,7 +3450,7 @@ createNode animCurveTL -n "ctl_upperlip_0_N_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0020104387636756529
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3456,7 +3464,7 @@ createNode animCurveTL -n "ctl_upperlip_0_R_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.00057341821314636928
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3470,7 +3478,7 @@ createNode animCurveTL -n "ctl_upperlip_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0037612685031197328
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3484,7 +3492,7 @@ createNode animCurveTL -n "ctl_upperlip_0_R_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0020104387636756529
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3498,7 +3506,7 @@ createNode animCurveTL -n "ctl_lowerlip_0_L_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0005734182131463695
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3512,7 +3520,7 @@ createNode animCurveTL -n "ctl_lowerlip_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0037612685031197333
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3526,8 +3534,8 @@ createNode animCurveTL -n "ctl_lowerlip_0_L_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 3.1086244689504383e-15 6 3.1086244689504383e-15
-		 11 1.554312234475219e-15 16 0 20 0 24 0.0020104387636756529 35 0 49 0 55 0 62 0 72 0
-		 76 0 80 0;
+		 11 1.554312234475219e-15 16 0 20 0 24 0.0020104387636756529 35 0 49 0 64 0 71 0 81 0
+		 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3541,8 +3549,8 @@ createNode animCurveTL -n "ctl_lowerlip_0_N_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 6.4095212173565842e-31 6 6.4095212173565842e-31
-		 11 3.2047606086782921e-31 16 0 20 0 24 0.00057341821314636917 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+		 11 3.2047606086782921e-31 16 0 20 0 24 0.00057341821314636917 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3556,7 +3564,7 @@ createNode animCurveTL -n "ctl_lowerlip_0_N_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0037612685031197333
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3570,8 +3578,8 @@ createNode animCurveTL -n "ctl_lowerlip_0_N_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 -4.145989107584569e-16 6 -4.145989107584569e-16
-		 11 -2.0729945537922842e-16 16 0 20 0 24 -0.0020104387636756529 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+		 11 -2.0729945537922842e-16 16 0 20 0 24 -0.0020104387636756529 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3585,7 +3593,7 @@ createNode animCurveTL -n "ctl_lowerlip_0_R_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.00057341821314636917
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3599,7 +3607,7 @@ createNode animCurveTL -n "ctl_lowerlip_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0037612685031197333
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3613,8 +3621,8 @@ createNode animCurveTL -n "ctl_lowerlip_0_R_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 1.3322676295501902e-15 6 1.3322676295501902e-15
-		 11 6.6613381477509511e-16 16 0 20 0 24 -0.0020104387636756529 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+		 11 6.6613381477509511e-16 16 0 20 0 24 -0.0020104387636756529 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3628,7 +3636,7 @@ createNode animCurveTL -n "ctl_Neck_0_N_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.00094221718993572564
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3642,7 +3650,7 @@ createNode animCurveTL -n "ctl_Neck_0_N_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -3.5943954591025676e-06
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3656,7 +3664,7 @@ createNode animCurveTL -n "ctl_Neck_0_N_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0041988125785189694
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3670,8 +3678,8 @@ createNode animCurveTL -n "ctl_chest_0_N_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.00064446199860103848
-		 35 0 49 0 55 -1.1524451941340568 62 -1.1524451941340568 72 -1.1524451941340568 76 -1.1524451941340568
-		 80 -1.1524451941340568;
+		 35 0 49 0 64 -1.1524451941340568 71 -1.1524451941340568 81 -1.1524451941340568 85 -1.1524451941340568
+		 89 -1.1524451941340568;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3685,8 +3693,8 @@ createNode animCurveTL -n "ctl_chest_0_N_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0014101781943253119
-		 35 0 49 0 55 1.5296542927565708 62 1.5296542927565708 72 1.5296542927565708 76 1.5296542927565708
-		 80 1.5296542927565708;
+		 35 0 49 0 64 1.5296542927565708 71 1.5296542927565708 81 1.5296542927565708 85 1.5296542927565708
+		 89 1.5296542927565708;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3700,8 +3708,8 @@ createNode animCurveTL -n "ctl_chest_0_N_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0040142096874511632
-		 35 0 49 0 55 -4.9266448921244148 62 -4.9266448921244148 72 -4.9266448921244148 76 -4.9266448921244148
-		 80 -4.9266448921244148;
+		 35 0 49 0 64 -4.9266448921244148 71 -4.9266448921244148 81 -4.9266448921244148 85 -4.9266448921244148
+		 89 -4.9266448921244148;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3715,7 +3723,7 @@ createNode animCurveTL -n "ctl_Clavicle_0_L_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0018061432259560302
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3729,7 +3737,7 @@ createNode animCurveTL -n "ctl_Clavicle_0_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -7.5478224132099836e-06
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3743,7 +3751,7 @@ createNode animCurveTL -n "ctl_Clavicle_0_L_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.0039058421498990672
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3757,7 +3765,7 @@ createNode animCurveTL -n "ctl_Clavicle_0_R_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 3.575372654726582e-05
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3771,7 +3779,7 @@ createNode animCurveTL -n "ctl_Clavicle_0_R_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -1.9711141363324436e-05
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3785,7 +3793,7 @@ createNode animCurveTL -n "ctl_Clavicle_0_R_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.0043030392008628453
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3799,8 +3807,8 @@ createNode animCurveTL -n "ctl_pelvis_0_N_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 -0.46555210130487823
-		 35 0 44 0.10287054917569685 49 0.10287054917569685 55 0.10287054917569685 62 0.10287054917569685
-		 72 0.10287054917569685 76 0.10287054917569685 80 0.10287054917569685;
+		 35 0 44 0.10287054917569685 49 0.10287054917569685 64 0.10287054917569685 71 0.10287054917569685
+		 81 0.10287054917569685 85 0.10287054917569685 89 0.10287054917569685;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -3814,8 +3822,8 @@ createNode animCurveTL -n "ctl_pelvis_0_N_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 1.4788477761470311
-		 35 0 44 1.194369481624818 49 1.194369481624818 55 1.194369481624818 62 1.194369481624818
-		 72 1.194369481624818 76 1.194369481624818 80 1.194369481624818;
+		 35 0 44 1.194369481624818 49 1.194369481624818 64 1.194369481624818 71 1.194369481624818
+		 81 1.194369481624818 85 1.194369481624818 89 1.194369481624818;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -3829,8 +3837,8 @@ createNode animCurveTL -n "ctl_pelvis_0_N_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 -2.8565949253419278
-		 35 0 44 0.64429094584063418 49 0.64429094584063418 55 0.64429094584063418 62 0.64429094584063418
-		 72 0.64429094584063418 76 0.64429094584063418 80 0.64429094584063418;
+		 35 0 44 0.64429094584063418 49 0.64429094584063418 64 0.64429094584063418 71 0.64429094584063418
+		 81 0.64429094584063418 85 0.64429094584063418 89 0.64429094584063418;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -3844,8 +3852,8 @@ createNode animCurveTL -n "ctl_spineFK_0_N_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 -0.038577607582978006 16 -0.077155215165956012
-		 20 -0.077155215165956012 24 0.10873852912854814 35 0 49 0 55 1.955636341767188 62 1.955636341767188
-		 72 1.955636341767188 76 1.955636341767188 80 1.955636341767188;
+		 20 -0.077155215165956012 24 0.10873852912854814 35 0 49 0 64 1.955636341767188 71 1.955636341767188
+		 81 1.955636341767188 85 1.955636341767188 89 1.955636341767188;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3859,8 +3867,8 @@ createNode animCurveTL -n "ctl_spineFK_0_N_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0.91080326968731173 16 1.8216065393746228
-		 20 1.8216065393746228 24 3.3964380973505359 35 0 49 0 55 -12.693693771632427 62 -12.693693771632427
-		 72 -12.693693771632427 76 -12.693693771632427 80 -12.693693771632427;
+		 20 1.8216065393746228 24 3.3964380973505359 35 0 49 0 64 -12.693693771632427 71 -12.693693771632427
+		 81 -12.693693771632427 85 -12.693693771632427 89 -12.693693771632427;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3874,8 +3882,8 @@ createNode animCurveTL -n "ctl_spineFK_0_N_translateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 -1.7122862449912188 16 -3.4245724899824368
-		 20 -3.4245724899824368 24 -3.1952787182041598 35 0 49 0 55 5.1899282167684335 62 5.1899282167684335
-		 72 5.1899282167684335 76 5.1899282167684335 80 5.1899282167684335;
+		 20 -3.4245724899824368 24 -3.1952787182041598 35 0 49 0 64 5.1899282167684335 71 5.1899282167684335
+		 81 5.1899282167684335 85 5.1899282167684335 89 5.1899282167684335;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3889,7 +3897,7 @@ createNode animCurveTL -n "ctl_spineFK_0_N_translateX1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -0.25454428105980564
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3903,7 +3911,7 @@ createNode animCurveTL -n "ctl_spineFK_0_N_translateY1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0.80857167848915057
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3917,7 +3925,7 @@ createNode animCurveTL -n "ctl_spineFK_0_N_translateZ1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 -1.5618657922758961
-		 35 0 49 0 55 0 62 0 72 0 76 0 80 0;
+		 35 0 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3967,8 +3975,8 @@ createNode animCurveTA -n "ctl_lowerlip_0_R_rotateX";
 	rename -uid "F6B981C2-4385-F532-25DC-59865947F708";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3981,8 +3989,8 @@ createNode animCurveTA -n "ctl_lowerlip_0_R_rotateY";
 	rename -uid "4C78FE24-4921-68C7-AF38-53BFA50C24E3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -3995,8 +4003,8 @@ createNode animCurveTA -n "ctl_lowerlip_0_R_rotateZ";
 	rename -uid "D00C82E2-4611-181C-A98C-66805512DFE3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4096,8 +4104,8 @@ createNode animCurveTU -n "ctl_eyes_0_N_SEP001";
 	rename -uid "62987B13-4111-0746-93DA-658346A867EB";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 0 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 0 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[0:11]"  9 9 9 1 1 9 9 9 
 		1 9 9 9;
 	setAttr -s 12 ".kix[3:11]"  1 1 1 1 1 1 1 1 1;
@@ -4106,8 +4114,8 @@ createNode animCurveTU -n "ctl_eyes_0_N_BlinkLeft";
 	rename -uid "0FA3E09A-4EF1-333B-E955-C08852984A60";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 0 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 0 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 1 18 18 
@@ -4120,8 +4128,8 @@ createNode animCurveTU -n "ctl_eyes_0_N_BlinkRight";
 	rename -uid "262F0E19-479B-0A41-D247-F59630088FB4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 0 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 0 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 1 18 18 
@@ -4134,8 +4142,8 @@ createNode animCurveTU -n "ctl_eyes_0_N_YellowPupil";
 	rename -uid "8719A472-4751-1216-8756-79B645457522";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 0 35 0 49 0 55 0 62 0
-		 72 0 76 0 80 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 6 0 16 0 20 0 24 0 35 0 49 0 64 0 71 0
+		 81 0 85 0 89 0;
 	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 1 18 18 
@@ -4187,18 +4195,20 @@ createNode animCurveTU -n "ctl_handSettings_0_L_visibility";
 	rename -uid "51598D73-414D-FA6F-08EA-99BACFFC07C5";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTU -n "ctl_handSettings_0_L_SEP001";
 	rename -uid "8735E7B3-491F-6FD2-099F-89AC63E9C6E2";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -4207,8 +4217,8 @@ createNode animCurveTU -n "ctl_handSettings_0_L_Fist";
 	rename -uid "84AEC4DA-4C14-D090-F28D-83B798A1C042";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4221,8 +4231,8 @@ createNode animCurveTU -n "ctl_handSettings_0_L_Relax";
 	rename -uid "4B64F78D-4C9B-A8A5-B89C-47B732EA47F4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4235,8 +4245,8 @@ createNode animCurveTU -n "ctl_handSettings_0_L_SEP002";
 	rename -uid "03EB8018-4630-9CD8-007C-F8B7D3CC7FD9";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -4245,8 +4255,8 @@ createNode animCurveTU -n "ctl_handSettings_0_L_Buster";
 	rename -uid "6AF72D6C-436C-141C-3439-B28CDA089055";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 1
-		 62 1 72 1 76 1 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 1
+		 71 1 81 1 85 1 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4298,12 +4308,14 @@ createNode animCurveTU -n "ctl_legSwitch_0_L_visibility";
 	rename -uid "386F248D-4AE1-186C-E79E-2ABEDB57E20A";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ctl_index_1_R_rotateX";
 	rename -uid "34B6937F-47E3-5E25-C38C-08B2BF6800BD";
 	setAttr ".tan" 18;
@@ -4357,12 +4369,14 @@ createNode animCurveTU -n "ctl_legSwitch_0_R_visibility";
 	rename -uid "0969DCC4-46D0-5429-9C37-47B2B03D8342";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ctl_index_1_L_rotateX";
 	rename -uid "5AFE7229-407C-C45F-C386-32B8A8012187";
 	setAttr ".tan" 18;
@@ -4408,8 +4422,8 @@ createNode animCurveTA -n "ctl_ball_0_L_rotateX";
 	rename -uid "1A01F142-4664-F6C1-D51F-72A569C8E0DD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4422,8 +4436,8 @@ createNode animCurveTA -n "ctl_ball_0_L_rotateY";
 	rename -uid "3F2A2B8A-4E70-3E57-4BCB-048A695758E1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4436,8 +4450,8 @@ createNode animCurveTA -n "ctl_ball_0_L_rotateZ";
 	rename -uid "C34CDBD1-4864-1116-FEAB-8A97C660B59B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4574,8 +4588,8 @@ createNode animCurveTA -n "ctl_lowerlip_0_N_rotateX";
 	rename -uid "ECBC512D-40B6-AFB1-B06B-5CA118A5ED6B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4588,8 +4602,8 @@ createNode animCurveTA -n "ctl_lowerlip_0_N_rotateY";
 	rename -uid "B78F1D71-4313-7C5E-259C-D98DD3CB8088";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4602,8 +4616,8 @@ createNode animCurveTA -n "ctl_lowerlip_0_N_rotateZ";
 	rename -uid "F130FA66-4150-CFC0-6545-E09E31E22C4A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4618,28 +4632,28 @@ createNode animCurveTA -n "ctl_elbow_0_L_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 -2.6345229481384487 11 -3.0985673954751709
 		 16 -3.2229196350561988 20 -3.2229196350561988 24 -11.68464549249574 35 -3.3254390386802526
-		 49 -3.3254390386802526 55 -18.211700318063745 62 -18.211700318063745 72 -18.211700318063745
-		 76 -18.211700318063745 80 -18.211700318063745;
+		 49 -3.3254390386802526 64 -15.64051089123191 71 -15.64051089123191 81 -18.211700318063745
+		 85 -18.211700318063745 89 -18.211700318063745;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kix[4:12]"  0.99998871139411583 0.99998871139411583 
-		1 1 1 1 1 1 1;
+		1 1 1 0.91443327997580581 1 1 1;
 	setAttr -s 13 ".kiy[4:12]"  -0.0047515349451953421 -0.0047515349451953421 
-		0 0 0 0 0 0 0;
+		0 0 0 -0.40473667547269487 0 0 0;
 	setAttr -s 13 ".kox[4:12]"  0.99998871139411605 0.99998871139411605 
-		1 1 1 1 1 1 1;
+		1 1 1 0.91443327997580581 1 1 1;
 	setAttr -s 13 ".koy[4:12]"  -0.0047515349451953438 -0.0047515349451953438 
-		0 0 0 0 0 0 0;
+		0 0 0 -0.40473667547269493 0 0 0;
 createNode animCurveTA -n "ctl_elbow_0_L_rotateY";
 	rename -uid "F94BD930-4916-656A-DB4B-2EB0FF4BB926";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 10.392506484213579 11 7.4268994141183002
 		 16 1.6373699609668919 20 1.6373699609668919 24 33.054194095854641 35 -8.8101657205681043
-		 49 -8.8101657205681043 55 6.5852782480873504 62 6.5852782480873504 72 6.5852782480873504
-		 76 6.5852782480873504 80 6.5852782480873504;
+		 49 -8.8101657205681043 64 17.769344493150204 71 17.769344493150204 81 6.5852782480873504
+		 85 6.5852782480873504 89 6.5852782480873504;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4658,8 +4672,8 @@ createNode animCurveTA -n "ctl_elbow_0_L_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 3.4940638298824318 11 3.4224851501269788
 		 16 3.2827475298465658 20 3.2827475298465658 24 -3.791297737873379 35 3.0305830343126958
-		 49 3.0305830343126958 55 4.4579718037228817 62 4.4579718037228817 72 4.4579718037228817
-		 76 4.4579718037228817 80 4.4579718037228817;
+		 49 3.0305830343126958 64 12.763310315910699 71 12.763310315910699 81 4.4579718037228817
+		 85 4.4579718037228817 89 4.4579718037228817;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4676,8 +4690,8 @@ createNode animCurveTU -n "ctl_elbow_0_L_SEP001";
 	rename -uid "57B2669D-40C0-E04F-98AD-0E9F2E212925";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -4686,8 +4700,8 @@ createNode animCurveTU -n "ctl_elbow_0_L_Stretch";
 	rename -uid "5D13D90A-4B2D-ED01-9A54-AE9FBA065438";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4700,18 +4714,20 @@ createNode animCurveTU -n "ikCrv_shoulderTwist_0_R_visibility";
 	rename -uid "702C3B61-422C-35B4-5D0E-EE9A6FD85398";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ikCrv_shoulderTwist_0_R_rotateX";
 	rename -uid "7D55E509-4090-1B9F-B6CD-1692E8CE2EC8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4724,8 +4740,8 @@ createNode animCurveTA -n "ikCrv_shoulderTwist_0_R_rotateY";
 	rename -uid "81F5385C-4A65-62E6-9A42-68A0616936E0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4738,8 +4754,8 @@ createNode animCurveTA -n "ikCrv_shoulderTwist_0_R_rotateZ";
 	rename -uid "F66603D7-4B89-D9E5-D413-87A4C522F203";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4752,8 +4768,8 @@ createNode animCurveTU -n "ikCrv_shoulderTwist_0_R_scaleX";
 	rename -uid "EE4F845D-413F-8F28-5CCE-0D8139C25683";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4766,8 +4782,8 @@ createNode animCurveTU -n "ikCrv_shoulderTwist_0_R_scaleY";
 	rename -uid "695B8923-48E4-5E25-9302-BEA4D3AA62D3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4780,8 +4796,8 @@ createNode animCurveTU -n "ikCrv_shoulderTwist_0_R_scaleZ";
 	rename -uid "FCFEA5F2-402F-D3D5-7251-BE80B36C6207";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -4794,40 +4810,42 @@ createNode animCurveTU -n "ctl_armSwitch_0_R_visibility";
 	rename -uid "7D20704D-4622-EBD0-E518-0589010B7FAB";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 67 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 76 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ctl_spineFK_0_N_rotateX";
 	rename -uid "5BD8FFF8-4319-503B-AC51-0295D66F9927";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 -5.5478812115052198 11 -10.33268146354019
 		 16 -14.95587792121516 20 7.7066848081593182 24 8.2719561232427914 35 -21.39897038723441
-		 44 -36.839223736275386 49 -34.122417332671198 55 -11.677339552334047 62 -11.677339552334047
-		 72 -11.677339552334047 76 -16.213777571908839 80 -20.750215591483652;
+		 44 -36.839223736275386 49 -34.122417332671198 64 -11.677339552334047 71 -11.677339552334047
+		 81 -11.677339552334047 85 -16.213777571908839 89 -20.750215591483652;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kix[4:13]"  0.97417676001100861 0.97417676001100861 
-		0.72688182558342507 1 0.82584671206252891 1 1 1 0.9032583624483792 1;
+		0.72688182558342507 1 0.88467253788581113 1 1 1 0.9032583624483792 1;
 	setAttr -s 14 ".kiy[4:13]"  -0.22578671407869333 -0.22578671407869333 
-		-0.68676255841193545 0 0.56389467826493145 0 0 0 -0.42909711099828274 0;
+		-0.68676255841193545 0 0.46621293494569405 0 0 0 -0.42909711099828274 0;
 	setAttr -s 14 ".kox[4:13]"  0.97417676001100872 0.97417676001100872 
-		0.72688182558342518 1 0.8258467120625288 1 1 1 0.90325836244837909 1;
+		0.72688182558342518 1 0.88467253788581113 1 1 1 0.90325836244837909 1;
 	setAttr -s 14 ".koy[4:13]"  -0.22578671407869336 -0.22578671407869336 
-		-0.68676255841193556 0 0.56389467826493134 0 0 0 -0.42909711099828263 0;
+		-0.68676255841193556 0 0.46621293494569416 0 0 0 -0.42909711099828263 0;
 createNode animCurveTA -n "ctl_spineFK_0_N_rotateY";
 	rename -uid "1C82520D-4136-5262-A7B7-CC81BBA6E30D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0.55426641760201201 11 1.0322964967494868
 		 16 1.4941813931224899 20 0.58286373529205526 24 21.244321968402343 35 2.1378847536077603
-		 44 10.166817652319278 49 10.166817652319278 55 -3.7148397890152229 62 -3.7148397890152229
-		 72 -3.7148397890152229 76 -3.7148397890152309 80 -3.7148397890152398;
+		 44 10.166817652319278 49 10.166817652319278 64 -3.7148397890152229 71 -3.7148397890152229
+		 81 -3.7148397890152229 85 -3.7148397890152309 89 -3.7148397890152398;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -4846,8 +4864,8 @@ createNode animCurveTA -n "ctl_spineFK_0_N_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 1.0425728066408215 11 1.9417453804217155
 		 16 2.8105489331247413 20 -1.9594483455794045 24 0.97719757234691029 35 4.0213522541860263
-		 44 -3.0951144830241093 49 -3.0951144830241093 55 -4.5617133592460322 62 -4.5617133592460322
-		 72 -4.5617133592460322 76 -4.5617133592460339 80 -4.5617133592460357;
+		 44 -3.0951144830241093 49 -3.0951144830241093 64 -4.5617133592460322 71 -4.5617133592460322
+		 81 -4.5617133592460322 85 -4.5617133592460339 89 -4.5617133592460357;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -4907,8 +4925,8 @@ createNode animCurveTA -n "ctl_Clavicle_0_R_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 -1.1324944542318429 16 -3.3433773673533147
 		 20 -3.3433773673533147 24 -26.929693829313376 35 -7.333041520449477 49 -7.333041520449477
-		 55 -7.333041520449477 62 -7.333041520449477 72 -7.333041520449477 76 -7.333041520449477
-		 80 -7.333041520449477 85 -17.511778067889843;
+		 64 -9.1734493042871783 71 -9.1734493042871783 81 -7.333041520449477 85 -7.333041520449477
+		 89 -7.333041520449477 94 -17.511778067889843;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -4927,8 +4945,8 @@ createNode animCurveTA -n "ctl_Clavicle_0_R_rotateY";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0.28667812638674384 16 0.84633806010715806
 		 20 0.84633806010715806 24 -0.52815599779179756 35 1.8562762898689584 49 1.8562762898689584
-		 55 1.8562762898689584 62 1.8562762898689584 72 1.8562762898689584 76 1.8562762898689584
-		 80 1.8562762898689584 85 7.1998407487542169;
+		 64 -36.851547608349868 71 -36.851547608349868 81 1.8562762898689584 85 1.8562762898689584
+		 89 1.8562762898689584 94 7.1998407487542169;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -4947,8 +4965,8 @@ createNode animCurveTA -n "ctl_Clavicle_0_R_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 2.0466474946486124 16 6.0421619611372526
 		 20 6.0421619611372526 24 -16.946030934161019 35 13.252295408512197 49 13.252295408512197
-		 55 13.252295408512197 62 13.252295408512197 72 13.252295408512197 76 13.252295408512197
-		 80 13.252295408512197 85 24.770076071507034;
+		 64 19.023097457213506 71 19.023097457213506 81 13.252295408512197 85 13.252295408512197
+		 89 13.252295408512197 94 24.770076071507034;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -5000,8 +5018,8 @@ createNode animCurveTA -n "ctl_eyebrownInt_1_L_rotateZ";
 	rename -uid "BCE1AA74-4D64-9ADD-2DD5-0C88B2CE12B7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5014,8 +5032,8 @@ createNode animCurveTA -n "ctl_lowerlip_0_L_rotateX";
 	rename -uid "62BD369A-4B0E-9254-F055-6BB80506AA6F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5028,8 +5046,8 @@ createNode animCurveTA -n "ctl_lowerlip_0_L_rotateY";
 	rename -uid "F3145C5E-4D2D-A666-4E39-B1ACAA3DF6A9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5042,8 +5060,8 @@ createNode animCurveTA -n "ctl_lowerlip_0_L_rotateZ";
 	rename -uid "9BE625F6-4D55-2B74-A107-D18392215099";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5126,8 +5144,8 @@ createNode animCurveTA -n "ctl_cornerlip_0_R_rotateX";
 	rename -uid "261F379E-4C2A-E1D6-8CB4-CB934AFDDA17";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5140,8 +5158,8 @@ createNode animCurveTA -n "ctl_cornerlip_0_R_rotateY";
 	rename -uid "AAFBBD44-4480-EF24-2E81-89B4909DB521";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5154,8 +5172,8 @@ createNode animCurveTA -n "ctl_cornerlip_0_R_rotateZ";
 	rename -uid "47E9B56A-444E-CA44-2C46-98AAD4F1EDB4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5168,75 +5186,75 @@ createNode animCurveTA -n "ctl_Head_0_N_rotateX";
 	rename -uid "39E7F347-4279-3D88-0F13-A48ABCCF5297";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  1 0 6 -64.018487954680509 11 -93.828397657078867
+	setAttr -s 18 ".ktv[0:17]"  1 0 6 -64.018487954680509 11 -93.828397657078867
 		 13 -97.080987960906199 16 -2.5738135008603629 20 58.412652529885776 24 93.186872840023298
 		 33 80.11600281734718 35 80.11600281734718 44 47.53329023684028 49 -8.9623891218066056
-		 55 -145.93743777073507 62 -145.93743777073507 72 -94.137077137361416 76 -94.232629975226047
-		 80 -94.328182813090692 90 -96.169362036302033;
-	setAttr -s 17 ".kit[5:16]"  1 1 18 18 18 18 18 1 
-		18 18 18 18;
-	setAttr -s 17 ".kot[5:16]"  1 1 18 18 18 18 18 1 
-		18 18 18 18;
-	setAttr -s 17 ".kix[5:16]"  0.21072309763250494 0.21072309763250494 
-		1 1 0.35129060169136367 0.13450070303166303 1 1 1 0.99994994104162305 0.99954973982671325 
-		1;
-	setAttr -s 17 ".kiy[5:16]"  0.97754579234129069 0.97754579234129069 
-		0 0 -0.93626647550968078 -0.99091349818437147 0 0 0 -0.010005768878730465 -0.030005293072222734 
-		0;
-	setAttr -s 17 ".kox[5:16]"  0.21072309763250491 0.21072309763250491 
-		1 1 0.35129060169136372 0.13450070303166306 1 1 1 0.99994994104162305 0.99954973982671314 
-		1;
-	setAttr -s 17 ".koy[5:16]"  0.97754579234129058 0.97754579234129058 
-		0 0 -0.93626647550968078 -0.99091349818437147 0 0 0 -0.010005768878730465 -0.030005293072222734 
-		0;
+		 55 -111.54712285635748 64 -92.768400569704326 71 -92.768400569704326 81 -94.137077137361416
+		 85 -94.232629975226047 89 -94.328182813090692 99 -96.169362036302033;
+	setAttr -s 18 ".kit[5:17]"  1 1 18 18 18 18 18 18 
+		1 18 18 18 18;
+	setAttr -s 18 ".kot[5:17]"  1 1 18 18 18 18 18 18 
+		1 18 18 18 18;
+	setAttr -s 18 ".kix[5:17]"  0.21072309763250494 0.21072309763250494 
+		1 1 0.35129060169136367 0.16287303221171343 1 1 1 0.99954973982671325 0.99994994104162305 
+		0.99954973982671325 1;
+	setAttr -s 18 ".kiy[5:17]"  0.97754579234129069 0.97754579234129069 
+		0 0 -0.93626647550968078 -0.98664703687699895 0 0 0 -0.03000529307221882 -0.010005768878730465 
+		-0.030005293072222734 0;
+	setAttr -s 18 ".kox[5:17]"  0.21072309763250491 0.21072309763250491 
+		1 1 0.35129060169136372 0.1628730322117134 1 1 1 0.99954973982671336 0.99994994104162305 
+		0.99954973982671314 1;
+	setAttr -s 18 ".koy[5:17]"  0.97754579234129058 0.97754579234129058 
+		0 0 -0.93626647550968078 -0.98664703687699895 0 0 0 -0.030005293072218824 -0.010005768878730465 
+		-0.030005293072222734 0;
 createNode animCurveTA -n "ctl_Head_0_N_rotateY";
 	rename -uid "C5971371-4ABB-5968-14E5-3DBFE78AD7CC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  1 0 6 12.278290378383872 11 11.87839694163698
+	setAttr -s 18 ".ktv[0:17]"  1 0 6 12.278290378383872 11 11.87839694163698
 		 13 11.779514200914113 16 23.293535324344671 20 12.76137153099671 24 14.2889288740931
 		 33 2.0259248704306403 35 2.0259248704306403 44 -15.733650089606426 49 -4.4174759648884772
-		 55 -4.4174759648884798 62 -4.4174759648884798 72 55.95161279119197 76 56.039001165998855
-		 80 56.051485219542698 90 66.910415210055234;
-	setAttr -s 17 ".kit[5:16]"  1 1 18 18 18 18 18 1 
-		18 18 18 18;
-	setAttr -s 17 ".kot[5:16]"  1 1 18 18 18 18 18 1 
-		18 18 18 18;
-	setAttr -s 17 ".kix[5:16]"  1 1 1 1 1 1 1 1 0.99962335547463099 0.99999230912088999 
-		0.99999230912088999 1;
-	setAttr -s 17 ".kiy[5:16]"  0 0 0 0 0 0 0 0 0.027443527281302928 0.0039219509265532781 
-		0.0039219509265532781 0;
-	setAttr -s 17 ".kox[5:16]"  1 1 1 1 1 1 1 1 0.99962335547463088 0.99999230912088999 
-		0.99999230912088999 1;
-	setAttr -s 17 ".koy[5:16]"  0 0 0 0 0 0 0 0 0.027443527281302928 0.0039219509265532781 
-		0.0039219509265532772 0;
+		 55 21.299669290351869 64 56.007358508697891 71 56.007358508697891 81 55.95161279119197
+		 85 56.039001165998855 89 56.051485219542698 99 66.910415210055234;
+	setAttr -s 18 ".kit[5:17]"  1 1 18 18 18 18 18 18 
+		1 18 18 18 18;
+	setAttr -s 18 ".kot[5:17]"  1 1 18 18 18 18 18 18 
+		1 18 18 18 18;
+	setAttr -s 18 ".kix[5:17]"  1 1 1 1 1 0.57843721250305136 0.50982928950807538 
+		1 1 1 0.99999230912088999 0.99999230912088999 1;
+	setAttr -s 18 ".kiy[5:17]"  0 0 0 0 0 0.8157269096895724 0.86027559279552446 
+		0 0 0 0.0039219509265532781 0.0039219509265532781 0;
+	setAttr -s 18 ".kox[5:17]"  1 1 1 1 1 0.57843721250305136 0.50982928950807538 
+		1 1 1 0.99999230912088999 0.99999230912088999 1;
+	setAttr -s 18 ".koy[5:17]"  0 0 0 0 0 0.8157269096895724 0.86027559279552457 
+		0 0 0 0.0039219509265532781 0.0039219509265532772 0;
 createNode animCurveTA -n "ctl_Head_0_N_rotateZ";
 	rename -uid "5C72D940-4E7C-ED57-1391-E6BCBC219FC5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  1 0 6 -1.7184008249051417 11 -7.1702499818947816
+	setAttr -s 18 ".ktv[0:17]"  1 0 6 -1.7184008249051417 11 -7.1702499818947816
 		 13 -8.171666817545443 16 -8.0936148114843576 20 5.2840441000562901 24 0.96926141194994031
 		 33 -6.3770833045844437 35 -6.3770833045844437 44 10.352254624033643 49 -6.7891548695312158
-		 55 -6.789154869531175 62 -6.789154869531175 72 81.202732548968342 76 85.143564044447174
-		 80 85.706539972372724 90 83.620548555765751;
-	setAttr -s 17 ".kit[5:16]"  1 1 18 18 18 18 18 1 
-		18 18 18 18;
-	setAttr -s 17 ".kot[5:16]"  1 1 18 18 18 18 18 1 
-		18 18 18 18;
-	setAttr -s 17 ".kix[5:16]"  0.99980764984352599 0.99980764984352599 
-		1 1 1 1 1 1 0.62835139242534344 0.98471716971587475 1 1;
-	setAttr -s 17 ".kiy[5:16]"  0.019612835449402177 0.019612835449402177 
-		0 0 0 0 0 0 0.77792964182960134 0.17416111984813676 0 0;
-	setAttr -s 17 ".kox[5:16]"  0.99980764984352599 0.99980764984352599 
-		1 1 1 1 1 1 0.62835139242534355 0.98471716971587486 1 1;
-	setAttr -s 17 ".koy[5:16]"  0.019612835449402177 0.019612835449402177 
-		0 0 0 0 0 0 0.77792964182960134 0.17416111984813676 0 0;
+		 55 43.532371691086986 64 82.854017721518446 71 82.854017721518446 81 81.202732548968342
+		 85 85.143564044447174 89 85.706539972372724 99 83.620548555765751;
+	setAttr -s 18 ".kit[5:17]"  1 1 18 18 18 18 18 18 
+		1 18 18 18 18;
+	setAttr -s 18 ".kot[5:17]"  1 1 18 18 18 18 18 18 
+		1 18 18 18 18;
+	setAttr -s 18 ".kix[5:17]"  0.99980764984352599 0.99980764984352599 
+		1 1 1 1 0.37096727175077282 1 1 1 0.98471716971587475 1 1;
+	setAttr -s 18 ".kiy[5:17]"  0.019612835449402177 0.019612835449402177 
+		0 0 0 0 0.92864594075987239 0 0 0 0.17416111984813676 0 0;
+	setAttr -s 18 ".kox[5:17]"  0.99980764984352599 0.99980764984352599 
+		1 1 1 1 0.37096727175077282 1 1 1 0.98471716971587486 1 1;
+	setAttr -s 18 ".koy[5:17]"  0.019612835449402177 0.019612835449402177 
+		0 0 0 0 0.92864594075987228 0 0 0 0.17416111984813676 0 0;
 createNode animCurveTU -n "ctl_Head_0_N_SEP001";
 	rename -uid "DB1ADEC5-4271-F3C6-7D49-B399C7DA66CA";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -5245,8 +5263,8 @@ createNode animCurveTU -n "ctl_Head_0_N_World";
 	rename -uid "52FBA398-49BC-9DB5-C1C8-34875FEB413D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5259,8 +5277,8 @@ createNode animCurveTU -n "ctl_Head_0_N_SEP002";
 	rename -uid "02C00A66-4E68-CF8D-AAB7-74A29073D839";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -5269,8 +5287,8 @@ createNode animCurveTU -n "ctl_Head_0_N_SelectFace";
 	rename -uid "3816589C-4C8F-B262-D225-9C82435954BB";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -5348,18 +5366,20 @@ createNode animCurveTU -n "ikCrv_kneeTwist_0_R_visibility";
 	rename -uid "A9838EA1-4054-E983-2492-EEA43DCEF2AD";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ikCrv_kneeTwist_0_R_rotateX";
 	rename -uid "4231A343-4139-09E0-D375-88B14939D756";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5372,8 +5392,8 @@ createNode animCurveTA -n "ikCrv_kneeTwist_0_R_rotateY";
 	rename -uid "97A87C1A-4455-8E18-D5BA-B383C8136DEB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5386,8 +5406,8 @@ createNode animCurveTA -n "ikCrv_kneeTwist_0_R_rotateZ";
 	rename -uid "0DCB6F0A-4498-5D47-3ABE-FE91F7D9827E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5400,8 +5420,8 @@ createNode animCurveTU -n "ikCrv_kneeTwist_0_R_scaleX";
 	rename -uid "05AB7DB6-4031-98C3-9956-70943AF57237";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5414,8 +5434,8 @@ createNode animCurveTU -n "ikCrv_kneeTwist_0_R_scaleY";
 	rename -uid "3CA29F9A-471D-5CD3-DCB9-3CADCFF1E6F9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5428,8 +5448,8 @@ createNode animCurveTU -n "ikCrv_kneeTwist_0_R_scaleZ";
 	rename -uid "53288A8E-4093-FA16-34B0-30BF75391F9B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5442,8 +5462,8 @@ createNode animCurveTA -n "ctl_cornerlip_0_L_rotateX";
 	rename -uid "0AF2435E-43B5-45B8-3697-DB9EAA4A72CA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5456,8 +5476,8 @@ createNode animCurveTA -n "ctl_cornerlip_0_L_rotateY";
 	rename -uid "BBE56AC5-4172-88F9-33C5-A8B6A5F3A14B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5470,8 +5490,8 @@ createNode animCurveTA -n "ctl_cornerlip_0_L_rotateZ";
 	rename -uid "D20EE7FE-4864-AE44-62DA-D1846F1AB104";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0 90 -8.4810554647592529;
+	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0 99 -8.4810554647592529;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -5525,28 +5545,28 @@ createNode animCurveTA -n "ctl_Clavicle_0_L_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 -3.0981534154670745 16 -9.1464430321532095
 		 20 -9.1464430321532095 24 -9.6826768583885201 35 -20.060926168289598 49 -20.060926168289598
-		 55 -20.060926168289598 62 -20.060926168289598 72 -20.060926168289598 76 -10.03046308414482
-		 80 0;
+		 64 -24.200079314860858 71 -24.200079314860858 81 -20.060926168289598 85 -10.03046308414482
+		 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kix[4:12]"  0.94230034357448933 0.94230034357448933 
-		1 1 1 1 1 0.68952167723534208 1;
+		1 1 1 1 0.92067725121189026 0.68952167723534208 1;
 	setAttr -s 13 ".kiy[4:12]"  -0.33476867012819372 -0.33476867012819372 
-		0 0 0 0 0 0.72426504583788998 0;
+		0 0 0 0 0.39032473544590773 0.72426504583788998 0;
 	setAttr -s 13 ".kox[4:12]"  0.94230034357448944 0.94230034357448944 
-		1 1 1 1 1 0.68952167723534208 1;
+		1 1 1 1 0.92067725121189037 0.68952167723534208 1;
 	setAttr -s 13 ".koy[4:12]"  -0.33476867012819372 -0.33476867012819372 
-		0 0 0 0 0 0.72426504583788998 0;
+		0 0 0 0 0.39032473544590768 0.72426504583788998 0;
 createNode animCurveTA -n "ctl_Clavicle_0_L_rotateY";
 	rename -uid "CA38C7A7-4021-E359-5F1D-AE822769626F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 0.55091381899021996 16 1.6264210273978155
 		 20 1.6264210273978155 24 19.139390573949925 35 3.5672350480381536 49 3.5672350480381536
-		 55 3.5672350480381536 62 3.5672350480381536 72 3.5672350480381536 76 9.9487461629595799
-		 80 16.330257277881032 85 13.153342932236763;
+		 64 33.366939053399591 71 33.366939053399591 81 3.5672350480381536 85 9.9487461629595799
+		 89 16.330257277881032 94 13.153342932236763;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 1 18 18 
@@ -5565,8 +5585,8 @@ createNode animCurveTA -n "ctl_Clavicle_0_L_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 3.5329133641814083 16 10.429951809906234
 		 20 10.429951809906234 24 7.4899091614092805 35 22.876050554495233 49 22.876050554495233
-		 55 22.876050554495233 62 22.876050554495233 72 22.876050554495233 76 11.438025277247643
-		 80 0;
+		 64 10.293564362623083 71 10.293564362623083 81 22.876050554495233 85 11.438025277247643
+		 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5619,12 +5639,14 @@ createNode animCurveTU -n "ctl_armSwitch_0_L_visibility";
 	rename -uid "DA14F324-4C80-2B33-CB1C-21BF84F9DD99";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ctl_index_3_L_rotateX";
 	rename -uid "030B0873-4A7C-CA8A-1F1C-CBA74B54AE12";
 	setAttr ".tan" 18;
@@ -5662,18 +5684,20 @@ createNode animCurveTU -n "ikCrv_shoulderTwist_0_L_visibility";
 	rename -uid "749BE703-494E-FD5E-4843-8896954ACD20";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ikCrv_shoulderTwist_0_L_rotateX";
 	rename -uid "DBF24827-44F9-39A1-BE7A-9282FFF7FDA8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5686,8 +5710,8 @@ createNode animCurveTA -n "ikCrv_shoulderTwist_0_L_rotateY";
 	rename -uid "8C6C8D49-4B2A-220C-8746-D78BB4F95924";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5700,8 +5724,8 @@ createNode animCurveTA -n "ikCrv_shoulderTwist_0_L_rotateZ";
 	rename -uid "64E620CE-4C03-9B34-E9D2-D39D7BBB02F1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5714,8 +5738,8 @@ createNode animCurveTU -n "ikCrv_shoulderTwist_0_L_scaleX";
 	rename -uid "19BAEA81-4932-379A-0BE4-10991783D72B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5728,8 +5752,8 @@ createNode animCurveTU -n "ikCrv_shoulderTwist_0_L_scaleY";
 	rename -uid "0D794307-42F9-7F1B-F560-E08BC0475C02";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5742,8 +5766,8 @@ createNode animCurveTU -n "ikCrv_shoulderTwist_0_L_scaleZ";
 	rename -uid "48172D27-4B02-042E-53FE-3C9D72B85D36";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5756,18 +5780,20 @@ createNode animCurveTU -n "ikCrv_elbowTwist_0_L_visibility";
 	rename -uid "7335FB3C-446E-4825-8386-8F8FFEBBFCE3";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ikCrv_elbowTwist_0_L_rotateX";
 	rename -uid "75C50008-4768-6A80-0ED9-B38038837FE0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5780,8 +5806,8 @@ createNode animCurveTA -n "ikCrv_elbowTwist_0_L_rotateY";
 	rename -uid "E12BA335-4B55-F888-A3D9-33A3D181D10E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5794,8 +5820,8 @@ createNode animCurveTA -n "ikCrv_elbowTwist_0_L_rotateZ";
 	rename -uid "B301341A-4CC8-AD58-88D0-14BA54BDD409";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5808,8 +5834,8 @@ createNode animCurveTU -n "ikCrv_elbowTwist_0_L_scaleX";
 	rename -uid "395F13B1-44C0-0C39-CA0A-9EA376FC2B6A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5822,8 +5848,8 @@ createNode animCurveTU -n "ikCrv_elbowTwist_0_L_scaleY";
 	rename -uid "C4C2FC2C-4CC8-15E0-844F-08B672FDF163";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5836,8 +5862,8 @@ createNode animCurveTU -n "ikCrv_elbowTwist_0_L_scaleZ";
 	rename -uid "5369458E-4E0F-9B53-23CD-909C10F4DB5B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5850,8 +5876,8 @@ createNode animCurveTA -n "ctl_upperlip_0_N_rotateX";
 	rename -uid "CC1A7C37-4E0A-0E01-BBF9-7095D12EE15F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5864,8 +5890,8 @@ createNode animCurveTA -n "ctl_upperlip_0_N_rotateY";
 	rename -uid "E7804B21-43F5-1E04-2949-06969B7D8AEE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -5878,8 +5904,8 @@ createNode animCurveTA -n "ctl_upperlip_0_N_rotateZ";
 	rename -uid "ADF164FE-4321-4443-6BF9-28B2B2184537";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6008,8 +6034,8 @@ createNode animCurveTA -n "ctl_yaw_0_N_rotateX";
 	rename -uid "6AB65C78-400C-C724-1219-BFAB169F121B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6022,8 +6048,8 @@ createNode animCurveTA -n "ctl_yaw_0_N_rotateY";
 	rename -uid "0BE14818-4605-CC3A-7B49-589935AEF0B3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6036,8 +6062,8 @@ createNode animCurveTA -n "ctl_yaw_0_N_rotateZ";
 	rename -uid "64F66D3D-4CF2-516F-7AD5-3F9954B6DBF3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6052,8 +6078,8 @@ createNode animCurveTA -n "ctl_Hand_0_R_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 -63.26196358633122 11 -64.872383695992767
 		 16 -65.303935777807538 20 -65.303935777807538 24 -63.658911443675002 35 -65.65971917350214
-		 49 -65.65971917350214 55 -66.187728705696188 62 -66.187728705696188 72 -66.187728705696188
-		 76 -66.187728705696188 80 -66.187728705696188;
+		 49 -65.65971917350214 64 -66.187728705696188 71 -66.187728705696188 81 -66.187728705696188
+		 85 -66.187728705696188 89 -66.187728705696188;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6072,8 +6098,8 @@ createNode animCurveTA -n "ctl_Hand_0_R_rotateY";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0.90038041562085791 11 4.7171675808225242
 		 16 9.5980796180155235 20 9.5980796180155235 24 9.5956348242928797 35 17.320309784494683
-		 49 17.320309784494683 55 12.954130241115129 62 12.954130241115129 72 12.954130241115129
-		 76 12.954130241115129 80 12.954130241115129;
+		 49 17.320309784494683 64 12.954130241115129 71 12.954130241115129 81 12.954130241115129
+		 85 12.954130241115129 89 12.954130241115129;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6092,8 +6118,8 @@ createNode animCurveTA -n "ctl_Hand_0_R_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 -1.4668724292245761 11 -0.27337508783513181
 		 16 2.0565991288806686 20 2.0565991288806686 24 5.8492575789591035 35 6.2611703229946478
-		 49 6.2611703229946478 55 4.2408277295461279 62 4.2408277295461279 72 4.2408277295461279
-		 76 4.2408277295461279 80 4.2408277295461279;
+		 49 6.2611703229946478 64 4.2408277295461279 71 4.2408277295461279 81 4.2408277295461279
+		 85 4.2408277295461279 89 4.2408277295461279;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6110,8 +6136,8 @@ createNode animCurveTU -n "ctl_Hand_0_R_scaleX";
 	rename -uid "46DA408E-450C-B705-BE7D-4BBD5F6414A2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6124,8 +6150,8 @@ createNode animCurveTU -n "ctl_Hand_0_R_scaleY";
 	rename -uid "CED0E687-4874-FA1F-03BD-AFBF05E0516A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6138,8 +6164,8 @@ createNode animCurveTU -n "ctl_Hand_0_R_scaleZ";
 	rename -uid "D9AE9B3E-4FCA-EE29-588C-4B98537DE0C4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6155,20 +6181,20 @@ createNode animCurveTA -n "ctl_center_0_N_rotateX";
 	setAttr -s 16 ".ktv[0:15]"  1 0 6 2.5690082195777979 11 5.7201276294687275
 		 13 6.8296095437391298 16 7.4407277784939936 20 19.152742941324316 24 19.152742941324316
 		 33 11.016911931337617 35 11.016911931337617 44 -6.2020001687635515 49 -41.178729698940003
-		 55 -72.744069466619422 62 -72.744069466619422 72 -72.744069466619422 76 -72.744069466619422
-		 80 -72.744069466619422;
+		 64 -72.744069466619422 71 -72.744069466619422 81 -72.744069466619422 85 -72.744069466619422
+		 89 -72.744069466619422;
 	setAttr -s 16 ".kit[5:15]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 16 ".kot[5:15]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 16 ".kix[5:15]"  0.99404498270788344 0.99404498270788344 
-		1 1 0.53925201220716146 0.36709347521109226 1 1 1 1 1;
+		1 1 0.53925201220716146 0.58298672057246204 1 1 1 1 1;
 	setAttr -s 16 ".kiy[5:15]"  0.10897051139314612 0.10897051139314612 
-		0 0 -0.84214444564488311 -0.93018405730126519 0 0 0 0 0;
+		0 0 -0.84214444564488311 -0.81248168203114968 0 0 0 0 0;
 	setAttr -s 16 ".kox[5:15]"  0.99404498270788333 0.99404498270788333 
-		1 1 0.53925201220716135 0.36709347521109226 1 1 1 1 1;
+		1 1 0.53925201220716135 0.58298672057246204 1 1 1 1 1;
 	setAttr -s 16 ".koy[5:15]"  0.10897051139314612 0.10897051139314612 
-		0 0 -0.842144445644883 -0.93018405730126497 0 0 0 0 0;
+		0 0 -0.842144445644883 -0.81248168203114957 0 0 0 0 0;
 createNode animCurveTA -n "ctl_center_0_N_rotateY";
 	rename -uid "7A1108BF-443B-E4E3-A00B-9A80046F53A4";
 	setAttr ".tan" 18;
@@ -6176,20 +6202,20 @@ createNode animCurveTA -n "ctl_center_0_N_rotateY";
 	setAttr -s 16 ".ktv[0:15]"  1 0 6 -0.18017489535579662 11 -0.41289392891006493
 		 13 -0.47898802949971758 16 -0.50167139252246307 20 -0.20165377829373515 24 -0.20165377829373515
 		 33 -0.55803716998485353 35 -0.55803716998485353 44 -1.9979357556069546 49 -4.2632660166033265
-		 55 -6.2599604105173183 62 -6.2599604105173183 72 -6.2599604105173183 76 -6.2599604105173183
-		 80 -6.2599604105173183;
+		 64 -6.2599604105173183 71 -6.2599604105173183 81 -6.2599604105173183 85 -6.2599604105173183
+		 89 -6.2599604105173183;
 	setAttr -s 16 ".kit[5:15]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 16 ".kot[5:15]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 16 ".kix[5:15]"  0.99999785858832124 0.99999785858832124 
-		1 1 0.99391107680837176 0.98708435799772898 1 1 1 1 1;
+		1 1 0.99391107680837176 0.99603965304742015 1 1 1 1 1;
 	setAttr -s 16 ".kiy[5:15]"  -0.0020694972268507305 -0.0020694972268507305 
-		0 0 -0.11018516868264455 -0.16020134267917696 0 0 0 0 0;
+		0 0 -0.11018516868264455 -0.08891012066786895 0 0 0 0 0;
 	setAttr -s 16 ".kox[5:15]"  0.99999785858832124 0.99999785858832124 
-		1 1 0.99391107680837176 0.98708435799772887 1 1 1 1 1;
+		1 1 0.99391107680837176 0.99603965304742004 1 1 1 1 1;
 	setAttr -s 16 ".koy[5:15]"  -0.0020694972268507305 -0.0020694972268507305 
-		0 0 -0.11018516868264457 -0.16020134267917693 0 0 0 0 0;
+		0 0 -0.11018516868264457 -0.088910120667868936 0 0 0 0 0;
 createNode animCurveTA -n "ctl_center_0_N_rotateZ";
 	rename -uid "6C317DE1-4330-958F-C6D2-90B47F8223A7";
 	setAttr ".tan" 18;
@@ -6197,86 +6223,86 @@ createNode animCurveTA -n "ctl_center_0_N_rotateZ";
 	setAttr -s 16 ".ktv[0:15]"  1 0 6 -0.059356271953085855 11 -0.12461045779413651
 		 13 -0.15779636605374206 16 -0.24592192161481172 20 -3.0098237169191417 24 -3.0098237169191417
 		 33 -1.4569940314336201 35 -1.4569940314336201 44 1.4485695813319517 49 5.9501481444205879
-		 55 9.9114038095325228 62 9.9114038095325228 72 9.9114038095325228 76 9.9114038095325228
-		 80 9.9114038095325228;
+		 64 9.9114038095325228 71 9.9114038095325228 81 9.9114038095325228 85 9.9114038095325228
+		 89 9.9114038095325228;
 	setAttr -s 16 ".kit[5:15]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 16 ".kot[5:15]"  1 1 18 18 18 18 18 1 
 		18 18 18;
 	setAttr -s 16 ".kix[5:15]"  0.99975481510404873 0.99975481510404873 
-		1 1 0.97631116534508677 0.95179664277521026 1 1 1 1 1;
+		1 1 0.97631116534508677 0.98465275022417986 1 1 1 1 1;
 	setAttr -s 16 ".kiy[5:15]"  -0.022142937390270803 -0.022142937390270803 
-		0 0 0.21637122826872965 0.30672976836596511 0 0 0 0 0;
+		0 0 0.21637122826872965 0.17452495946413696 0 0 0 0 0;
 	setAttr -s 16 ".kox[5:15]"  0.99975481510404873 0.99975481510404873 
-		1 1 0.97631116534508666 0.95179664277521037 1 1 1 1 1;
+		1 1 0.97631116534508666 0.98465275022418008 1 1 1 1 1;
 	setAttr -s 16 ".koy[5:15]"  -0.0221429373902708 -0.0221429373902708 
-		0 0 0.21637122826872962 0.30672976836596511 0 0 0 0 0;
+		0 0 0.21637122826872962 0.17452495946413699 0 0 0 0 0;
 createNode animCurveTA -n "ctl_Shoulder_0_L_rotateX";
 	rename -uid "E8A96025-4CFC-43BC-A1DC-4BBB66F0578B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 0.077788168547412259 11 0.89662770603221209
 		 13 1.0753436419994262 16 0.24636465294570833 20 0.24636465294570833 24 1.898206164095567
-		 35 -28.531048824204692 49 -28.531048824204692 55 -28.651446239773282 62 -28.651446239773282
-		 72 49.431166483777353 76 30.908801380328818 80 49.431166483777353 85 56.679417373802352;
+		 35 -28.531048824204692 49 -28.531048824204692 64 30.404385162984372 71 30.404385162984372
+		 81 49.431166483777353 85 30.908801380328818 89 49.431166483777353 94 56.679417373802352;
 	setAttr -s 15 ".kit[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kot[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kix[5:14]"  0.97897811101463117 0.97897811101463117 
-		1 1 1 1 1 1 0.64036738014537631 1;
+		1 1 1 0.41211987164851471 1 1 0.64036738014537631 1;
 	setAttr -s 15 ".kiy[5:14]"  -0.20396533566815844 -0.20396533566815844 
-		0 0 0 0 0 0 0.76806875893096138 0;
+		0 0 0 0.91112963478991926 0 0 0.76806875893096138 0;
 	setAttr -s 15 ".kox[5:14]"  0.97897811101463106 0.97897811101463106 
-		1 1 1 1 1 1 0.6403673801453762 1;
+		1 1 1 0.41211987164851466 1 1 0.6403673801453762 1;
 	setAttr -s 15 ".koy[5:14]"  -0.20396533566815842 -0.20396533566815842 
-		0 0 0 0 0 0 0.76806875893096127 0;
+		0 0 0 0.91112963478991926 0 0 0.76806875893096127 0;
 createNode animCurveTA -n "ctl_Shoulder_0_L_rotateY";
 	rename -uid "97A876A5-4300-68B7-C675-F9814098D07F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 -2.6084254163762663 11 -15.6516287999656
 		 13 -18.108613081655633 16 -17.991446515781046 20 -17.991446515781046 24 -28.331750011845184
-		 35 -13.924092871848829 49 -13.924092871848829 55 51.83936953277815 62 51.83936953277815
-		 72 33.518332602398203 76 2.4149979813675304 80 33.518332602398203 85 44.022360760970642;
+		 35 -13.924092871848829 49 -13.924092871848829 64 -6.6462840030742365 71 -6.6462840030742365
+		 81 33.518332602398203 85 2.4149979813675304 89 33.518332602398203 94 44.022360760970642;
 	setAttr -s 15 ".kit[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kot[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kix[5:14]"  0.99956671386324447 0.99956671386324447 
-		1 1 1 1 0.5601760273321944 1 0.45883092095407962 1;
+		1 1 1 0.87500911545418047 1 1 0.45883092095407962 1;
 	setAttr -s 15 ".kiy[5:14]"  0.029434410757392032 0.029434410757392032 
-		0 0 0 0 -0.82837359832524871 0 0.88852359899804068 0;
+		0 0 0 0.48410644270872139 0 0 0.88852359899804068 0;
 	setAttr -s 15 ".kox[5:14]"  0.99956671386324447 0.99956671386324447 
-		1 1 1 1 0.5601760273321944 1 0.45883092095407962 1;
+		1 1 1 0.87500911545418059 1 1 0.45883092095407962 1;
 	setAttr -s 15 ".koy[5:14]"  0.029434410757392036 0.029434410757392036 
-		0 0 0 0 -0.82837359832524871 0 0.88852359899804068 0;
+		0 0 0 0.4841064427087215 0 0 0.88852359899804068 0;
 createNode animCurveTA -n "ctl_Shoulder_0_L_rotateZ";
 	rename -uid "F6827E78-4F55-297F-2CA4-FC8AF42797B0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 37.028763360970245 11 51.200854451292585
 		 13 53.942929128989363 16 55.142079172978605 20 55.142079172978605 24 58.286788568938498
-		 35 59.141277865942421 49 59.141277865942421 55 43.094425529242841 62 43.094425529242841
-		 72 142.58604775251072 76 121.61078999635561 80 142.58604775251072 85 157.99866443607212;
+		 35 59.141277865942421 49 59.141277865942421 64 149.39690016634489 71 149.39690016634489
+		 81 142.58604775251072 85 121.61078999635561 89 142.58604775251072 94 157.99866443607212;
 	setAttr -s 15 ".kit[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kot[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kix[5:14]"  0.99276234108393124 0.99276234108393124 
-		1 1 1 1 1 1 0.50844849899791356 1;
+		1 1 1 1 0.76896761136337177 1 0.50844849899791356 1;
 	setAttr -s 15 ".kiy[5:14]"  0.12009552083883987 0.12009552083883987 
-		0 0 0 0 0 0 0.86109240146848853 0;
+		0 0 0 0 -0.63928773856074439 0 0.86109240146848853 0;
 	setAttr -s 15 ".kox[5:14]"  0.99276234108393124 0.99276234108393124 
-		1 1 1 1 1 1 0.50844849899791356 1;
+		1 1 1 1 0.76896761136337166 1 0.50844849899791356 1;
 	setAttr -s 15 ".koy[5:14]"  0.12009552083883987 0.12009552083883987 
-		0 0 0 0 0 0 0.86109240146848853 0;
+		0 0 0 0 -0.63928773856074439 0 0.86109240146848853 0;
 createNode animCurveTU -n "ctl_Shoulder_0_L_clavicleFollow";
 	rename -uid "4E30FE71-4B02-E3A5-204D-EE95BB54C843";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6289,8 +6315,8 @@ createNode animCurveTU -n "ctl_Shoulder_0_L_Stretch";
 	rename -uid "04993F41-4A88-B3F1-B59F-C8B912964134";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6371,8 +6397,8 @@ createNode animCurveTA -n "ctl_spineFK_0_N_rotateX1";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 7.9844743011146662 11 40.381766746364512
 		 16 62.382050735669452 20 71.9738038983471 24 71.910951384235645 33 12.920836529681383
-		 35 12.920836529681383 49 12.920836529681383 55 -19.239996000514243 62 -19.239996000514243
-		 72 -19.239996000514243 76 -19.239996000514243 80 -19.239996000514243;
+		 35 12.920836529681383 49 12.920836529681383 64 -19.239996000514243 71 -19.239996000514243
+		 81 -19.239996000514243 85 -19.239996000514243 89 -19.239996000514243;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -6387,8 +6413,8 @@ createNode animCurveTA -n "ctl_spineFK_0_N_rotateY1";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 -2.6065168274887602 11 -5.4572640335631695
 		 16 -8.4649302103235513 20 -6.6200409985932556 24 -6.6266903450286598 33 -12.012960861928141
-		 35 -12.012960861928141 49 -12.012960861928141 55 3.4623052604139506 62 3.4623052604139506
-		 72 3.4623052604139506 76 3.4623052604139506 80 3.4623052604139506;
+		 35 -12.012960861928141 49 -12.012960861928141 64 3.4623052604139506 71 3.4623052604139506
+		 81 3.4623052604139506 85 3.4623052604139506 89 3.4623052604139506;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -6407,8 +6433,8 @@ createNode animCurveTA -n "ctl_spineFK_0_N_rotateZ1";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 -1.9555647555257574 11 -9.7084591636420079
 		 16 -14.966874490078506 20 -16.082944907652639 24 -16.068049903141738 33 -1.2225594568436511
-		 35 -1.2225594568436511 49 -1.2225594568436511 55 21.276340839974317 62 21.276340839974317
-		 72 21.276340839974317 76 21.276340839974317 80 21.276340839974317;
+		 35 -1.2225594568436511 49 -1.2225594568436511 64 21.276340839974317 71 21.276340839974317
+		 81 21.276340839974317 85 21.276340839974317 89 21.276340839974317;
 	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
 		18 18;
 	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
@@ -6457,8 +6483,8 @@ createNode animCurveTA -n "ctl_upperlip_0_R_rotateX";
 	rename -uid "BEDBE78B-40D3-6E2F-6DBB-9D80F673DA25";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6471,8 +6497,8 @@ createNode animCurveTA -n "ctl_upperlip_0_R_rotateY";
 	rename -uid "3A93714F-4E36-A9D4-DFD0-9FA125F2FD75";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6485,8 +6511,8 @@ createNode animCurveTA -n "ctl_upperlip_0_R_rotateZ";
 	rename -uid "E38B13E4-42F2-D56E-A1E0-EF9818950432";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6499,18 +6525,20 @@ createNode animCurveTU -n "ikCrv_elbowTwist_0_R_visibility";
 	rename -uid "FD61AA8A-4EEF-3BE5-E35F-D4938484A136";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ikCrv_elbowTwist_0_R_rotateX";
 	rename -uid "8843E32C-436C-764C-165F-8B9BF199AD32";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6523,8 +6551,8 @@ createNode animCurveTA -n "ikCrv_elbowTwist_0_R_rotateY";
 	rename -uid "A1131CB1-4814-36BA-760A-C1BCFF750BD4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6537,8 +6565,8 @@ createNode animCurveTA -n "ikCrv_elbowTwist_0_R_rotateZ";
 	rename -uid "E0888855-4369-80C2-308A-9C92F13CBE15";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6551,8 +6579,8 @@ createNode animCurveTU -n "ikCrv_elbowTwist_0_R_scaleX";
 	rename -uid "EF2545EA-4669-5F72-0D39-05B8DCA5D33F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6565,8 +6593,8 @@ createNode animCurveTU -n "ikCrv_elbowTwist_0_R_scaleY";
 	rename -uid "55377C9B-4C33-0ECE-3A45-D6942D82290F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6579,8 +6607,8 @@ createNode animCurveTU -n "ikCrv_elbowTwist_0_R_scaleZ";
 	rename -uid "957C725E-47E2-38BA-E788-3EB0628977B7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6593,18 +6621,20 @@ createNode animCurveTU -n "ikCrv_hipTwist_0_R_visibility";
 	rename -uid "D6699953-425A-E498-F128-0A86D6258D13";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ikCrv_hipTwist_0_R_rotateX";
 	rename -uid "BFFC70EF-4F03-0C48-F224-71BE0AA1CE1E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6617,8 +6647,8 @@ createNode animCurveTA -n "ikCrv_hipTwist_0_R_rotateY";
 	rename -uid "D3DC73D8-477B-02EF-FF39-7EAB9FBB364F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6631,8 +6661,8 @@ createNode animCurveTA -n "ikCrv_hipTwist_0_R_rotateZ";
 	rename -uid "16EF574D-4BB8-D094-A5F6-99AAD583AC03";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6645,8 +6675,8 @@ createNode animCurveTU -n "ikCrv_hipTwist_0_R_scaleX";
 	rename -uid "DE2690E4-432A-35EB-131A-609AD6E823E2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6659,8 +6689,8 @@ createNode animCurveTU -n "ikCrv_hipTwist_0_R_scaleY";
 	rename -uid "B28DF37F-41DE-2839-B05C-0D842721414F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6673,8 +6703,8 @@ createNode animCurveTU -n "ikCrv_hipTwist_0_R_scaleZ";
 	rename -uid "00AAB8C1-4AE0-60B0-048B-59B12AF70BDD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6687,8 +6717,8 @@ createNode animCurveTA -n "ctl_upperlip_0_L_rotateX";
 	rename -uid "B90213B1-4193-A7C6-6C86-069647C545CA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6701,8 +6731,8 @@ createNode animCurveTA -n "ctl_upperlip_0_L_rotateY";
 	rename -uid "3C9890F3-4EAE-3569-37EB-389C8D146C0F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6715,8 +6745,8 @@ createNode animCurveTA -n "ctl_upperlip_0_L_rotateZ";
 	rename -uid "1DF1F014-434F-73DF-3CBD-63A99A9212EB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6766,8 +6796,8 @@ createNode animCurveTA -n "ctl_Neck_0_N_rotateX";
 	rename -uid "8520AC1B-44AB-3459-6C94-C5B688744325";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 -5.299527102528633
-		 62 -5.299527102528633 72 -5.299527102528633 76 -5.299527102528633 80 -5.299527102528633;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 -5.299527102528633
+		 71 -5.299527102528633 81 -5.299527102528633 85 -5.299527102528633 89 -5.299527102528633;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6780,8 +6810,8 @@ createNode animCurveTA -n "ctl_Neck_0_N_rotateY";
 	rename -uid "773B211C-4DDC-8057-26AF-57A997EC8CF2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6794,8 +6824,8 @@ createNode animCurveTA -n "ctl_Neck_0_N_rotateZ";
 	rename -uid "DB46288D-4EBC-D686-75ED-93B2A443185E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6810,29 +6840,29 @@ createNode animCurveTA -n "ctl_Hand_0_L_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 17 ".ktv[0:16]"  1 0 6 -57.328141491424702 11 -57.328141491424702
 		 16 -57.328141491424702 20 -57.328141491424702 24 -74.758711901359376 35 -57.328141491424702
-		 44 -58.028470567556383 49 -58.028470567556383 55 -58.028470567556383 62 -58.028470567556383
-		 72 -58.028470567556383 76 -104.16032804675291 80 -150.29218552594961 85 -148.09535926238658
-		 90 -149.17071734360394 95 -149.7959149867126;
+		 44 -58.028470567556383 49 -58.028470567556383 64 -58.028470567556383 71 -58.028470567556383
+		 81 -58.028470567556383 85 -104.16032804675291 89 -150.29218552594961 94 -148.09535926238658
+		 99 -149.17071734360394 104 -149.7959149867126;
 	setAttr -s 17 ".kit[4:16]"  1 1 18 18 18 18 1 18 
 		18 18 18 18 18;
 	setAttr -s 17 ".kot[4:16]"  1 1 18 18 18 18 1 18 
 		18 18 18 18 18;
 	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 0.20270278795196056 1 1 
-		0.99747256468490963 1;
+		0.99747256468490941 1;
 	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 -0.97924030746109636 0 
-		0 -0.071052675536596915 0;
+		0 -0.071052675536596985 0;
 	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 0.20270278795196056 1 1 
 		0.99747256468490963 1;
 	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 -0.97924030746109636 0 
-		0 -0.071052675536596915 0;
+		0 -0.071052675536596985 0;
 createNode animCurveTA -n "ctl_Hand_0_L_rotateY";
 	rename -uid "D2DFE02C-46DD-23D3-96B9-E8A53A473404";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 17 ".ktv[0:16]"  1 0 6 0 11 0 16 0 20 0 24 3.2832704534837003
-		 35 0 44 -13.430165622925362 49 -13.430165622925362 55 -13.430165622925362 62 -13.430165622925362
-		 72 -13.430165622925362 76 -6.7150828114626959 80 0 85 20.332417745221981 90 -14.757157172475225
-		 95 9.9087447745141404;
+		 35 0 44 -13.430165622925362 49 -13.430165622925362 64 -13.430165622925362 71 -13.430165622925362
+		 81 -13.430165622925362 85 -6.7150828114626959 89 0 94 20.332417745221981 99 -14.757157172475225
+		 104 9.9087447745141404;
 	setAttr -s 17 ".kit[4:16]"  1 1 18 18 18 18 1 18 
 		18 18 18 18 18;
 	setAttr -s 17 ".kot[4:16]"  1 1 18 18 18 18 1 18 
@@ -6850,9 +6880,9 @@ createNode animCurveTA -n "ctl_Hand_0_L_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 17 ".ktv[0:16]"  1 0 6 0 11 0 16 0 20 0 24 32.290921639453749
-		 35 0 44 9.5174880318817774 49 9.5174880318817774 55 9.5174880318817774 62 9.5174880318817774
-		 72 9.5174880318817774 76 4.7587440159408994 80 0 85 12.206025802165323 90 -8.6440195356173231
-		 95 5.7201833394072601;
+		 35 0 44 9.5174880318817774 49 9.5174880318817774 64 9.5174880318817774 71 9.5174880318817774
+		 81 9.5174880318817774 85 4.7587440159408994 89 0 94 12.206025802165323 99 -8.6440195356173231
+		 104 5.7201833394072601;
 	setAttr -s 17 ".kit[4:16]"  1 1 18 18 18 18 1 18 
 		18 18 18 18 18;
 	setAttr -s 17 ".kot[4:16]"  1 1 18 18 18 18 1 18 
@@ -6871,8 +6901,8 @@ createNode animCurveTU -n "ctl_Hand_0_L_scaleX";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 1.0000000000000002 6 1.0000000000000002
 		 11 1.0000000000000002 16 1.0000000000000002 20 1.0000000000000002 24 1.0000000000000002
-		 35 1.0000000000000002 49 1.0000000000000002 55 1.0000000000000002 62 1.0000000000000002
-		 72 1.0000000000000002 76 1.0000000000000002 80 1.0000000000000002;
+		 35 1.0000000000000002 49 1.0000000000000002 64 1.0000000000000002 71 1.0000000000000002
+		 81 1.0000000000000002 85 1.0000000000000002 89 1.0000000000000002;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6887,8 +6917,8 @@ createNode animCurveTU -n "ctl_Hand_0_L_scaleY";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0.99999999999999978 6 0.99999999999999978
 		 11 0.99999999999999978 16 0.99999999999999978 20 0.99999999999999978 24 0.99999999999999978
-		 35 0.99999999999999978 49 0.99999999999999978 55 0.99999999999999978 62 0.99999999999999978
-		 72 0.99999999999999978 76 0.99999999999999978 80 0.99999999999999978;
+		 35 0.99999999999999978 49 0.99999999999999978 64 0.99999999999999978 71 0.99999999999999978
+		 81 0.99999999999999978 85 0.99999999999999978 89 0.99999999999999978;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6903,8 +6933,8 @@ createNode animCurveTU -n "ctl_Hand_0_L_scaleZ";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0.99999999999999978 6 0.99999999999999978
 		 11 0.99999999999999978 16 0.99999999999999978 20 0.99999999999999978 24 0.99999999999999978
-		 35 0.99999999999999978 49 0.99999999999999978 55 0.99999999999999978 62 0.99999999999999978
-		 72 0.99999999999999978 76 0.99999999999999978 80 0.99999999999999978;
+		 35 0.99999999999999978 49 0.99999999999999978 64 0.99999999999999978 71 0.99999999999999978
+		 81 0.99999999999999978 85 0.99999999999999978 89 0.99999999999999978;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -6966,56 +6996,59 @@ createNode animCurveTA -n "ctl_pelvis_0_N_rotateX";
 	rename -uid "895D1F05-48D9-5702-D761-F8B44290A533";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1 0 6 3.6901698215807759 11 -7.6379896732117887
+	setAttr -s 16 ".ktv[0:15]"  1 0 6 3.6901698215807759 11 -7.6379896732117887
 		 16 20.20264681106217 20 33.953818390255876 24 77.841163756041325 33 -55.424694182941664
-		 35 -55.424694182941664 44 -75.356036376197224 49 -75.356036376197224 55 -75.356036376197224
-		 62 -75.356036376197224 72 -75.356036376197224 76 -75.356036376197224 80 -75.356036376197224;
-	setAttr -s 15 ".kit[4:14]"  1 1 18 18 18 18 18 1 
-		18 18 18;
-	setAttr -s 15 ".kot[4:14]"  1 1 18 18 18 18 18 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
+		 35 -55.424694182941664 44 -75.356036376197224 49 -75.356036376197224 64 -75.356036376197224
+		 71 -75.356036376197224 81 -75.356036376197224 85 -75.356036376197224 89 -75.356036376197224
+		 94 -71.581842033838583;
+	setAttr -s 16 ".kit[4:15]"  1 1 18 18 18 18 18 1 
+		18 18 18 18;
+	setAttr -s 16 ".kot[4:15]"  1 1 18 18 18 18 18 1 
+		18 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "ctl_pelvis_0_N_rotateY";
 	rename -uid "D158F008-443D-A88C-26F2-FD8EB08A25F3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1 0 6 -0.13860088700021214 11 1.2267079819169688
+	setAttr -s 16 ".ktv[0:15]"  1 0 6 -0.13860088700021214 11 1.2267079819169688
 		 16 -6.211094872724467 20 5.4764521675287368 24 -1.4290416747285053 33 6.9861264923511355
-		 35 6.9861264923511355 44 13.853837097108817 49 13.853837097108817 55 13.853837097108817
-		 62 13.853837097108817 72 13.853837097108817 76 13.853837097108817 80 13.853837097108817;
-	setAttr -s 15 ".kit[4:14]"  1 1 18 18 18 18 18 1 
-		18 18 18;
-	setAttr -s 15 ".kot[4:14]"  1 1 18 18 18 18 18 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
+		 35 6.9861264923511355 44 13.853837097108817 49 13.853837097108817 64 13.853837097108817
+		 71 13.853837097108817 81 13.853837097108817 85 13.853837097108817 89 13.853837097108817
+		 94 8.0744350593392902;
+	setAttr -s 16 ".kit[4:15]"  1 1 18 18 18 18 18 1 
+		18 18 18 18;
+	setAttr -s 16 ".kot[4:15]"  1 1 18 18 18 18 18 1 
+		18 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "ctl_pelvis_0_N_rotateZ";
 	rename -uid "FDF1249F-4EEC-9D42-BD42-779497D5DF46";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1 0 6 -0.77220315614587143 11 0.78273093274161865
+	setAttr -s 16 ".ktv[0:15]"  1 0 6 -0.77220315614587143 11 0.78273093274161865
 		 16 -3.4388843685843256 20 4.4124835288078392 24 -0.24219956719323968 33 7.342064412459119
-		 35 7.342064412459119 44 -7.0697834452860961 49 -7.0697834452860961 55 -7.0697834452860961
-		 62 -7.0697834452860961 72 -7.0697834452860961 76 -7.0697834452860961 80 -7.0697834452860961;
-	setAttr -s 15 ".kit[4:14]"  1 1 18 18 18 18 18 1 
-		18 18 18;
-	setAttr -s 15 ".kot[4:14]"  1 1 18 18 18 18 18 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 15 ".kox[4:14]"  1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 15 ".koy[4:14]"  0 0 0 0 0 0 0 0 0 0 0;
+		 35 7.342064412459119 44 -7.0697834452860961 49 -7.0697834452860961 64 -7.0697834452860961
+		 71 -7.0697834452860961 81 -7.0697834452860961 85 -7.0697834452860961 89 -7.0697834452860961
+		 94 12.561679156475979;
+	setAttr -s 16 ".kit[4:15]"  1 1 18 18 18 18 18 1 
+		18 18 18 18;
+	setAttr -s 16 ".kot[4:15]"  1 1 18 18 18 18 18 1 
+		18 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".kiy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".kox[4:15]"  1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 16 ".koy[4:15]"  0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "ctl_eyebrownInt_1_R_rotateZ";
 	rename -uid "70DBE38B-4AEA-3BCD-628C-38A7DE9BA738";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7028,62 +7061,66 @@ createNode animCurveTA -n "ctl_chest_0_N_rotateX";
 	rename -uid "D1E46FCC-4ABC-D2D1-143C-3F8C44DCC848";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1 0 6 0 11 6.6959328592177121 16 19.215541378752334
+	setAttr -s 16 ".ktv[0:15]"  1 0 6 0 11 6.6959328592177121 16 19.215541378752334
 		 20 19.215541378752334 24 19.215541378752334 33 34.942053961901465 35 34.942053961901465
-		 44 67.877883607355074 49 67.877883607355074 55 0.87462427872765314 62 0.87462427872765314
-		 72 -33.938520787396797 76 -40.749872038047961 80 -42.71763853195646;
-	setAttr -s 15 ".kit[4:14]"  1 1 18 18 18 18 18 1 
-		18 18 18;
-	setAttr -s 15 ".kot[4:14]"  1 1 18 18 18 18 18 1 
-		18 18 18;
-	setAttr -s 15 ".kix[4:14]"  0.83563865393153358 0.83563865393153358 
-		1 1 1 1 1 0.40843708294297432 0.6260983247686458 0.90860303975673973 1;
-	setAttr -s 15 ".kiy[4:14]"  0.54927956457117044 0.54927956457117044 
-		0 0 0 0 0 -0.9127864751830157 -0.77974411682416389 -0.41766076682495845 0;
-	setAttr -s 15 ".kox[4:14]"  0.83563865393153358 0.83563865393153358 
-		1 1 1 1 1 0.40843708294297432 0.62609832476864591 0.90860303975673973 1;
-	setAttr -s 15 ".koy[4:14]"  0.54927956457117044 0.54927956457117044 
-		0 0 0 0 0 -0.9127864751830157 -0.779744116824164 -0.41766076682495845 0;
+		 44 67.877883607355074 49 67.877883607355074 55 22.550148266552121 64 0.77847362756360472
+		 71 0.77847362756360472 81 -33.938520787396797 85 -40.749872038047961 89 -42.71763853195646;
+	setAttr -s 16 ".kit[4:15]"  1 1 18 18 18 18 18 18 
+		1 18 18 18;
+	setAttr -s 16 ".kot[4:15]"  1 1 18 18 18 18 18 18 
+		1 18 18 18;
+	setAttr -s 16 ".kix[4:15]"  0.83563865393153358 0.83563865393153358 
+		1 1 1 1 0.47082887648648913 1 0.46499778071893733 0.62697848784188648 0.90860303975673973 
+		1;
+	setAttr -s 16 ".kiy[4:15]"  0.54927956457117044 0.54927956457117044 
+		0 0 0 0 -0.8822245570524947 0 -0.88531184558124099 -0.77903656896419282 -0.41766076682495845 
+		0;
+	setAttr -s 16 ".kox[4:15]"  0.83563865393153358 0.83563865393153358 
+		1 1 1 1 0.47082887648648913 1 0.46499778071893733 0.62697848784188648 0.90860303975673973 
+		1;
+	setAttr -s 16 ".koy[4:15]"  0.54927956457117044 0.54927956457117044 
+		0 0 0 0 -0.88222455705249458 0 -0.88531184558124099 -0.77903656896419271 -0.41766076682495845 
+		0;
 createNode animCurveTA -n "ctl_chest_0_N_rotateY";
 	rename -uid "51F4D5D9-4233-A72E-30D1-FCBFAC417C8E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 -1.2305080346692443 16 -3.5312298606047423
+	setAttr -s 15 ".ktv[0:14]"  1 0 6 0 11 -1.2305080346692443 16 -3.5312298606047423
 		 20 -3.5312298606047423 24 -3.5312298606047423 33 -6.4212827475975267 35 -6.4212827475975267
-		 49 -6.4212827475975267 55 27.238144789790365 62 27.238144789790365 72 -35.540318213235928
-		 76 -40.503877079685402 80 -41.212956917749608;
-	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
-		18 18;
-	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
-		18 18;
-	setAttr -s 14 ".kix[4:13]"  0.99278318874612714 0.99278318874612714 
-		1 1 1 1 1 0.53982601350645398 0.97607494540075501 1;
-	setAttr -s 14 ".kiy[4:13]"  -0.11992305926331037 -0.11992305926331037 
-		0 0 0 0 0 -0.84177661831493622 -0.21743436012027426 0;
-	setAttr -s 14 ".kox[4:13]"  0.99278318874612725 0.99278318874612725 
-		1 1 1 1 1 0.53982601350645398 0.97607494540075512 1;
-	setAttr -s 14 ".koy[4:13]"  -0.11992305926331039 -0.11992305926331039 
-		0 0 0 0 0 -0.84177661831493611 -0.21743436012027426 0;
+		 49 -6.4212827475975267 55 -10.039756871526063 64 2.6636298062130073 71 2.6636298062130073
+		 81 -35.540318213235928 85 -40.503877079685402 89 -41.212956917749608;
+	setAttr -s 15 ".kit[4:14]"  1 1 18 18 18 18 18 1 
+		18 18 18;
+	setAttr -s 15 ".kot[4:14]"  1 1 18 18 18 18 18 1 
+		18 18 18;
+	setAttr -s 15 ".kix[4:14]"  0.99278318874612714 0.99278318874612714 
+		1 1 1 1 1 1 0.61220219884810001 0.97607494540075501 1;
+	setAttr -s 15 ".kiy[4:14]"  -0.11992305926331037 -0.11992305926331037 
+		0 0 0 0 0 0 -0.79070125061590202 -0.21743436012027426 0;
+	setAttr -s 15 ".kox[4:14]"  0.99278318874612725 0.99278318874612725 
+		1 1 1 1 1 1 0.6122021988480999 0.97607494540075512 1;
+	setAttr -s 15 ".koy[4:14]"  -0.11992305926331039 -0.11992305926331039 
+		0 0 0 0 0 0 -0.79070125061590202 -0.21743436012027426 0;
 createNode animCurveTA -n "ctl_chest_0_N_rotateZ";
 	rename -uid "569D7D7B-4D1F-B2C3-76A9-74AB28C0653E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 0 6 0 11 -0.74028246932256825 16 -2.1244132401433111
+	setAttr -s 15 ".ktv[0:14]"  1 0 6 0 11 -0.74028246932256825 16 -2.1244132401433111
 		 20 -2.1244132401433111 24 -2.1244132401433111 33 -3.8630898089890477 35 -3.8630898089890477
-		 49 -3.8630898089890477 55 14.150051666495509 62 14.150051666495509 72 26.657450398375932
-		 76 33.845452546864422 80 38.345114392467181;
-	setAttr -s 14 ".kit[4:13]"  1 1 18 18 18 18 1 18 
-		18 18;
-	setAttr -s 14 ".kot[4:13]"  1 1 18 18 18 18 1 18 
-		18 18;
-	setAttr -s 14 ".kix[4:13]"  0.99736987379719622 0.99736987379719622 
-		1 1 1 1 1 0.8615387245495395 0.85295773324019319 1;
-	setAttr -s 14 ".kiy[4:13]"  -0.072479892672140264 -0.072479892672140264 
-		0 0 0 0 0 0.50769186137021405 0.52197998554135339 0;
-	setAttr -s 14 ".kox[4:13]"  0.99736987379719622 0.99736987379719622 
-		1 1 1 1 1 0.86153872454953961 0.85295773324019319 1;
-	setAttr -s 14 ".koy[4:13]"  -0.072479892672140264 -0.072479892672140264 
-		0 0 0 0 0 0.50769186137021405 0.52197998554135328 0;
+		 49 -3.8630898089890477 55 -4.0735015613781895 64 13.785900069851165 71 13.785900069851165
+		 81 26.657450398375932 85 33.845452546864422 89 38.345114392467181;
+	setAttr -s 15 ".kit[4:14]"  1 1 18 18 18 18 18 1 
+		18 18 18;
+	setAttr -s 15 ".kot[4:14]"  1 1 18 18 18 18 18 1 
+		18 18 18;
+	setAttr -s 15 ".kix[4:14]"  0.99736987379719622 0.99736987379719622 
+		1 1 1 1 1 0.59508575829426924 0.85742467474480344 0.85295773324019319 1;
+	setAttr -s 15 ".kiy[4:14]"  -0.072479892672140264 -0.072479892672140264 
+		0 0 0 0 0 0.80366220532966126 0.5146094899423912 0.52197998554135339 0;
+	setAttr -s 15 ".kox[4:14]"  0.99736987379719622 0.99736987379719622 
+		1 1 1 1 1 0.59508575829426924 0.85742467474480344 0.85295773324019319 1;
+	setAttr -s 15 ".koy[4:14]"  -0.072479892672140264 -0.072479892672140264 
+		0 0 0 0 0 0.80366220532966115 0.5146094899423912 0.52197998554135328 0;
 createNode animCurveTA -n "ctl_ring_1_L_rotateX";
 	rename -uid "325E8A24-4C6E-BCC6-8EEF-90BD019AA856";
 	setAttr ".tan" 18;
@@ -7129,18 +7166,20 @@ createNode animCurveTU -n "ikCrv_kneeTwist_0_L_visibility";
 	rename -uid "4E141343-4B62-FF30-C6FF-B09F91C6402D";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ikCrv_kneeTwist_0_L_rotateX";
 	rename -uid "622B8F70-48CE-11F7-3728-5B9E8904B1DF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7153,8 +7192,8 @@ createNode animCurveTA -n "ikCrv_kneeTwist_0_L_rotateY";
 	rename -uid "01A4388E-46B7-88E3-ADD7-C1821970B419";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7167,8 +7206,8 @@ createNode animCurveTA -n "ikCrv_kneeTwist_0_L_rotateZ";
 	rename -uid "DA37215F-4DB5-63A9-847F-FAAC024458D8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7181,8 +7220,8 @@ createNode animCurveTU -n "ikCrv_kneeTwist_0_L_scaleX";
 	rename -uid "92E66D48-41FB-9DDA-A597-CAAB4CB7AE45";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7195,8 +7234,8 @@ createNode animCurveTU -n "ikCrv_kneeTwist_0_L_scaleY";
 	rename -uid "F5278930-4DE3-5C80-84CD-DB9125E26FD9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7209,8 +7248,8 @@ createNode animCurveTU -n "ikCrv_kneeTwist_0_L_scaleZ";
 	rename -uid "EF2151CE-4675-8CF5-A7DD-97A44CB1E17E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7259,18 +7298,20 @@ createNode animCurveTU -n "ikCrv_hipTwist_0_L_visibility";
 	rename -uid "60077F73-4074-B805-6D4D-76BDA68FBD16";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ikCrv_hipTwist_0_L_rotateX";
 	rename -uid "4775B664-48CF-51F0-20BE-609AC4059EDD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7283,8 +7324,8 @@ createNode animCurveTA -n "ikCrv_hipTwist_0_L_rotateY";
 	rename -uid "60A18039-4440-7F8C-053A-269CA0AB29C7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7297,8 +7338,8 @@ createNode animCurveTA -n "ikCrv_hipTwist_0_L_rotateZ";
 	rename -uid "A09C8855-483A-7D42-23D2-A5869D0285E3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7311,8 +7352,8 @@ createNode animCurveTU -n "ikCrv_hipTwist_0_L_scaleX";
 	rename -uid "2CAE98B6-4AC0-1DAA-59BA-219588C63A64";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7325,8 +7366,8 @@ createNode animCurveTU -n "ikCrv_hipTwist_0_L_scaleY";
 	rename -uid "376B1E06-47AB-3304-2631-0180F6031544";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7339,8 +7380,8 @@ createNode animCurveTU -n "ikCrv_hipTwist_0_L_scaleZ";
 	rename -uid "99BF0922-4FEB-81F3-275F-56A068832290";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7353,24 +7394,28 @@ createNode animCurveTU -n "ctl_settings_0_N_visibility";
 	rename -uid "05B5B8F6-4955-811F-E9DE-5E960F03BC96";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 12 ".ktv[0:11]"  1 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1 55 1
-		 67 1 76 1 80 1;
-	setAttr -s 12 ".kit[0:11]"  9 9 9 9 1 1 9 9 
-		9 9 9 9;
-	setAttr -s 12 ".kix[4:11]"  1 1 1 1 1 1 1 1;
-	setAttr -s 12 ".kiy[4:11]"  0 0 0 0 0 0 0 0;
+	setAttr -s 15 ".ktv[0:14]"  1 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1 55 1
+		 71 1 73 1 82 1 86 1 104 0 105 0;
+	setAttr -s 15 ".kit[0:14]"  9 9 9 9 1 1 9 9 
+		9 9 9 9 9 9 9;
+	setAttr -s 15 ".kix[4:14]"  1 1 1 1 1 1 1 1 0.67572462851734627 0.62070294436556106 
+		1;
+	setAttr -s 15 ".kiy[4:14]"  0 0 0 0 0 0 0 0 -0.73715414020074144 -0.78404582446176141 
+		0;
 createNode animCurveTU -n "ctl_settings_0_N_suitColor";
 	rename -uid "0C889FED-49B0-4BE4-E82F-DB8C9D4BAD3C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 11 ".ktv[0:10]"  1 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1 67 1
-		 76 1 80 1;
-	setAttr -s 11 ".kit[3:10]"  1 1 18 18 18 18 18 18;
-	setAttr -s 11 ".kot[3:10]"  1 1 18 18 18 18 18 18;
-	setAttr -s 11 ".kix[3:10]"  1 1 1 1 1 1 1 1;
-	setAttr -s 11 ".kiy[3:10]"  0 0 0 0 0 0 0 0;
-	setAttr -s 11 ".kox[3:10]"  1 1 1 1 1 1 1 1;
-	setAttr -s 11 ".koy[3:10]"  0 0 0 0 0 0 0 0;
+	setAttr -s 12 ".ktv[0:11]"  1 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1 71 1
+		 73 1 82 1 86 1;
+	setAttr -s 12 ".kit[3:11]"  1 1 18 18 18 18 18 18 
+		18;
+	setAttr -s 12 ".kot[3:11]"  1 1 18 18 18 18 18 18 
+		18;
+	setAttr -s 12 ".kix[3:11]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 12 ".kiy[3:11]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 12 ".kox[3:11]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 12 ".koy[3:11]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "ctl_thumb_2_R_rotateX";
 	rename -uid "F1F253F7-4D19-39AB-8BB7-7987A0BF7E31";
 	setAttr ".tan" 18;
@@ -7410,8 +7455,8 @@ createNode animCurveTA -n "ctl_elbow_0_R_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 0.79234471153729147 11 0.27810811379464662
 		 16 -0.72579694110656279 20 -0.72579694110656279 24 -6.6185158927145711 35 -2.5374007971409474
-		 49 -2.5374007971409474 55 -2.5374007971409474 62 -2.5374007971409474 72 -2.5374007971409474
-		 76 -2.5374007971409474 80 -2.5374007971409474;
+		 49 -2.5374007971409474 64 -10.176403747849545 71 -10.176403747849545 81 -2.5374007971409474
+		 85 -2.5374007971409474 89 -2.5374007971409474;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7430,8 +7475,8 @@ createNode animCurveTA -n "ctl_elbow_0_R_rotateY";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 9.507634395332536 11 6.5056454859447479
 		 16 0.64509053104437131 20 0.64509053104437131 24 27.898113075131846 35 -9.9306147141530623
-		 49 -9.9306147141530623 55 -9.9306147141530623 62 -9.9306147141530623 72 -9.9306147141530623
-		 76 -9.9306147141530623 80 -9.9306147141530623;
+		 49 -9.9306147141530623 64 24.88815653153614 71 24.88815653153614 81 -9.9306147141530623
+		 85 -9.9306147141530623 89 -9.9306147141530623;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7450,8 +7495,8 @@ createNode animCurveTA -n "ctl_elbow_0_R_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 0 6 4.947843672732879 11 8.3794472638461244
 		 16 11.487489646639087 20 11.487489646639087 24 18.302939348379073 35 15.766782389012585
-		 49 15.766782389012585 55 15.766782389012585 62 15.766782389012585 72 15.766782389012585
-		 76 15.766782389012585 80 15.766782389012585;
+		 49 15.766782389012585 64 60.962145957043312 71 60.962145957043312 81 15.766782389012585
+		 85 15.766782389012585 89 15.766782389012585;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7468,8 +7513,8 @@ createNode animCurveTU -n "ctl_elbow_0_R_SEP001";
 	rename -uid "F0D2FF88-4BB7-4C3D-2C7F-7D8CCF1DF16D";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -7478,8 +7523,8 @@ createNode animCurveTU -n "ctl_elbow_0_R_Stretch";
 	rename -uid "DCFF35C5-41D2-1F08-4D39-FA8B148074D7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7528,8 +7573,8 @@ createNode animCurveTA -n "ctl_footIK_0_R_rotateX";
 	setAttr -s 20 ".ktv[0:19]"  1 0 4 -3.0258272023208881 6 -3.9123926915594791
 		 9 49.105926425904279 11 176.64713748194606 16 160.46421983206241 20 163.49779534570277
 		 24 137.82172544687063 30 160.17875286292036 31 185.68076716599359 32 0 33 -10.405967449516075
-		 35 6.877847489922261 44 11.089571805393163 49 11.089571805393163 55 11.089571805393163
-		 62 11.089571805393163 72 172.91955015015012 76 165.95960714957982 80 158.99966414900945;
+		 35 6.877847489922261 44 11.089571805393163 49 11.089571805393163 64 11.089571805393163
+		 71 11.089571805393163 81 172.91955015015012 85 165.95960714957982 89 158.99966414900945;
 	setAttr -s 20 ".kit[6:19]"  1 1 18 18 18 18 18 18 
 		18 18 1 18 18 18;
 	setAttr -s 20 ".kot[6:19]"  1 1 18 18 18 18 18 18 
@@ -7554,8 +7599,8 @@ createNode animCurveTA -n "ctl_footIK_0_R_rotateY";
 		 9 -48.842623753445615 11 -54.813441708949398 16 -8.5769855120563498 20 6.3238248741308754
 		 24 57.709683775254497 30 0.80496712972431839 31 -49.92943674203233 32 -94.605517388095095
 		 33 -43.844860135339893 35 -13.861463994526584 44 72.961754654624542 49 72.961754654624542
-		 55 72.961754654624542 62 72.961754654624542 72 62.791992389152142 76 48.128962032303086
-		 80 37.415513973371056;
+		 64 72.961754654624542 71 72.961754654624542 81 62.791992389152142 85 48.128962032303086
+		 89 37.415513973371056;
 	setAttr -s 20 ".kit[6:19]"  1 1 18 18 18 18 18 18 
 		18 18 1 18 18 18;
 	setAttr -s 20 ".kot[6:19]"  1 1 18 18 18 18 18 18 
@@ -7579,8 +7624,8 @@ createNode animCurveTA -n "ctl_footIK_0_R_rotateZ";
 	setAttr -s 20 ".ktv[0:19]"  1 0 4 -1.3513954395698355 6 -7.2571086939998359
 		 9 -67.506988901749196 11 -177.64595795654455 16 -169.66739652678837 20 -173.54432606431288
 		 24 -214.55406186700276 30 -185.23551967998154 31 -192.51904390915851 32 0 33 -0.51304787564723087
-		 35 2.8638066419612644 44 13.356086409634447 49 13.356086409634447 55 13.356086409634447
-		 62 13.356086409634447 72 176.43822985539643 76 179.78841556463436 80 180.26701352309692;
+		 35 2.8638066419612644 44 13.356086409634447 49 13.356086409634447 64 13.356086409634447
+		 71 13.356086409634447 81 176.43822985539643 85 179.78841556463436 89 180.26701352309692;
 	setAttr -s 20 ".kit[6:19]"  1 1 18 18 18 18 18 18 
 		18 18 1 18 18 18;
 	setAttr -s 20 ".kot[6:19]"  1 1 18 18 18 18 18 18 
@@ -7597,8 +7642,8 @@ createNode animCurveTU -n "ctl_footIK_0_R_scaleX";
 	rename -uid "A2FA65EF-4E97-BA9D-6829-69AD046A4038";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7611,8 +7656,8 @@ createNode animCurveTU -n "ctl_footIK_0_R_scaleY";
 	rename -uid "F6327A50-4D6D-B9A0-152A-6DA9609EA1BF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7625,8 +7670,8 @@ createNode animCurveTU -n "ctl_footIK_0_R_scaleZ";
 	rename -uid "6957B6B2-4ACA-65BE-3670-35888C384AFC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7639,8 +7684,8 @@ createNode animCurveTU -n "ctl_footIK_0_R_SEP001";
 	rename -uid "8B6BAAC1-48FB-A309-BD53-45AD096D06F3";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -7649,8 +7694,8 @@ createNode animCurveTU -n "ctl_footIK_0_R_pelvisFollow";
 	rename -uid "A318981A-461F-8AA4-875C-B7A54E9DF3AB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7663,8 +7708,8 @@ createNode animCurveTU -n "ctl_footIK_0_R_SEP002";
 	rename -uid "0BB17D50-4B01-823C-9852-D881B887148E";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -7673,8 +7718,8 @@ createNode animCurveTU -n "ctl_footIK_0_R_StretchOn";
 	rename -uid "37EF6F8A-49A8-3685-7BE9-B1B5BF72D3A5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7687,8 +7732,8 @@ createNode animCurveTU -n "ctl_footIK_0_R_heelToe";
 	rename -uid "48E40843-4E65-23F3-82D8-BE8EACE5F983";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7701,8 +7746,8 @@ createNode animCurveTU -n "ctl_footIK_0_R_BankExtInt";
 	rename -uid "5F4600E3-49CA-A043-D091-ACABEC8A30D5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7716,7 +7761,7 @@ createNode animCurveTU -n "ctl_footIK_0_R_BallBreak";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 40 4 40 11 40 16 40 20 40 24 40 35 40
-		 49 40 55 40 62 40 72 40 76 40 80 40;
+		 49 40 64 40 71 40 81 40 85 40 89 40;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7901,22 +7946,22 @@ createNode animCurveTA -n "ctl_Shoulder_0_R_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 -7.0240842791809923 11 -16.998945564812267
 		 13 -18.673257899115001 16 -18.052663498261285 20 -18.052663498261285 24 -12.022153510252956
-		 35 3.4908278456604562 49 17.341855099792156 55 -355.38487783427041 62 -355.38487783427041
-		 72 -184.00864694783891 76 -136.29189749644897 80 -115.25612102398013 85 -90.190558119322347;
+		 35 3.4908278456604562 49 17.341855099792156 64 -393.10423102441615 71 -393.10423102441615
+		 81 -184.00864694783891 85 -136.29189749644897 89 -115.25612102398013 94 -90.190558119322347;
 	setAttr -s 15 ".kit[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kot[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kix[5:14]"  0.9880538352132392 0.9880538352132392 0.89728051889993488 
-		1 1 1 0.15080493434634309 0.2676525716581642 0.42243269224422353 1;
+		1 1 1 0.12905547585192162 0.2676525716581642 0.42243269224422353 1;
 	setAttr -s 15 ".kiy[5:14]"  0.15410911303491875 0.15410911303491875 
-		0.44146083677112669 0 0 0 0.98856353957486975 0.96351549073420262 0.90639429638722735 
+		0.44146083677112669 0 0 0 0.99163737533063667 0.96351549073420262 0.90639429638722735 
 		0;
 	setAttr -s 15 ".kox[5:14]"  0.98805383521323908 0.98805383521323908 
-		0.89728051889993499 1 1 1 0.15080493434634309 0.2676525716581642 0.42243269224422358 
+		0.89728051889993499 1 1 1 0.12905547585192162 0.2676525716581642 0.42243269224422358 
 		1;
 	setAttr -s 15 ".koy[5:14]"  0.15410911303491875 0.15410911303491875 
-		0.44146083677112674 0 0 0 0.98856353957486987 0.96351549073420251 0.90639429638722746 
+		0.44146083677112674 0 0 0 0.99163737533063667 0.96351549073420251 0.90639429638722746 
 		0;
 createNode animCurveTA -n "ctl_Shoulder_0_R_rotateY";
 	rename -uid "AD64AA61-4B53-2441-CB22-BA9B7A0163A3";
@@ -7924,50 +7969,50 @@ createNode animCurveTA -n "ctl_Shoulder_0_R_rotateY";
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 -12.444835886347482 11 -41.859938805567332
 		 13 -47.133872686178954 16 -46.596094308625666 20 -46.596094308625666 24 -38.684722837696299
-		 35 -27.927502059275977 49 -44.007168818869609 55 -77.737827916919471 62 -77.737827916919471
-		 72 -75.850521248125801 76 -64.930381862552039 80 -55.142626478254442 85 -58.875121951051099;
+		 35 -27.927502059275977 49 -44.007168818869609 64 -75.361574787586861 71 -75.361574787586861
+		 81 -75.850521248125801 85 -64.930381862552039 89 -55.142626478254442 94 -58.875121951051099;
 	setAttr -s 15 ".kit[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kot[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kix[5:14]"  0.99098936413850458 0.99098936413850458 
-		1 0.69199289748245474 1 1 0.97300957565645263 0.67796596229973316 1 1;
+		1 0.82494871914062162 1 0.9964139415949963 1 0.67796596229973316 1 1;
 	setAttr -s 15 ".kiy[5:14]"  0.13394058445580442 0.13394058445580442 
-		0 -0.72190430794796967 0 0 0.23076474098278127 0.73509329609444596 0 0;
+		0 -0.56520758203358146 0 -0.084612392680523701 0 0.73509329609444596 0 0;
 	setAttr -s 15 ".kox[5:14]"  0.99098936413850458 0.99098936413850458 
-		1 0.69199289748245474 1 1 0.97300957565645252 0.67796596229973316 1 1;
+		1 0.82494871914062162 1 0.99641394159499641 1 0.67796596229973316 1 1;
 	setAttr -s 15 ".koy[5:14]"  0.13394058445580442 0.13394058445580442 
-		0 -0.72190430794796967 0 0 0.23076474098278127 0.73509329609444596 0 0;
+		0 -0.56520758203358157 0 -0.084612392680523715 0 0.73509329609444596 0 0;
 createNode animCurveTA -n "ctl_Shoulder_0_R_rotateZ";
 	rename -uid "E6DF406C-4A4D-322E-4071-979225587C92";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 30.546499230202798 11 77.358399160580149
 		 13 85.314310341018157 16 84.46368798200497 20 84.46368798200497 24 79.578846372371814
-		 35 54.934940376261899 49 44.313427475584277 55 294.12408986076883 62 294.12408986076883
-		 72 122.5217705382676 76 72.448644045843267 80 49.550374784153874 85 19.877787940489402;
+		 35 54.934940376261899 49 44.313427475584277 64 332.82136307680929 71 332.82136307680929
+		 81 122.5217705382676 85 72.448644045843267 89 49.550374784153874 94 19.877787940489402;
 	setAttr -s 15 ".kit[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kot[5:14]"  1 1 18 18 18 1 18 18 
 		18 18;
 	setAttr -s 15 ".kix[5:14]"  0.97790267721758606 0.97790267721758606 
-		0.86093834013342607 1 1 1 0.14908736758219035 0.25319856542743407 0.37832599138956674 
+		0.86093834013342607 1 1 1 0.12731954878270405 0.25319856542743407 0.37832599138956674 
 		1;
 	setAttr -s 15 ".kiy[5:14]"  -0.20906064644183434 -0.20906064644183434 
-		-0.50870932219520137 0 0 0 -0.98882402723002893 -0.96741433029777346 -0.92567242815107198 
+		-0.50870932219520137 0 0 0 -0.99186175069803384 -0.96741433029777346 -0.92567242815107198 
 		0;
 	setAttr -s 15 ".kox[5:14]"  0.97790267721758606 0.97790267721758606 
-		0.86093834013342607 1 1 1 0.14908736758219035 0.25319856542743402 0.37832599138956668 
+		0.86093834013342607 1 1 1 0.12731954878270405 0.25319856542743402 0.37832599138956668 
 		1;
 	setAttr -s 15 ".koy[5:14]"  -0.20906064644183431 -0.20906064644183431 
-		-0.50870932219520137 0 0 0 -0.98882402723002893 -0.96741433029777335 -0.92567242815107187 
+		-0.50870932219520137 0 0 0 -0.99186175069803395 -0.96741433029777335 -0.92567242815107187 
 		0;
 createNode animCurveTU -n "ctl_Shoulder_0_R_clavicleFollow";
 	rename -uid "AF16C0DD-4985-45AF-328C-B780862B954E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7980,8 +8025,8 @@ createNode animCurveTU -n "ctl_Shoulder_0_R_Stretch";
 	rename -uid "E323873E-4C9A-3DBB-810C-1B85EF547CBF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -7994,8 +8039,8 @@ createNode animCurveTU -n "ctl_legPole_0_L_SEP001";
 	rename -uid "3CD917CA-4F90-00A6-551E-03B007564EFD";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8004,8 +8049,8 @@ createNode animCurveTU -n "ctl_legPole_0_L_PelvisFollow";
 	rename -uid "6CAFA298-4B87-90F2-2072-F2B0A0E237FA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8018,8 +8063,8 @@ createNode animCurveTU -n "ctl_legPole_0_L_FootFollow";
 	rename -uid "4E075C7B-49FB-AE35-CB71-8E9EBA98D5B6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8032,8 +8077,8 @@ createNode animCurveTU -n "ctl_legPole_0_L_SEP002";
 	rename -uid "D2088484-48E1-F7C9-C865-9FAEE73BEA3C";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8042,8 +8087,8 @@ createNode animCurveTU -n "ctl_legPole_0_L_Pin";
 	rename -uid "CFE081AE-4A81-55D5-C5DF-DEAFB6F739A2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8058,8 +8103,8 @@ createNode animCurveTA -n "ctl_ball_0_R_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 3.255060535051447 10 5.5833861883588334
 		 11 5.5833861883588334 16 5.5833861883588334 20 5.5833861883588334 24 -2.1888017045068207
-		 35 5.5833861883588334 49 7.0852337104717362 55 7.0852337104717362 62 7.0852337104717362
-		 72 7.5376167908242584 76 6.7224658138672995 80 5.9073148369103361;
+		 35 5.5833861883588334 49 7.0852337104717362 64 7.0852337104717362 71 7.0852337104717362
+		 81 7.5376167908242584 85 6.7224658138672995 89 5.9073148369103361;
 	setAttr -s 14 ".kit[5:13]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 14 ".kot[5:13]"  1 1 18 18 18 1 18 18 
@@ -8078,8 +8123,8 @@ createNode animCurveTA -n "ctl_ball_0_R_rotateY";
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 0 6 3.0951851258629999 10 5.3091528394214746
 		 11 5.3091528394214746 16 5.3091528394214746 20 5.3091528394214746 24 5.3855377100855364
-		 35 5.3091528394214746 49 -3.0195977626668569 55 -3.0195977626668569 62 -3.0195977626668569
-		 72 1.5718069958908254 76 3.7014070973680915 80 4.9459467026941413;
+		 35 5.3091528394214746 49 -3.0195977626668569 64 -3.0195977626668569 71 -3.0195977626668569
+		 81 1.5718069958908254 85 3.7014070973680915 89 4.9459467026941413;
 	setAttr -s 14 ".kit[5:13]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 14 ".kot[5:13]"  1 1 18 18 18 1 18 18 
@@ -8098,8 +8143,8 @@ createNode animCurveTA -n "ctl_ball_0_R_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 15 ".ktv[0:14]"  1 0 6 -10.407808016550311 10 -17.852451868388648
 		 11 -13.224038421028631 13 0 16 0 20 0 24 31.835141359312271 35 0 49 66.393865664515815
-		 55 66.393865664515815 62 66.393865664515815 72 31.714679077846412 76 14.181698291389219
-		 80 3.623232320890367;
+		 64 66.393865664515815 71 66.393865664515815 81 31.714679077846412 85 14.181698291389219
+		 89 3.623232320890367;
 	setAttr -s 15 ".kit[6:14]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 15 ".kot[6:14]"  1 1 18 18 18 1 18 18 
@@ -8225,18 +8270,20 @@ createNode animCurveTU -n "ctl_handSettings_0_R_visibility";
 	rename -uid "C180EAA8-4CA6-901F-23E8-DF89F37DD982";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 14 ".ktv[0:13]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
-		 55 1 62 1 67 1 76 1 80 1;
-	setAttr -s 14 ".kit[0:13]"  9 9 9 9 9 1 1 9 
-		9 9 1 9 9 9;
-	setAttr -s 14 ".kix[5:13]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 14 ".kiy[5:13]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 16 ".ktv[0:15]"  1 1 6 1 11 1 15 0 16 1 20 1 24 1 35 1 49 1
+		 64 1 71 1 76 1 85 1 89 1 104 0 105 0;
+	setAttr -s 16 ".kit[0:15]"  9 9 9 9 9 1 1 9 
+		9 9 1 9 9 9 9 9;
+	setAttr -s 16 ".kix[5:15]"  1 1 1 1 1 1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 16 ".kiy[5:15]"  0 0 0 0 0 0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTU -n "ctl_handSettings_0_R_SEP001";
 	rename -uid "2B9A48E2-4A8D-82B9-B257-229E613472D5";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 67 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 76 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8245,8 +8292,8 @@ createNode animCurveTU -n "ctl_handSettings_0_R_Fist";
 	rename -uid "7D03FF3B-4AD2-6ECD-2987-14A44A2544A0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 67 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 76 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8259,8 +8306,8 @@ createNode animCurveTU -n "ctl_handSettings_0_R_Relax";
 	rename -uid "BDB84F70-4D60-A104-D9E2-61BD2A9EB54C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 67 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 76 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8273,8 +8320,8 @@ createNode animCurveTU -n "ctl_handSettings_0_R_SEP002";
 	rename -uid "86B9476F-44E1-FEBE-F202-60986EFDEBC0";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 67 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 76 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8283,8 +8330,8 @@ createNode animCurveTU -n "ctl_handSettings_0_R_Buster";
 	rename -uid "DED7BD50-4067-D6A6-B3C2-BFB579011BEF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 1
-		 62 1 67 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 1
+		 71 1 76 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8297,8 +8344,8 @@ createNode animCurveTU -n "ctl_legPole_0_R_SEP001";
 	rename -uid "D2A59DAA-4865-9761-B400-589E098678FC";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8307,8 +8354,8 @@ createNode animCurveTU -n "ctl_legPole_0_R_PelvisFollow";
 	rename -uid "8175C45D-4B3C-2329-F612-5390250D9909";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8321,8 +8368,8 @@ createNode animCurveTU -n "ctl_legPole_0_R_FootFollow";
 	rename -uid "515F7587-4B00-B8F2-B531-6387C63C34BD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8335,8 +8382,8 @@ createNode animCurveTU -n "ctl_legPole_0_R_SEP002";
 	rename -uid "43BB3456-4EA4-C3B3-C143-17BDF69A52F8";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8345,8 +8392,8 @@ createNode animCurveTU -n "ctl_legPole_0_R_Pin";
 	rename -uid "6B18BFFC-47F5-2D64-3E66-7593FCBB0825";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 6 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8362,20 +8409,20 @@ createNode animCurveTA -n "ctl_footIK_0_L_rotateX";
 	setAttr -s 19 ".ktv[0:18]"  1 0 4 4.6673424166765329 6 8.005864992369867
 		 9 -173.34772004791736 11 -178.64142465259718 16 -184.24845575841536 20 -180.43223441371072
 		 24 -174.31750571574321 25 -163.97312683793805 30 -69.614659518364064 33 13.379256298704853
-		 35 -13.143064626137477 44 -9.2789884125153836 49 -1.949687263823445 55 15.0651729919279
-		 62 15.0651729919279 72 15.0651729919279 76 15.0651729919279 80 15.0651729919279;
+		 35 -13.143064626137477 44 -9.2789884125153836 49 -1.949687263823445 64 15.0651729919279
+		 71 15.0651729919279 81 15.0651729919279 85 15.0651729919279 89 15.0651729919279;
 	setAttr -s 19 ".kit[6:18]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18;
 	setAttr -s 19 ".kot[6:18]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18;
 	setAttr -s 19 ".kix[6:18]"  1 1 0.13554316842272893 0.10706824399154127 
-		1 1 0.948235237673277 0.73335927747079244 1 1 1 1 1;
+		1 1 0.948235237673277 0.89088487629907431 1 1 1 1 1;
 	setAttr -s 19 ".kiy[6:18]"  0 0 0.99077144160191033 0.99425167393802649 
-		0 0 0.3175687863041704 0.6798412830562125 0 0 0 0 0;
+		0 0 0.3175687863041704 0.45422916813166336 0 0 0 0 0;
 	setAttr -s 19 ".kox[6:18]"  1 1 0.13554316842272895 0.10706824399154127 
-		1 1 0.94823523767327711 0.73335927747079244 1 1 1 1 1;
+		1 1 0.94823523767327711 0.89088487629907442 1 1 1 1 1;
 	setAttr -s 19 ".koy[6:18]"  0 0 0.99077144160191044 0.99425167393802649 
-		0 0 0.3175687863041704 0.6798412830562125 0 0 0 0 0;
+		0 0 0.3175687863041704 0.45422916813166342 0 0 0 0 0;
 createNode animCurveTA -n "ctl_footIK_0_L_rotateY";
 	rename -uid "08A6DABE-4F94-882D-A743-F8B4E542EC61";
 	setAttr ".tan" 18;
@@ -8383,8 +8430,8 @@ createNode animCurveTA -n "ctl_footIK_0_L_rotateY";
 	setAttr -s 19 ".ktv[0:18]"  1 0 4 -30.818390823477852 6 -57.948243685853548
 		 9 -60.349795526045106 11 -26.992333283425843 16 -22.380717939451799 20 -58.707761709415571
 		 24 -0.53772520310047589 25 2.9818782960838086 30 -72.820879824011143 33 -52.685233445906398
-		 35 -21.866951065656249 44 16.30512768666031 49 47.398685048334741 55 15.614225300895473
-		 62 15.614225300895473 72 15.614225300895473 76 15.614225300895473 80 15.614225300895473;
+		 35 -21.866951065656249 44 16.30512768666031 49 47.398685048334741 64 15.614225300895473
+		 71 15.614225300895473 81 15.614225300895473 85 15.614225300895473 89 15.614225300895473;
 	setAttr -s 19 ".kit[6:18]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18;
 	setAttr -s 19 ".kot[6:18]"  1 1 18 18 18 18 18 18 
@@ -8404,8 +8451,8 @@ createNode animCurveTA -n "ctl_footIK_0_L_rotateZ";
 	setAttr -s 19 ".ktv[0:18]"  1 0 4 -16.271634857086443 6 -27.910639554861202
 		 9 150.41121048944163 11 167.62506773299899 16 190.80898266792425 20 192.32325293342785
 		 24 156.90925480751787 25 177.91392778952505 30 85.655830274047105 33 -9.8973199810386472
-		 35 10.026209677199525 44 12.630015183013359 49 18.611520296022466 55 9.2621241452647318
-		 62 9.2621241452647318 72 9.2621241452647318 76 9.2621241452647318 80 9.2621241452647318;
+		 35 10.026209677199525 44 12.630015183013359 49 18.611520296022466 64 9.2621241452647318
+		 71 9.2621241452647318 81 9.2621241452647318 85 9.2621241452647318 89 9.2621241452647318;
 	setAttr -s 19 ".kit[6:18]"  1 1 18 18 18 18 18 18 
 		18 1 18 18 18;
 	setAttr -s 19 ".kot[6:18]"  1 1 18 18 18 18 18 18 
@@ -8422,8 +8469,8 @@ createNode animCurveTU -n "ctl_footIK_0_L_scaleX";
 	rename -uid "D85E701F-446A-D44E-919B-6FB2595FBEC4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8436,8 +8483,8 @@ createNode animCurveTU -n "ctl_footIK_0_L_scaleY";
 	rename -uid "17247A44-4673-F0F3-03F4-ED9DC452C3D8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8450,8 +8497,8 @@ createNode animCurveTU -n "ctl_footIK_0_L_scaleZ";
 	rename -uid "B5C9EE36-4BB2-C92B-FEF9-E9920C1193F9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8464,8 +8511,8 @@ createNode animCurveTU -n "ctl_footIK_0_L_SEP001";
 	rename -uid "C676C76D-4CA1-A4F7-7E0E-67A164C92125";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8474,8 +8521,8 @@ createNode animCurveTU -n "ctl_footIK_0_L_pelvisFollow";
 	rename -uid "CCAF4909-48AC-0776-8863-11A485397EC2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8488,8 +8535,8 @@ createNode animCurveTU -n "ctl_footIK_0_L_SEP002";
 	rename -uid "5BD77713-4F33-5743-0BF8-1390E092DC8B";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8498,8 +8545,8 @@ createNode animCurveTU -n "ctl_footIK_0_L_StretchOn";
 	rename -uid "BB97B988-46B5-A9C4-C66F-25B618FD1B18";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 4 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8512,8 +8559,8 @@ createNode animCurveTU -n "ctl_footIK_0_L_heelToe";
 	rename -uid "1694E186-4412-361C-BA70-698480772A26";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8526,8 +8573,8 @@ createNode animCurveTU -n "ctl_footIK_0_L_BankExtInt";
 	rename -uid "605586FF-4B85-8DCE-4F7E-7796789C9585";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 55 0
-		 62 0 72 0 76 0 80 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 4 0 11 0 16 0 20 0 24 0 35 0 49 0 64 0
+		 71 0 81 0 85 0 89 0;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8541,7 +8588,7 @@ createNode animCurveTU -n "ctl_footIK_0_L_BallBreak";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 13 ".ktv[0:12]"  1 40 4 40 11 40 16 40 20 40 24 40 35 40
-		 49 40 55 40 62 40 72 40 76 40 80 40;
+		 49 40 64 40 71 40 81 40 85 40 89 40;
 	setAttr -s 13 ".kit[4:12]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 13 ".kot[4:12]"  1 1 18 18 18 1 18 18 
@@ -8554,8 +8601,8 @@ createNode animCurveTU -n "MegaMan_HandArm_L_visibility";
 	rename -uid "A522BB8B-4937-6216-9D0B-389DE98265D2";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8564,8 +8611,8 @@ createNode animCurveTU -n "MegaMan_HandArm_R_visibility";
 	rename -uid "2292448D-4611-25AE-7EAD-879F5A630D76";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8574,8 +8621,8 @@ createNode animCurveTU -n "MegaMan_Body_visibility";
 	rename -uid "9711E9F2-4DC0-8BDC-3373-B2A775F3B780";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 55 1
-		 62 1 72 1 76 1 80 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 6 1 11 1 16 1 20 1 24 1 35 1 49 1 64 1
+		 71 1 81 1 85 1 89 1;
 	setAttr -s 13 ".kit[0:12]"  9 9 9 9 1 1 9 9 
 		9 1 9 9 9;
 	setAttr -s 13 ".kix[4:12]"  1 1 1 1 1 1 1 1 1;
@@ -8629,14 +8676,14 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "C177927F-4A54-DBC5-8E4D-AC9DD06F2902";
-	setAttr ".b" -type "string" "playbackOptions -min 0 -max 95 -ast 0 -aet 95 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 105 -ast 0 -aet 105 ";
 	setAttr ".st" 6;
 createNode animCurveTA -n "ctl_main_0_N_rotateX";
 	rename -uid "F051F8A4-4413-A555-D79D-E9B931269051";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 55 0 62 0 72 0
-		 76 0 80 0;
+	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 64 0 71 0 81 0
+		 85 0 89 0;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8649,8 +8696,8 @@ createNode animCurveTA -n "ctl_main_0_N_rotateY";
 	rename -uid "89FEEAE9-41B3-834C-7231-62925F54C663";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 55 0 62 0 72 0
-		 76 0 80 0;
+	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 64 0 71 0 81 0
+		 85 0 89 0;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8663,8 +8710,8 @@ createNode animCurveTA -n "ctl_main_0_N_rotateZ";
 	rename -uid "6158F658-4E9D-9F06-37FA-E1A5A423C489";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 55 0 62 0 72 0
-		 76 0 80 0;
+	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 64 0 71 0 81 0
+		 85 0 89 0;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8677,18 +8724,20 @@ createNode animCurveTU -n "ctl_main_0_N_visibility";
 	rename -uid "BCCF3AB1-492A-A60F-64C2-809A7ABFF1AF";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 11 ".ktv[0:10]"  15 0 16 1 20 1 24 1 35 1 49 1 55 1 62 1
-		 72 1 76 1 80 1;
-	setAttr -s 11 ".kit[0:10]"  9 9 1 1 9 9 9 1 
-		9 9 9;
-	setAttr -s 11 ".kix[2:10]"  1 1 1 1 1 1 1 1 1;
-	setAttr -s 11 ".kiy[2:10]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 15 ".ktv[0:14]"  15 0 16 1 20 1 24 1 35 1 49 1 64 1 71 1
+		 81 1 85 1 89 1 95 0 96 0 104 0 105 0;
+	setAttr -s 15 ".kit[0:14]"  9 9 1 1 9 9 9 1 
+		9 9 9 9 9 9 9;
+	setAttr -s 15 ".kix[2:14]"  1 1 1 1 1 1 1 1 0.38461538461538486 0.27999999999999986 
+		1 1 1;
+	setAttr -s 15 ".kiy[2:14]"  0 0 0 0 0 0 0 0 -0.92307692307692291 -0.96000000000000008 
+		0 0 0;
 createNode animCurveTL -n "ctl_main_0_N_translateX";
 	rename -uid "8C56E383-44CA-0EFE-E069-A28832CA98B1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 55 0 62 0 72 0
-		 76 0 80 0;
+	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 64 0 71 0 81 0
+		 85 0 89 0;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8702,7 +8751,7 @@ createNode animCurveTL -n "ctl_main_0_N_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0.0043032328803143116 35 0
-		 49 0 55 0 62 0 72 0 76 0 80 0;
+		 49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8715,8 +8764,8 @@ createNode animCurveTL -n "ctl_main_0_N_translateZ";
 	rename -uid "F1476890-4148-8FDB-DFF9-5BA89CA17C78";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 55 0 62 0 72 0
-		 76 0 80 0;
+	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 64 0 71 0 81 0
+		 85 0 89 0;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8729,8 +8778,8 @@ createNode animCurveTU -n "ctl_main_0_N_scaleX";
 	rename -uid "DE50C7BA-4FC2-E961-9D87-9E9F073C00D7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 1 20 1 24 1 35 1 49 1 55 1 62 1 72 1
-		 76 1 80 1;
+	setAttr -s 10 ".ktv[0:9]"  16 1 20 1 24 1 35 1 49 1 64 1 71 1 81 1
+		 85 1 89 1;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8743,8 +8792,8 @@ createNode animCurveTU -n "ctl_main_0_N_scaleY";
 	rename -uid "5900A50C-43C3-CCA0-ECBD-6E960FD70B6D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 1 20 1 24 1 35 1 49 1 55 1 62 1 72 1
-		 76 1 80 1;
+	setAttr -s 10 ".ktv[0:9]"  16 1 20 1 24 1 35 1 49 1 64 1 71 1 81 1
+		 85 1 89 1;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8757,8 +8806,8 @@ createNode animCurveTU -n "ctl_main_0_N_scaleZ";
 	rename -uid "E578255C-4AB6-EF02-087E-18B58202D23B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 1 20 1 24 1 35 1 49 1 55 1 62 1 72 1
-		 76 1 80 1;
+	setAttr -s 10 ".ktv[0:9]"  16 1 20 1 24 1 35 1 49 1 64 1 71 1 81 1
+		 85 1 89 1;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8771,8 +8820,8 @@ createNode animCurveTU -n "ctl_main_0_N_SEP001";
 	rename -uid "E68A2274-4245-D3BA-5879-93B5A3492367";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 55 0 62 0 72 0
-		 76 0 80 0;
+	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 64 0 71 0 81 0
+		 85 0 89 0;
 	setAttr -s 10 ".kit[0:9]"  9 1 1 9 9 9 1 9 
 		9 9;
 	setAttr -s 10 ".kix[1:9]"  1 1 1 1 1 1 1 1 1;
@@ -8781,8 +8830,8 @@ createNode animCurveTU -n "ctl_main_0_N_JointsVis";
 	rename -uid "1F4B39B0-4A9F-66E9-60FE-E599FB9A4107";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 55 0 62 0 72 0
-		 76 0 80 0;
+	setAttr -s 10 ".ktv[0:9]"  16 0 20 0 24 0 35 0 49 0 64 0 71 0 81 0
+		 85 0 89 0;
 	setAttr -s 10 ".kit[1:9]"  1 1 18 18 18 1 18 18 
 		18;
 	setAttr -s 10 ".kot[1:9]"  1 1 18 18 18 1 18 18 
@@ -8808,7 +8857,7 @@ createNode animCurveTL -n "ctl_main_0_N_translateX1";
 	rename -uid "AA1C7CAF-40DA-9D74-912E-099B73BEC745";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 0 55 0 62 0 72 0 76 0 80 0;
+	setAttr -s 6 ".ktv[0:5]"  49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8819,7 +8868,7 @@ createNode animCurveTL -n "ctl_main_0_N_translateY1";
 	rename -uid "B71C2440-479B-826D-BDE0-F1B86EB71142";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 0 55 0 62 0 72 0 76 0 80 0;
+	setAttr -s 6 ".ktv[0:5]"  49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8830,7 +8879,7 @@ createNode animCurveTL -n "ctl_main_0_N_translateZ1";
 	rename -uid "0582E126-4A84-8D71-8697-6CB48C508AF6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 0 55 0 62 0 72 0 76 0 80 0;
+	setAttr -s 6 ".ktv[0:5]"  49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8841,15 +8890,17 @@ createNode animCurveTU -n "ctl_main_0_N_visibility1";
 	rename -uid "15A1B8AB-40AD-254E-9754-E2B8872045A0";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 1 55 1 62 1 72 1 76 1 80 1;
-	setAttr -s 6 ".kit[0:5]"  9 9 1 9 9 9;
-	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
-	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  49 1 64 1 71 1 81 1 85 1 89 1 104 0 105 0;
+	setAttr -s 8 ".kit[0:7]"  9 9 1 9 9 9 9 9;
+	setAttr -s 8 ".kix[2:7]"  1 1 1 0.62070294436556106 0.55470019622522904 
+		1;
+	setAttr -s 8 ".kiy[2:7]"  0 0 0 -0.78404582446176141 -0.83205029433784372 
+		0;
 createNode animCurveTA -n "ctl_main_0_N_rotateX1";
 	rename -uid "05AF003E-441A-DD8A-044B-8793544A505B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 0 55 0 62 0 72 0 76 0 80 0;
+	setAttr -s 6 ".ktv[0:5]"  49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8860,7 +8911,7 @@ createNode animCurveTA -n "ctl_main_0_N_rotateY1";
 	rename -uid "B0137C51-4A75-D9AA-2456-2796AE0AEEAE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 0 55 0 62 0 72 0 76 0 80 0;
+	setAttr -s 6 ".ktv[0:5]"  49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8871,7 +8922,7 @@ createNode animCurveTA -n "ctl_main_0_N_rotateZ1";
 	rename -uid "CD9980C8-4268-72D1-BA9F-F9819549B15F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 0 55 0 62 0 72 0 76 0 80 0;
+	setAttr -s 6 ".ktv[0:5]"  49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8882,7 +8933,7 @@ createNode animCurveTU -n "ctl_main_0_N_scaleX1";
 	rename -uid "AE16C3A7-462B-D0C2-8875-7B8484684612";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 1 55 1 62 1 72 1 76 1 80 1;
+	setAttr -s 6 ".ktv[0:5]"  49 1 64 1 71 1 81 1 85 1 89 1;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8893,7 +8944,7 @@ createNode animCurveTU -n "ctl_main_0_N_scaleY1";
 	rename -uid "CB7112A8-4A0B-C90F-633E-1CA1797CF2A8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 1 55 1 62 1 72 1 76 1 80 1;
+	setAttr -s 6 ".ktv[0:5]"  49 1 64 1 71 1 81 1 85 1 89 1;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8904,7 +8955,7 @@ createNode animCurveTU -n "ctl_main_0_N_scaleZ1";
 	rename -uid "770C7C36-4D7F-31D9-8EA5-218FD7AC7EEE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 1 55 1 62 1 72 1 76 1 80 1;
+	setAttr -s 6 ".ktv[0:5]"  49 1 64 1 71 1 81 1 85 1 89 1;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8915,7 +8966,7 @@ createNode animCurveTU -n "ctl_main_0_N_SEP002";
 	rename -uid "F85DB112-4677-33B8-E78D-08BA6910FCD6";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 0 55 0 62 0 72 0 76 0 80 0;
+	setAttr -s 6 ".ktv[0:5]"  49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 6 ".kit[0:5]"  9 9 1 9 9 9;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
 	setAttr -s 6 ".kiy[2:5]"  0 0 0 0;
@@ -8923,7 +8974,7 @@ createNode animCurveTU -n "ctl_main_0_N_JointsVis1";
 	rename -uid "38ED0CFD-4E24-56D9-2E8F-A98DECCAF58A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  49 0 55 0 62 0 72 0 76 0 80 0;
+	setAttr -s 6 ".ktv[0:5]"  49 0 64 0 71 0 81 0 85 0 89 0;
 	setAttr -s 6 ".kit[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kot[2:5]"  1 18 18 18;
 	setAttr -s 6 ".kix[2:5]"  1 1 1 1;
@@ -8934,18 +8985,18 @@ createNode animCurveTU -n "ctl_settings_0_N_visibility1";
 	rename -uid "F27D4ECB-4A3D-AB79-B62F-589BE7A42DF6";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  49 1 55 1 67 1 76 1 80 1;
-	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
+	setAttr -s 8 ".ktv[0:7]"  49 1 55 1 71 1 73 1 82 1 86 1 104 0 105 0;
+	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "ctl_settings_0_N_suitColor1";
 	rename -uid "FCE2C736-41EF-6E39-36D4-93A386A720A2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  49 1 55 1 67 1 76 1 80 1;
+	setAttr -s 6 ".ktv[0:5]"  49 1 55 1 71 1 73 1 82 1 86 1;
 createNode animCurveTU -n "MegaMan_RArm_Buster_MaxHandle";
 	rename -uid "4C5FF46F-4ECC-1156-4757-9D8F0F0117AD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  55 91 62 91 72 91 76 91 80 91;
+	setAttr -s 5 ".ktv[0:4]"  64 91 71 91 81 91 85 91 89 91;
 	setAttr -s 5 ".kit[1:4]"  1 18 18 18;
 	setAttr -s 5 ".kot[1:4]"  1 18 18 18;
 	setAttr -s 5 ".kix[1:4]"  1 1 1 1;
@@ -8956,16 +9007,20 @@ createNode animCurveTU -n "MegaMan_LArm_Buster_MaxHandle";
 	rename -uid "F108DC18-4E9A-9BD7-D673-4A8CD58834B8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  55 82 62 82 72 82 76 82;
+	setAttr -s 4 ".ktv[0:3]"  64 82 71 82 81 82 85 82;
 	setAttr -s 4 ".kit[1:3]"  1 18 18;
 	setAttr -s 4 ".kot[1:3]"  1 18 18;
 	setAttr -s 4 ".kix[1:3]"  1 1 1;
 	setAttr -s 4 ".kiy[1:3]"  0 0 0;
 	setAttr -s 4 ".kox[1:3]"  1 1 1;
 	setAttr -s 4 ".koy[1:3]"  0 0 0;
+createNode displayLayer -n "Controllers";
+	rename -uid "A575BD84-472D-4BA1-821C-C38622EA061F";
+	setAttr ".v" no;
+	setAttr ".ufem" -type "stringArray" 0  ;
+	setAttr ".do" 1;
 select -ne :time1;
-	setAttr ".o" 94;
-	setAttr ".unw" 94;
+	setAttr ".o" 0;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -9031,513 +9086,514 @@ connectAttr "ctl_main_0_N_scaleX.o" "Megaman_Rig_GameReadyRN.phl[12]";
 connectAttr "ctl_main_0_N_scaleY.o" "Megaman_Rig_GameReadyRN.phl[13]";
 connectAttr "ctl_main_0_N_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[14]";
 connectAttr "ctl_main_0_N_SEP001.o" "Megaman_Rig_GameReadyRN.phl[15]";
-connectAttr "ctl_local_0_N_visibility.o" "Megaman_Rig_GameReadyRN.phl[16]";
-connectAttr "ctl_local_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[17]";
-connectAttr "ctl_local_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[18]";
-connectAttr "ctl_local_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[19]";
-connectAttr "ctl_local_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[20]";
-connectAttr "ctl_local_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[21]";
-connectAttr "ctl_local_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[22]";
-connectAttr "ctl_local_0_N_scaleX.o" "Megaman_Rig_GameReadyRN.phl[23]";
-connectAttr "ctl_local_0_N_scaleY.o" "Megaman_Rig_GameReadyRN.phl[24]";
-connectAttr "ctl_local_0_N_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[25]";
-connectAttr "ctl_center_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[26]";
-connectAttr "ctl_center_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[27]";
-connectAttr "ctl_center_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[28]";
-connectAttr "ctl_center_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[29]";
-connectAttr "ctl_center_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[30]";
-connectAttr "ctl_center_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[31]";
-connectAttr "ctl_pelvis_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[32]";
-connectAttr "ctl_pelvis_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[33]";
-connectAttr "ctl_pelvis_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[34]";
-connectAttr "ctl_pelvis_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[35]";
-connectAttr "ctl_pelvis_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[36]";
-connectAttr "ctl_pelvis_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[37]";
-connectAttr "ctl_chest_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[38]";
-connectAttr "ctl_chest_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[39]";
-connectAttr "ctl_chest_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[40]";
-connectAttr "ctl_chest_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[41]";
-connectAttr "ctl_chest_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[42]";
-connectAttr "ctl_chest_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[43]";
-connectAttr "ctl_Clavicle_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[44]";
-connectAttr "ctl_Clavicle_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[45]";
-connectAttr "ctl_Clavicle_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[46]";
-connectAttr "ctl_Clavicle_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[47]";
-connectAttr "ctl_Clavicle_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[48]";
-connectAttr "ctl_Clavicle_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[49]";
-connectAttr "ctl_Clavicle_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[50]";
-connectAttr "ctl_Clavicle_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[51]";
-connectAttr "ctl_Clavicle_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[52]";
-connectAttr "ctl_Clavicle_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[53]";
-connectAttr "ctl_Clavicle_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[54]";
-connectAttr "ctl_Clavicle_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[55]";
-connectAttr "ctl_spineFK_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[56]";
-connectAttr "ctl_spineFK_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[57]";
-connectAttr "ctl_spineFK_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[58]";
-connectAttr "ctl_spineFK_0_N_rotateX1.o" "Megaman_Rig_GameReadyRN.phl[59]";
-connectAttr "ctl_spineFK_0_N_rotateY1.o" "Megaman_Rig_GameReadyRN.phl[60]";
-connectAttr "ctl_spineFK_0_N_rotateZ1.o" "Megaman_Rig_GameReadyRN.phl[61]";
-connectAttr "ctl_spineFK_0_N_translateX1.o" "Megaman_Rig_GameReadyRN.phl[62]";
-connectAttr "ctl_spineFK_0_N_translateY1.o" "Megaman_Rig_GameReadyRN.phl[63]";
-connectAttr "ctl_spineFK_0_N_translateZ1.o" "Megaman_Rig_GameReadyRN.phl[64]";
-connectAttr "ctl_spineFK_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[65]";
-connectAttr "ctl_spineFK_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[66]";
-connectAttr "ctl_spineFK_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[67]";
-connectAttr "ctl_Neck_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[68]";
-connectAttr "ctl_Neck_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[69]";
-connectAttr "ctl_Neck_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[70]";
-connectAttr "ctl_Neck_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[71]";
-connectAttr "ctl_Neck_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[72]";
-connectAttr "ctl_Neck_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[73]";
-connectAttr "ctl_Head_0_N_World.o" "Megaman_Rig_GameReadyRN.phl[74]";
-connectAttr "ctl_Head_0_N_SelectFace.o" "Megaman_Rig_GameReadyRN.phl[75]";
-connectAttr "ctl_Head_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[76]";
-connectAttr "ctl_Head_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[77]";
-connectAttr "ctl_Head_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[78]";
-connectAttr "ctl_Head_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[79]";
-connectAttr "ctl_Head_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[80]";
-connectAttr "ctl_Head_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[81]";
-connectAttr "ctl_Head_0_N_SEP001.o" "Megaman_Rig_GameReadyRN.phl[82]";
-connectAttr "ctl_Head_0_N_SEP002.o" "Megaman_Rig_GameReadyRN.phl[83]";
-connectAttr "ctl_yaw_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[84]";
-connectAttr "ctl_yaw_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[85]";
-connectAttr "ctl_yaw_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[86]";
-connectAttr "ctl_lowerlip_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[87]";
-connectAttr "ctl_lowerlip_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[88]";
-connectAttr "ctl_lowerlip_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[89]";
-connectAttr "ctl_lowerlip_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[90]";
-connectAttr "ctl_lowerlip_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[91]";
-connectAttr "ctl_lowerlip_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[92]";
-connectAttr "ctl_lowerlip_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[93]";
-connectAttr "ctl_lowerlip_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[94]";
-connectAttr "ctl_lowerlip_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[95]";
-connectAttr "ctl_lowerlip_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[96]";
-connectAttr "ctl_lowerlip_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[97]";
-connectAttr "ctl_lowerlip_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[98]";
-connectAttr "ctl_lowerlip_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[99]";
-connectAttr "ctl_lowerlip_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[100]";
-connectAttr "ctl_lowerlip_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[101]";
-connectAttr "ctl_lowerlip_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[102]";
-connectAttr "ctl_lowerlip_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[103]";
-connectAttr "ctl_lowerlip_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[104]";
-connectAttr "ctl_eyebrownInt_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[105]";
-connectAttr "ctl_eyebrownInt_1_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[106]"
+connectAttr "Controllers.di" "Megaman_Rig_GameReadyRN.phl[16]";
+connectAttr "ctl_local_0_N_visibility.o" "Megaman_Rig_GameReadyRN.phl[17]";
+connectAttr "ctl_local_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[18]";
+connectAttr "ctl_local_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[19]";
+connectAttr "ctl_local_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[20]";
+connectAttr "ctl_local_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[21]";
+connectAttr "ctl_local_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[22]";
+connectAttr "ctl_local_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[23]";
+connectAttr "ctl_local_0_N_scaleX.o" "Megaman_Rig_GameReadyRN.phl[24]";
+connectAttr "ctl_local_0_N_scaleY.o" "Megaman_Rig_GameReadyRN.phl[25]";
+connectAttr "ctl_local_0_N_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[26]";
+connectAttr "ctl_center_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[27]";
+connectAttr "ctl_center_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[28]";
+connectAttr "ctl_center_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[29]";
+connectAttr "ctl_center_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[30]";
+connectAttr "ctl_center_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[31]";
+connectAttr "ctl_center_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[32]";
+connectAttr "ctl_pelvis_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[33]";
+connectAttr "ctl_pelvis_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[34]";
+connectAttr "ctl_pelvis_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[35]";
+connectAttr "ctl_pelvis_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[36]";
+connectAttr "ctl_pelvis_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[37]";
+connectAttr "ctl_pelvis_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[38]";
+connectAttr "ctl_chest_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[39]";
+connectAttr "ctl_chest_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[40]";
+connectAttr "ctl_chest_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[41]";
+connectAttr "ctl_chest_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[42]";
+connectAttr "ctl_chest_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[43]";
+connectAttr "ctl_chest_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[44]";
+connectAttr "ctl_Clavicle_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[45]";
+connectAttr "ctl_Clavicle_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[46]";
+connectAttr "ctl_Clavicle_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[47]";
+connectAttr "ctl_Clavicle_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[48]";
+connectAttr "ctl_Clavicle_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[49]";
+connectAttr "ctl_Clavicle_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[50]";
+connectAttr "ctl_Clavicle_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[51]";
+connectAttr "ctl_Clavicle_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[52]";
+connectAttr "ctl_Clavicle_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[53]";
+connectAttr "ctl_Clavicle_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[54]";
+connectAttr "ctl_Clavicle_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[55]";
+connectAttr "ctl_Clavicle_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[56]";
+connectAttr "ctl_spineFK_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[57]";
+connectAttr "ctl_spineFK_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[58]";
+connectAttr "ctl_spineFK_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[59]";
+connectAttr "ctl_spineFK_0_N_rotateX1.o" "Megaman_Rig_GameReadyRN.phl[60]";
+connectAttr "ctl_spineFK_0_N_rotateY1.o" "Megaman_Rig_GameReadyRN.phl[61]";
+connectAttr "ctl_spineFK_0_N_rotateZ1.o" "Megaman_Rig_GameReadyRN.phl[62]";
+connectAttr "ctl_spineFK_0_N_translateX1.o" "Megaman_Rig_GameReadyRN.phl[63]";
+connectAttr "ctl_spineFK_0_N_translateY1.o" "Megaman_Rig_GameReadyRN.phl[64]";
+connectAttr "ctl_spineFK_0_N_translateZ1.o" "Megaman_Rig_GameReadyRN.phl[65]";
+connectAttr "ctl_spineFK_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[66]";
+connectAttr "ctl_spineFK_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[67]";
+connectAttr "ctl_spineFK_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[68]";
+connectAttr "ctl_Neck_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[69]";
+connectAttr "ctl_Neck_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[70]";
+connectAttr "ctl_Neck_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[71]";
+connectAttr "ctl_Neck_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[72]";
+connectAttr "ctl_Neck_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[73]";
+connectAttr "ctl_Neck_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[74]";
+connectAttr "ctl_Head_0_N_World.o" "Megaman_Rig_GameReadyRN.phl[75]";
+connectAttr "ctl_Head_0_N_SelectFace.o" "Megaman_Rig_GameReadyRN.phl[76]";
+connectAttr "ctl_Head_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[77]";
+connectAttr "ctl_Head_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[78]";
+connectAttr "ctl_Head_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[79]";
+connectAttr "ctl_Head_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[80]";
+connectAttr "ctl_Head_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[81]";
+connectAttr "ctl_Head_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[82]";
+connectAttr "ctl_Head_0_N_SEP001.o" "Megaman_Rig_GameReadyRN.phl[83]";
+connectAttr "ctl_Head_0_N_SEP002.o" "Megaman_Rig_GameReadyRN.phl[84]";
+connectAttr "ctl_yaw_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[85]";
+connectAttr "ctl_yaw_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[86]";
+connectAttr "ctl_yaw_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[87]";
+connectAttr "ctl_lowerlip_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[88]";
+connectAttr "ctl_lowerlip_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[89]";
+connectAttr "ctl_lowerlip_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[90]";
+connectAttr "ctl_lowerlip_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[91]";
+connectAttr "ctl_lowerlip_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[92]";
+connectAttr "ctl_lowerlip_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[93]";
+connectAttr "ctl_lowerlip_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[94]";
+connectAttr "ctl_lowerlip_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[95]";
+connectAttr "ctl_lowerlip_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[96]";
+connectAttr "ctl_lowerlip_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[97]";
+connectAttr "ctl_lowerlip_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[98]";
+connectAttr "ctl_lowerlip_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[99]";
+connectAttr "ctl_lowerlip_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[100]";
+connectAttr "ctl_lowerlip_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[101]";
+connectAttr "ctl_lowerlip_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[102]";
+connectAttr "ctl_lowerlip_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[103]";
+connectAttr "ctl_lowerlip_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[104]";
+connectAttr "ctl_lowerlip_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[105]";
+connectAttr "ctl_eyebrownInt_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[106]";
+connectAttr "ctl_eyebrownInt_1_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[107]"
 		;
-connectAttr "ctl_eyebrownInt_1_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[107]"
+connectAttr "ctl_eyebrownInt_1_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[108]"
 		;
-connectAttr "ctl_eyebrownInt_1_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[108]"
+connectAttr "ctl_eyebrownInt_1_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[109]"
 		;
-connectAttr "ctl_eyebrownInt_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[109]"
+connectAttr "ctl_eyebrownInt_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[110]"
 		;
-connectAttr "ctl_eyebrownInt_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[110]"
+connectAttr "ctl_eyebrownInt_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[111]"
 		;
-connectAttr "ctl_eyebrownInt_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[111]"
+connectAttr "ctl_eyebrownInt_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[112]"
 		;
-connectAttr "ctl_upperlip_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[112]";
-connectAttr "ctl_upperlip_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[113]";
-connectAttr "ctl_upperlip_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[114]";
-connectAttr "ctl_upperlip_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[115]";
-connectAttr "ctl_upperlip_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[116]";
-connectAttr "ctl_upperlip_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[117]";
-connectAttr "ctl_eyebrownInt_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[118]";
-connectAttr "ctl_eyebrownInt_1_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[119]"
+connectAttr "ctl_upperlip_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[113]";
+connectAttr "ctl_upperlip_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[114]";
+connectAttr "ctl_upperlip_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[115]";
+connectAttr "ctl_upperlip_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[116]";
+connectAttr "ctl_upperlip_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[117]";
+connectAttr "ctl_upperlip_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[118]";
+connectAttr "ctl_eyebrownInt_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[119]";
+connectAttr "ctl_eyebrownInt_1_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[120]"
 		;
-connectAttr "ctl_eyebrownInt_1_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[120]"
+connectAttr "ctl_eyebrownInt_1_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[121]"
 		;
-connectAttr "ctl_eyebrownInt_1_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[121]"
+connectAttr "ctl_eyebrownInt_1_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[122]"
 		;
-connectAttr "ctl_eyebrownInt_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[122]"
+connectAttr "ctl_eyebrownInt_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[123]"
 		;
-connectAttr "ctl_eyebrownInt_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[123]"
+connectAttr "ctl_eyebrownInt_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[124]"
 		;
-connectAttr "ctl_eyebrownInt_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[124]"
+connectAttr "ctl_eyebrownInt_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[125]"
 		;
-connectAttr "ctl_upperlip_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[125]";
-connectAttr "ctl_upperlip_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[126]";
-connectAttr "ctl_upperlip_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[127]";
-connectAttr "ctl_upperlip_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[128]";
-connectAttr "ctl_upperlip_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[129]";
-connectAttr "ctl_upperlip_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[130]";
-connectAttr "ctl_cornerlip_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[131]";
-connectAttr "ctl_cornerlip_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[132]";
-connectAttr "ctl_cornerlip_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[133]";
-connectAttr "ctl_cornerlip_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[134]";
-connectAttr "ctl_cornerlip_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[135]";
-connectAttr "ctl_cornerlip_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[136]";
-connectAttr "ctl_cornerlip_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[137]";
-connectAttr "ctl_cornerlip_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[138]";
-connectAttr "ctl_cornerlip_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[139]";
-connectAttr "ctl_cornerlip_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[140]";
-connectAttr "ctl_cornerlip_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[141]";
-connectAttr "ctl_cornerlip_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[142]";
-connectAttr "ctl_upperlip_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[143]";
-connectAttr "ctl_upperlip_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[144]";
-connectAttr "ctl_upperlip_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[145]";
-connectAttr "ctl_upperlip_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[146]";
-connectAttr "ctl_upperlip_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[147]";
-connectAttr "ctl_upperlip_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[148]";
-connectAttr "ctl_eyes_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[149]";
-connectAttr "ctl_eyes_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[150]";
-connectAttr "ctl_eyes_0_N_BlinkLeft.o" "Megaman_Rig_GameReadyRN.phl[151]";
-connectAttr "ctl_eyes_0_N_BlinkRight.o" "Megaman_Rig_GameReadyRN.phl[152]";
-connectAttr "ctl_eyes_0_N_YellowPupil.o" "Megaman_Rig_GameReadyRN.phl[153]";
-connectAttr "ctl_eyes_0_N_SEP001.o" "Megaman_Rig_GameReadyRN.phl[154]";
-connectAttr "ctl_eye_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[155]";
-connectAttr "ctl_eye_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[156]";
-connectAttr "ctl_eye_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[157]";
-connectAttr "ctl_eye_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[158]";
-connectAttr "ctl_armSwitch_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[159]";
-connectAttr "ctl_Shoulder_0_L_clavicleFollow.o" "Megaman_Rig_GameReadyRN.phl[160]"
+connectAttr "ctl_upperlip_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[126]";
+connectAttr "ctl_upperlip_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[127]";
+connectAttr "ctl_upperlip_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[128]";
+connectAttr "ctl_upperlip_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[129]";
+connectAttr "ctl_upperlip_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[130]";
+connectAttr "ctl_upperlip_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[131]";
+connectAttr "ctl_cornerlip_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[132]";
+connectAttr "ctl_cornerlip_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[133]";
+connectAttr "ctl_cornerlip_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[134]";
+connectAttr "ctl_cornerlip_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[135]";
+connectAttr "ctl_cornerlip_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[136]";
+connectAttr "ctl_cornerlip_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[137]";
+connectAttr "ctl_cornerlip_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[138]";
+connectAttr "ctl_cornerlip_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[139]";
+connectAttr "ctl_cornerlip_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[140]";
+connectAttr "ctl_cornerlip_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[141]";
+connectAttr "ctl_cornerlip_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[142]";
+connectAttr "ctl_cornerlip_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[143]";
+connectAttr "ctl_upperlip_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[144]";
+connectAttr "ctl_upperlip_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[145]";
+connectAttr "ctl_upperlip_0_N_translateZ.o" "Megaman_Rig_GameReadyRN.phl[146]";
+connectAttr "ctl_upperlip_0_N_rotateX.o" "Megaman_Rig_GameReadyRN.phl[147]";
+connectAttr "ctl_upperlip_0_N_rotateY.o" "Megaman_Rig_GameReadyRN.phl[148]";
+connectAttr "ctl_upperlip_0_N_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[149]";
+connectAttr "ctl_eyes_0_N_translateX.o" "Megaman_Rig_GameReadyRN.phl[150]";
+connectAttr "ctl_eyes_0_N_translateY.o" "Megaman_Rig_GameReadyRN.phl[151]";
+connectAttr "ctl_eyes_0_N_BlinkLeft.o" "Megaman_Rig_GameReadyRN.phl[152]";
+connectAttr "ctl_eyes_0_N_BlinkRight.o" "Megaman_Rig_GameReadyRN.phl[153]";
+connectAttr "ctl_eyes_0_N_YellowPupil.o" "Megaman_Rig_GameReadyRN.phl[154]";
+connectAttr "ctl_eyes_0_N_SEP001.o" "Megaman_Rig_GameReadyRN.phl[155]";
+connectAttr "ctl_eye_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[156]";
+connectAttr "ctl_eye_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[157]";
+connectAttr "ctl_eye_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[158]";
+connectAttr "ctl_eye_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[159]";
+connectAttr "ctl_armSwitch_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[160]";
+connectAttr "ctl_Shoulder_0_L_clavicleFollow.o" "Megaman_Rig_GameReadyRN.phl[161]"
 		;
-connectAttr "ctl_Shoulder_0_L_Stretch.o" "Megaman_Rig_GameReadyRN.phl[161]";
-connectAttr "ctl_Shoulder_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[162]";
-connectAttr "ctl_Shoulder_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[163]";
-connectAttr "ctl_Shoulder_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[164]";
-connectAttr "ctl_elbow_0_L_Stretch.o" "Megaman_Rig_GameReadyRN.phl[165]";
-connectAttr "ctl_elbow_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[166]";
-connectAttr "ctl_elbow_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[167]";
-connectAttr "ctl_elbow_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[168]";
-connectAttr "ctl_elbow_0_L_SEP001.o" "Megaman_Rig_GameReadyRN.phl[169]";
-connectAttr "ctl_Hand_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[170]";
-connectAttr "ctl_Hand_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[171]";
-connectAttr "ctl_Hand_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[172]";
-connectAttr "ctl_Hand_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[173]";
-connectAttr "ctl_Hand_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[174]";
-connectAttr "ctl_Hand_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[175]";
-connectAttr "ctl_thumb_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[176]";
-connectAttr "ctl_thumb_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[177]";
-connectAttr "ctl_thumb_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[178]";
-connectAttr "ctl_thumb_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[179]";
-connectAttr "ctl_thumb_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[180]";
-connectAttr "ctl_thumb_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[181]";
-connectAttr "ctl_thumb_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[182]";
-connectAttr "ctl_thumb_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[183]";
-connectAttr "ctl_thumb_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[184]";
-connectAttr "ctl_pinky_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[185]";
-connectAttr "ctl_pinky_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[186]";
-connectAttr "ctl_pinky_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[187]";
-connectAttr "ctl_pinky_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[188]";
-connectAttr "ctl_pinky_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[189]";
-connectAttr "ctl_pinky_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[190]";
-connectAttr "ctl_pinky_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[191]";
-connectAttr "ctl_pinky_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[192]";
-connectAttr "ctl_pinky_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[193]";
-connectAttr "ctl_pinky_3_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[194]";
-connectAttr "ctl_pinky_3_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[195]";
-connectAttr "ctl_pinky_3_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[196]";
-connectAttr "ctl_ring_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[197]";
-connectAttr "ctl_ring_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[198]";
-connectAttr "ctl_ring_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[199]";
-connectAttr "ctl_ring_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[200]";
-connectAttr "ctl_ring_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[201]";
-connectAttr "ctl_ring_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[202]";
-connectAttr "ctl_ring_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[203]";
-connectAttr "ctl_ring_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[204]";
-connectAttr "ctl_ring_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[205]";
-connectAttr "ctl_ring_3_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[206]";
-connectAttr "ctl_ring_3_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[207]";
-connectAttr "ctl_ring_3_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[208]";
-connectAttr "ctl_middle_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[209]";
-connectAttr "ctl_middle_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[210]";
-connectAttr "ctl_middle_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[211]";
-connectAttr "ctl_middle_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[212]";
-connectAttr "ctl_middle_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[213]";
-connectAttr "ctl_middle_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[214]";
-connectAttr "ctl_middle_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[215]";
-connectAttr "ctl_middle_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[216]";
-connectAttr "ctl_middle_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[217]";
-connectAttr "ctl_middle_3_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[218]";
-connectAttr "ctl_middle_3_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[219]";
-connectAttr "ctl_middle_3_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[220]";
-connectAttr "ctl_index_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[221]";
-connectAttr "ctl_index_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[222]";
-connectAttr "ctl_index_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[223]";
-connectAttr "ctl_index_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[224]";
-connectAttr "ctl_index_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[225]";
-connectAttr "ctl_index_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[226]";
-connectAttr "ctl_index_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[227]";
-connectAttr "ctl_index_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[228]";
-connectAttr "ctl_index_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[229]";
-connectAttr "ctl_index_3_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[230]";
-connectAttr "ctl_index_3_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[231]";
-connectAttr "ctl_index_3_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[232]";
-connectAttr "ctl_handSettings_0_L_SEP001.o" "Megaman_Rig_GameReadyRN.phl[233]";
-connectAttr "ctl_handSettings_0_L_Fist.o" "Megaman_Rig_GameReadyRN.phl[234]";
-connectAttr "ctl_handSettings_0_L_Relax.o" "Megaman_Rig_GameReadyRN.phl[235]";
-connectAttr "ctl_handSettings_0_L_Buster.o" "Megaman_Rig_GameReadyRN.phl[236]";
-connectAttr "ctl_handSettings_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[237]"
+connectAttr "ctl_Shoulder_0_L_Stretch.o" "Megaman_Rig_GameReadyRN.phl[162]";
+connectAttr "ctl_Shoulder_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[163]";
+connectAttr "ctl_Shoulder_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[164]";
+connectAttr "ctl_Shoulder_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[165]";
+connectAttr "ctl_elbow_0_L_Stretch.o" "Megaman_Rig_GameReadyRN.phl[166]";
+connectAttr "ctl_elbow_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[167]";
+connectAttr "ctl_elbow_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[168]";
+connectAttr "ctl_elbow_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[169]";
+connectAttr "ctl_elbow_0_L_SEP001.o" "Megaman_Rig_GameReadyRN.phl[170]";
+connectAttr "ctl_Hand_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[171]";
+connectAttr "ctl_Hand_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[172]";
+connectAttr "ctl_Hand_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[173]";
+connectAttr "ctl_Hand_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[174]";
+connectAttr "ctl_Hand_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[175]";
+connectAttr "ctl_Hand_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[176]";
+connectAttr "ctl_thumb_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[177]";
+connectAttr "ctl_thumb_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[178]";
+connectAttr "ctl_thumb_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[179]";
+connectAttr "ctl_thumb_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[180]";
+connectAttr "ctl_thumb_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[181]";
+connectAttr "ctl_thumb_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[182]";
+connectAttr "ctl_thumb_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[183]";
+connectAttr "ctl_thumb_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[184]";
+connectAttr "ctl_thumb_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[185]";
+connectAttr "ctl_pinky_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[186]";
+connectAttr "ctl_pinky_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[187]";
+connectAttr "ctl_pinky_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[188]";
+connectAttr "ctl_pinky_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[189]";
+connectAttr "ctl_pinky_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[190]";
+connectAttr "ctl_pinky_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[191]";
+connectAttr "ctl_pinky_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[192]";
+connectAttr "ctl_pinky_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[193]";
+connectAttr "ctl_pinky_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[194]";
+connectAttr "ctl_pinky_3_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[195]";
+connectAttr "ctl_pinky_3_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[196]";
+connectAttr "ctl_pinky_3_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[197]";
+connectAttr "ctl_ring_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[198]";
+connectAttr "ctl_ring_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[199]";
+connectAttr "ctl_ring_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[200]";
+connectAttr "ctl_ring_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[201]";
+connectAttr "ctl_ring_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[202]";
+connectAttr "ctl_ring_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[203]";
+connectAttr "ctl_ring_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[204]";
+connectAttr "ctl_ring_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[205]";
+connectAttr "ctl_ring_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[206]";
+connectAttr "ctl_ring_3_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[207]";
+connectAttr "ctl_ring_3_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[208]";
+connectAttr "ctl_ring_3_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[209]";
+connectAttr "ctl_middle_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[210]";
+connectAttr "ctl_middle_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[211]";
+connectAttr "ctl_middle_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[212]";
+connectAttr "ctl_middle_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[213]";
+connectAttr "ctl_middle_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[214]";
+connectAttr "ctl_middle_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[215]";
+connectAttr "ctl_middle_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[216]";
+connectAttr "ctl_middle_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[217]";
+connectAttr "ctl_middle_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[218]";
+connectAttr "ctl_middle_3_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[219]";
+connectAttr "ctl_middle_3_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[220]";
+connectAttr "ctl_middle_3_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[221]";
+connectAttr "ctl_index_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[222]";
+connectAttr "ctl_index_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[223]";
+connectAttr "ctl_index_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[224]";
+connectAttr "ctl_index_1_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[225]";
+connectAttr "ctl_index_1_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[226]";
+connectAttr "ctl_index_1_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[227]";
+connectAttr "ctl_index_2_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[228]";
+connectAttr "ctl_index_2_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[229]";
+connectAttr "ctl_index_2_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[230]";
+connectAttr "ctl_index_3_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[231]";
+connectAttr "ctl_index_3_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[232]";
+connectAttr "ctl_index_3_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[233]";
+connectAttr "ctl_handSettings_0_L_SEP001.o" "Megaman_Rig_GameReadyRN.phl[234]";
+connectAttr "ctl_handSettings_0_L_Fist.o" "Megaman_Rig_GameReadyRN.phl[235]";
+connectAttr "ctl_handSettings_0_L_Relax.o" "Megaman_Rig_GameReadyRN.phl[236]";
+connectAttr "ctl_handSettings_0_L_Buster.o" "Megaman_Rig_GameReadyRN.phl[237]";
+connectAttr "ctl_handSettings_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[238]"
 		;
-connectAttr "ctl_handSettings_0_L_SEP002.o" "Megaman_Rig_GameReadyRN.phl[238]";
-connectAttr "ctl_Shoulder_0_R_clavicleFollow.o" "Megaman_Rig_GameReadyRN.phl[239]"
+connectAttr "ctl_handSettings_0_L_SEP002.o" "Megaman_Rig_GameReadyRN.phl[239]";
+connectAttr "ctl_Shoulder_0_R_clavicleFollow.o" "Megaman_Rig_GameReadyRN.phl[240]"
 		;
-connectAttr "ctl_Shoulder_0_R_Stretch.o" "Megaman_Rig_GameReadyRN.phl[240]";
-connectAttr "ctl_Shoulder_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[241]";
-connectAttr "ctl_Shoulder_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[242]";
-connectAttr "ctl_Shoulder_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[243]";
-connectAttr "ctl_elbow_0_R_Stretch.o" "Megaman_Rig_GameReadyRN.phl[244]";
-connectAttr "ctl_elbow_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[245]";
-connectAttr "ctl_elbow_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[246]";
-connectAttr "ctl_elbow_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[247]";
-connectAttr "ctl_elbow_0_R_SEP001.o" "Megaman_Rig_GameReadyRN.phl[248]";
-connectAttr "ctl_Hand_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[249]";
-connectAttr "ctl_Hand_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[250]";
-connectAttr "ctl_Hand_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[251]";
-connectAttr "ctl_Hand_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[252]";
-connectAttr "ctl_Hand_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[253]";
-connectAttr "ctl_Hand_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[254]";
-connectAttr "ctl_armSwitch_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[255]";
-connectAttr "ctl_index_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[256]";
-connectAttr "ctl_index_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[257]";
-connectAttr "ctl_index_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[258]";
-connectAttr "ctl_index_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[259]";
-connectAttr "ctl_index_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[260]";
-connectAttr "ctl_index_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[261]";
-connectAttr "ctl_index_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[262]";
-connectAttr "ctl_index_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[263]";
-connectAttr "ctl_index_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[264]";
-connectAttr "ctl_index_3_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[265]";
-connectAttr "ctl_index_3_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[266]";
-connectAttr "ctl_index_3_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[267]";
-connectAttr "ctl_middle_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[268]";
-connectAttr "ctl_middle_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[269]";
-connectAttr "ctl_middle_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[270]";
-connectAttr "ctl_middle_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[271]";
-connectAttr "ctl_middle_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[272]";
-connectAttr "ctl_middle_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[273]";
-connectAttr "ctl_middle_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[274]";
-connectAttr "ctl_middle_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[275]";
-connectAttr "ctl_middle_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[276]";
-connectAttr "ctl_middle_3_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[277]";
-connectAttr "ctl_middle_3_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[278]";
-connectAttr "ctl_middle_3_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[279]";
-connectAttr "ctl_ring_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[280]";
-connectAttr "ctl_ring_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[281]";
-connectAttr "ctl_ring_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[282]";
-connectAttr "ctl_ring_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[283]";
-connectAttr "ctl_ring_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[284]";
-connectAttr "ctl_ring_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[285]";
-connectAttr "ctl_ring_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[286]";
-connectAttr "ctl_ring_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[287]";
-connectAttr "ctl_ring_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[288]";
-connectAttr "ctl_ring_3_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[289]";
-connectAttr "ctl_ring_3_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[290]";
-connectAttr "ctl_ring_3_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[291]";
-connectAttr "ctl_pinky_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[292]";
-connectAttr "ctl_pinky_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[293]";
-connectAttr "ctl_pinky_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[294]";
-connectAttr "ctl_pinky_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[295]";
-connectAttr "ctl_pinky_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[296]";
-connectAttr "ctl_pinky_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[297]";
-connectAttr "ctl_pinky_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[298]";
-connectAttr "ctl_pinky_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[299]";
-connectAttr "ctl_pinky_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[300]";
-connectAttr "ctl_pinky_3_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[301]";
-connectAttr "ctl_pinky_3_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[302]";
-connectAttr "ctl_pinky_3_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[303]";
-connectAttr "ctl_thumb_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[304]";
-connectAttr "ctl_thumb_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[305]";
-connectAttr "ctl_thumb_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[306]";
-connectAttr "ctl_thumb_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[307]";
-connectAttr "ctl_thumb_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[308]";
-connectAttr "ctl_thumb_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[309]";
-connectAttr "ctl_thumb_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[310]";
-connectAttr "ctl_thumb_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[311]";
-connectAttr "ctl_thumb_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[312]";
-connectAttr "ctl_handSettings_0_R_SEP001.o" "Megaman_Rig_GameReadyRN.phl[313]";
-connectAttr "ctl_handSettings_0_R_Fist.o" "Megaman_Rig_GameReadyRN.phl[314]";
-connectAttr "ctl_handSettings_0_R_Relax.o" "Megaman_Rig_GameReadyRN.phl[315]";
-connectAttr "ctl_handSettings_0_R_Buster.o" "Megaman_Rig_GameReadyRN.phl[316]";
-connectAttr "ctl_handSettings_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[317]"
+connectAttr "ctl_Shoulder_0_R_Stretch.o" "Megaman_Rig_GameReadyRN.phl[241]";
+connectAttr "ctl_Shoulder_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[242]";
+connectAttr "ctl_Shoulder_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[243]";
+connectAttr "ctl_Shoulder_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[244]";
+connectAttr "ctl_elbow_0_R_Stretch.o" "Megaman_Rig_GameReadyRN.phl[245]";
+connectAttr "ctl_elbow_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[246]";
+connectAttr "ctl_elbow_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[247]";
+connectAttr "ctl_elbow_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[248]";
+connectAttr "ctl_elbow_0_R_SEP001.o" "Megaman_Rig_GameReadyRN.phl[249]";
+connectAttr "ctl_Hand_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[250]";
+connectAttr "ctl_Hand_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[251]";
+connectAttr "ctl_Hand_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[252]";
+connectAttr "ctl_Hand_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[253]";
+connectAttr "ctl_Hand_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[254]";
+connectAttr "ctl_Hand_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[255]";
+connectAttr "ctl_armSwitch_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[256]";
+connectAttr "ctl_index_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[257]";
+connectAttr "ctl_index_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[258]";
+connectAttr "ctl_index_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[259]";
+connectAttr "ctl_index_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[260]";
+connectAttr "ctl_index_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[261]";
+connectAttr "ctl_index_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[262]";
+connectAttr "ctl_index_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[263]";
+connectAttr "ctl_index_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[264]";
+connectAttr "ctl_index_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[265]";
+connectAttr "ctl_index_3_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[266]";
+connectAttr "ctl_index_3_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[267]";
+connectAttr "ctl_index_3_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[268]";
+connectAttr "ctl_middle_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[269]";
+connectAttr "ctl_middle_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[270]";
+connectAttr "ctl_middle_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[271]";
+connectAttr "ctl_middle_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[272]";
+connectAttr "ctl_middle_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[273]";
+connectAttr "ctl_middle_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[274]";
+connectAttr "ctl_middle_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[275]";
+connectAttr "ctl_middle_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[276]";
+connectAttr "ctl_middle_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[277]";
+connectAttr "ctl_middle_3_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[278]";
+connectAttr "ctl_middle_3_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[279]";
+connectAttr "ctl_middle_3_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[280]";
+connectAttr "ctl_ring_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[281]";
+connectAttr "ctl_ring_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[282]";
+connectAttr "ctl_ring_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[283]";
+connectAttr "ctl_ring_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[284]";
+connectAttr "ctl_ring_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[285]";
+connectAttr "ctl_ring_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[286]";
+connectAttr "ctl_ring_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[287]";
+connectAttr "ctl_ring_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[288]";
+connectAttr "ctl_ring_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[289]";
+connectAttr "ctl_ring_3_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[290]";
+connectAttr "ctl_ring_3_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[291]";
+connectAttr "ctl_ring_3_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[292]";
+connectAttr "ctl_pinky_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[293]";
+connectAttr "ctl_pinky_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[294]";
+connectAttr "ctl_pinky_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[295]";
+connectAttr "ctl_pinky_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[296]";
+connectAttr "ctl_pinky_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[297]";
+connectAttr "ctl_pinky_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[298]";
+connectAttr "ctl_pinky_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[299]";
+connectAttr "ctl_pinky_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[300]";
+connectAttr "ctl_pinky_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[301]";
+connectAttr "ctl_pinky_3_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[302]";
+connectAttr "ctl_pinky_3_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[303]";
+connectAttr "ctl_pinky_3_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[304]";
+connectAttr "ctl_thumb_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[305]";
+connectAttr "ctl_thumb_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[306]";
+connectAttr "ctl_thumb_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[307]";
+connectAttr "ctl_thumb_1_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[308]";
+connectAttr "ctl_thumb_1_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[309]";
+connectAttr "ctl_thumb_1_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[310]";
+connectAttr "ctl_thumb_2_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[311]";
+connectAttr "ctl_thumb_2_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[312]";
+connectAttr "ctl_thumb_2_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[313]";
+connectAttr "ctl_handSettings_0_R_SEP001.o" "Megaman_Rig_GameReadyRN.phl[314]";
+connectAttr "ctl_handSettings_0_R_Fist.o" "Megaman_Rig_GameReadyRN.phl[315]";
+connectAttr "ctl_handSettings_0_R_Relax.o" "Megaman_Rig_GameReadyRN.phl[316]";
+connectAttr "ctl_handSettings_0_R_Buster.o" "Megaman_Rig_GameReadyRN.phl[317]";
+connectAttr "ctl_handSettings_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[318]"
 		;
-connectAttr "ctl_handSettings_0_R_SEP002.o" "Megaman_Rig_GameReadyRN.phl[318]";
-connectAttr "ctl_legPole_0_R_PelvisFollow.o" "Megaman_Rig_GameReadyRN.phl[319]";
-connectAttr "ctl_legPole_0_R_FootFollow.o" "Megaman_Rig_GameReadyRN.phl[320]";
-connectAttr "ctl_legPole_0_R_Pin.o" "Megaman_Rig_GameReadyRN.phl[321]";
-connectAttr "ctl_legPole_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[322]";
-connectAttr "ctl_legPole_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[323]";
-connectAttr "ctl_legPole_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[324]";
-connectAttr "ctl_legPole_0_R_SEP001.o" "Megaman_Rig_GameReadyRN.phl[325]";
-connectAttr "ctl_legPole_0_R_SEP002.o" "Megaman_Rig_GameReadyRN.phl[326]";
-connectAttr "ctl_footIK_0_R_pelvisFollow.o" "Megaman_Rig_GameReadyRN.phl[327]";
-connectAttr "ctl_footIK_0_R_StretchOn.o" "Megaman_Rig_GameReadyRN.phl[328]";
-connectAttr "ctl_footIK_0_R_heelToe.o" "Megaman_Rig_GameReadyRN.phl[329]";
-connectAttr "ctl_footIK_0_R_BankExtInt.o" "Megaman_Rig_GameReadyRN.phl[330]";
-connectAttr "ctl_footIK_0_R_BallBreak.o" "Megaman_Rig_GameReadyRN.phl[331]";
-connectAttr "ctl_footIK_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[332]";
-connectAttr "ctl_footIK_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[333]";
-connectAttr "ctl_footIK_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[334]";
-connectAttr "ctl_footIK_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[335]";
-connectAttr "ctl_footIK_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[336]";
-connectAttr "ctl_footIK_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[337]";
-connectAttr "ctl_footIK_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[338]";
-connectAttr "ctl_footIK_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[339]";
-connectAttr "ctl_footIK_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[340]";
-connectAttr "ctl_footIK_0_R_SEP001.o" "Megaman_Rig_GameReadyRN.phl[341]";
-connectAttr "ctl_footIK_0_R_SEP002.o" "Megaman_Rig_GameReadyRN.phl[342]";
-connectAttr "ctl_legSwitch_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[343]";
-connectAttr "ctl_ball_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[344]";
-connectAttr "ctl_ball_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[345]";
-connectAttr "ctl_ball_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[346]";
-connectAttr "ctl_footIK_0_L_pelvisFollow.o" "Megaman_Rig_GameReadyRN.phl[347]";
-connectAttr "ctl_footIK_0_L_StretchOn.o" "Megaman_Rig_GameReadyRN.phl[348]";
-connectAttr "ctl_footIK_0_L_heelToe.o" "Megaman_Rig_GameReadyRN.phl[349]";
-connectAttr "ctl_footIK_0_L_BankExtInt.o" "Megaman_Rig_GameReadyRN.phl[350]";
-connectAttr "ctl_footIK_0_L_BallBreak.o" "Megaman_Rig_GameReadyRN.phl[351]";
-connectAttr "ctl_footIK_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[352]";
-connectAttr "ctl_footIK_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[353]";
-connectAttr "ctl_footIK_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[354]";
-connectAttr "ctl_footIK_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[355]";
-connectAttr "ctl_footIK_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[356]";
-connectAttr "ctl_footIK_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[357]";
-connectAttr "ctl_footIK_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[358]";
-connectAttr "ctl_footIK_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[359]";
-connectAttr "ctl_footIK_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[360]";
-connectAttr "ctl_footIK_0_L_SEP001.o" "Megaman_Rig_GameReadyRN.phl[361]";
-connectAttr "ctl_footIK_0_L_SEP002.o" "Megaman_Rig_GameReadyRN.phl[362]";
-connectAttr "ctl_legPole_0_L_PelvisFollow.o" "Megaman_Rig_GameReadyRN.phl[363]";
-connectAttr "ctl_legPole_0_L_FootFollow.o" "Megaman_Rig_GameReadyRN.phl[364]";
-connectAttr "ctl_legPole_0_L_Pin.o" "Megaman_Rig_GameReadyRN.phl[365]";
-connectAttr "ctl_legPole_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[366]";
-connectAttr "ctl_legPole_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[367]";
-connectAttr "ctl_legPole_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[368]";
-connectAttr "ctl_legPole_0_L_SEP001.o" "Megaman_Rig_GameReadyRN.phl[369]";
-connectAttr "ctl_legPole_0_L_SEP002.o" "Megaman_Rig_GameReadyRN.phl[370]";
-connectAttr "ctl_legSwitch_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[371]";
-connectAttr "ctl_ball_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[372]";
-connectAttr "ctl_ball_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[373]";
-connectAttr "ctl_ball_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[374]";
-connectAttr "MegaMan_Body_visibility.o" "Megaman_Rig_GameReadyRN.phl[375]";
-connectAttr "MegaMan_HandArm_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[376]";
-connectAttr "MegaMan_HandArm_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[377]";
-connectAttr "MegaMan_RArm_Buster_MaxHandle.o" "Megaman_Rig_GameReadyRN.phl[378]"
+connectAttr "ctl_handSettings_0_R_SEP002.o" "Megaman_Rig_GameReadyRN.phl[319]";
+connectAttr "ctl_legPole_0_R_PelvisFollow.o" "Megaman_Rig_GameReadyRN.phl[320]";
+connectAttr "ctl_legPole_0_R_FootFollow.o" "Megaman_Rig_GameReadyRN.phl[321]";
+connectAttr "ctl_legPole_0_R_Pin.o" "Megaman_Rig_GameReadyRN.phl[322]";
+connectAttr "ctl_legPole_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[323]";
+connectAttr "ctl_legPole_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[324]";
+connectAttr "ctl_legPole_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[325]";
+connectAttr "ctl_legPole_0_R_SEP001.o" "Megaman_Rig_GameReadyRN.phl[326]";
+connectAttr "ctl_legPole_0_R_SEP002.o" "Megaman_Rig_GameReadyRN.phl[327]";
+connectAttr "ctl_footIK_0_R_pelvisFollow.o" "Megaman_Rig_GameReadyRN.phl[328]";
+connectAttr "ctl_footIK_0_R_StretchOn.o" "Megaman_Rig_GameReadyRN.phl[329]";
+connectAttr "ctl_footIK_0_R_heelToe.o" "Megaman_Rig_GameReadyRN.phl[330]";
+connectAttr "ctl_footIK_0_R_BankExtInt.o" "Megaman_Rig_GameReadyRN.phl[331]";
+connectAttr "ctl_footIK_0_R_BallBreak.o" "Megaman_Rig_GameReadyRN.phl[332]";
+connectAttr "ctl_footIK_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[333]";
+connectAttr "ctl_footIK_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[334]";
+connectAttr "ctl_footIK_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[335]";
+connectAttr "ctl_footIK_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[336]";
+connectAttr "ctl_footIK_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[337]";
+connectAttr "ctl_footIK_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[338]";
+connectAttr "ctl_footIK_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[339]";
+connectAttr "ctl_footIK_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[340]";
+connectAttr "ctl_footIK_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[341]";
+connectAttr "ctl_footIK_0_R_SEP001.o" "Megaman_Rig_GameReadyRN.phl[342]";
+connectAttr "ctl_footIK_0_R_SEP002.o" "Megaman_Rig_GameReadyRN.phl[343]";
+connectAttr "ctl_legSwitch_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[344]";
+connectAttr "ctl_ball_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[345]";
+connectAttr "ctl_ball_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[346]";
+connectAttr "ctl_ball_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[347]";
+connectAttr "ctl_footIK_0_L_pelvisFollow.o" "Megaman_Rig_GameReadyRN.phl[348]";
+connectAttr "ctl_footIK_0_L_StretchOn.o" "Megaman_Rig_GameReadyRN.phl[349]";
+connectAttr "ctl_footIK_0_L_heelToe.o" "Megaman_Rig_GameReadyRN.phl[350]";
+connectAttr "ctl_footIK_0_L_BankExtInt.o" "Megaman_Rig_GameReadyRN.phl[351]";
+connectAttr "ctl_footIK_0_L_BallBreak.o" "Megaman_Rig_GameReadyRN.phl[352]";
+connectAttr "ctl_footIK_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[353]";
+connectAttr "ctl_footIK_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[354]";
+connectAttr "ctl_footIK_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[355]";
+connectAttr "ctl_footIK_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[356]";
+connectAttr "ctl_footIK_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[357]";
+connectAttr "ctl_footIK_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[358]";
+connectAttr "ctl_footIK_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[359]";
+connectAttr "ctl_footIK_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[360]";
+connectAttr "ctl_footIK_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[361]";
+connectAttr "ctl_footIK_0_L_SEP001.o" "Megaman_Rig_GameReadyRN.phl[362]";
+connectAttr "ctl_footIK_0_L_SEP002.o" "Megaman_Rig_GameReadyRN.phl[363]";
+connectAttr "ctl_legPole_0_L_PelvisFollow.o" "Megaman_Rig_GameReadyRN.phl[364]";
+connectAttr "ctl_legPole_0_L_FootFollow.o" "Megaman_Rig_GameReadyRN.phl[365]";
+connectAttr "ctl_legPole_0_L_Pin.o" "Megaman_Rig_GameReadyRN.phl[366]";
+connectAttr "ctl_legPole_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[367]";
+connectAttr "ctl_legPole_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[368]";
+connectAttr "ctl_legPole_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[369]";
+connectAttr "ctl_legPole_0_L_SEP001.o" "Megaman_Rig_GameReadyRN.phl[370]";
+connectAttr "ctl_legPole_0_L_SEP002.o" "Megaman_Rig_GameReadyRN.phl[371]";
+connectAttr "ctl_legSwitch_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[372]";
+connectAttr "ctl_ball_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[373]";
+connectAttr "ctl_ball_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[374]";
+connectAttr "ctl_ball_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[375]";
+connectAttr "MegaMan_Body_visibility.o" "Megaman_Rig_GameReadyRN.phl[376]";
+connectAttr "MegaMan_HandArm_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[377]";
+connectAttr "MegaMan_HandArm_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[378]";
+connectAttr "MegaMan_RArm_Buster_MaxHandle.o" "Megaman_Rig_GameReadyRN.phl[379]"
 		;
-connectAttr "MegaMan_LArm_Buster_MaxHandle.o" "Megaman_Rig_GameReadyRN.phl[379]"
+connectAttr "MegaMan_LArm_Buster_MaxHandle.o" "Megaman_Rig_GameReadyRN.phl[380]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[380]"
+connectAttr "ikCrv_shoulderTwist_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[381]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[381]"
+connectAttr "ikCrv_shoulderTwist_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[382]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[382]"
+connectAttr "ikCrv_shoulderTwist_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[383]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[383]"
+connectAttr "ikCrv_shoulderTwist_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[384]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[384]"
+connectAttr "ikCrv_shoulderTwist_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[385]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[385]"
+connectAttr "ikCrv_shoulderTwist_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[386]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[386]"
+connectAttr "ikCrv_shoulderTwist_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[387]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[387]"
+connectAttr "ikCrv_shoulderTwist_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[388]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[388]"
+connectAttr "ikCrv_shoulderTwist_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[389]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[389]"
+connectAttr "ikCrv_shoulderTwist_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[390]"
 		;
-connectAttr "ikCrv_elbowTwist_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[390]"
+connectAttr "ikCrv_elbowTwist_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[391]"
 		;
-connectAttr "ikCrv_elbowTwist_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[391]"
+connectAttr "ikCrv_elbowTwist_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[392]"
 		;
-connectAttr "ikCrv_elbowTwist_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[392]"
+connectAttr "ikCrv_elbowTwist_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[393]"
 		;
-connectAttr "ikCrv_elbowTwist_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[393]"
+connectAttr "ikCrv_elbowTwist_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[394]"
 		;
-connectAttr "ikCrv_elbowTwist_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[394]";
-connectAttr "ikCrv_elbowTwist_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[395]";
-connectAttr "ikCrv_elbowTwist_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[396]";
-connectAttr "ikCrv_elbowTwist_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[397]";
-connectAttr "ikCrv_elbowTwist_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[398]";
-connectAttr "ikCrv_elbowTwist_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[399]";
-connectAttr "ikCrv_shoulderTwist_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[400]"
+connectAttr "ikCrv_elbowTwist_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[395]";
+connectAttr "ikCrv_elbowTwist_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[396]";
+connectAttr "ikCrv_elbowTwist_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[397]";
+connectAttr "ikCrv_elbowTwist_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[398]";
+connectAttr "ikCrv_elbowTwist_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[399]";
+connectAttr "ikCrv_elbowTwist_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[400]";
+connectAttr "ikCrv_shoulderTwist_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[401]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[401]"
+connectAttr "ikCrv_shoulderTwist_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[402]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[402]"
+connectAttr "ikCrv_shoulderTwist_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[403]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[403]"
+connectAttr "ikCrv_shoulderTwist_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[404]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[404]"
+connectAttr "ikCrv_shoulderTwist_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[405]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[405]"
+connectAttr "ikCrv_shoulderTwist_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[406]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[406]"
+connectAttr "ikCrv_shoulderTwist_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[407]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[407]"
+connectAttr "ikCrv_shoulderTwist_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[408]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[408]"
+connectAttr "ikCrv_shoulderTwist_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[409]"
 		;
-connectAttr "ikCrv_shoulderTwist_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[409]"
+connectAttr "ikCrv_shoulderTwist_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[410]"
 		;
-connectAttr "ikCrv_elbowTwist_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[410]"
+connectAttr "ikCrv_elbowTwist_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[411]"
 		;
-connectAttr "ikCrv_elbowTwist_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[411]"
+connectAttr "ikCrv_elbowTwist_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[412]"
 		;
-connectAttr "ikCrv_elbowTwist_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[412]"
+connectAttr "ikCrv_elbowTwist_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[413]"
 		;
-connectAttr "ikCrv_elbowTwist_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[413]"
+connectAttr "ikCrv_elbowTwist_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[414]"
 		;
-connectAttr "ikCrv_elbowTwist_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[414]";
-connectAttr "ikCrv_elbowTwist_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[415]";
-connectAttr "ikCrv_elbowTwist_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[416]";
-connectAttr "ikCrv_elbowTwist_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[417]";
-connectAttr "ikCrv_elbowTwist_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[418]";
-connectAttr "ikCrv_elbowTwist_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[419]";
-connectAttr "ikCrv_hipTwist_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[420]"
+connectAttr "ikCrv_elbowTwist_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[415]";
+connectAttr "ikCrv_elbowTwist_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[416]";
+connectAttr "ikCrv_elbowTwist_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[417]";
+connectAttr "ikCrv_elbowTwist_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[418]";
+connectAttr "ikCrv_elbowTwist_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[419]";
+connectAttr "ikCrv_elbowTwist_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[420]";
+connectAttr "ikCrv_hipTwist_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[421]"
 		;
-connectAttr "ikCrv_hipTwist_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[421]"
+connectAttr "ikCrv_hipTwist_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[422]"
 		;
-connectAttr "ikCrv_hipTwist_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[422]"
+connectAttr "ikCrv_hipTwist_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[423]"
 		;
-connectAttr "ikCrv_hipTwist_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[423]"
+connectAttr "ikCrv_hipTwist_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[424]"
 		;
-connectAttr "ikCrv_hipTwist_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[424]";
-connectAttr "ikCrv_hipTwist_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[425]";
-connectAttr "ikCrv_hipTwist_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[426]";
-connectAttr "ikCrv_hipTwist_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[427]";
-connectAttr "ikCrv_hipTwist_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[428]";
-connectAttr "ikCrv_hipTwist_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[429]";
-connectAttr "ikCrv_kneeTwist_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[430]"
+connectAttr "ikCrv_hipTwist_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[425]";
+connectAttr "ikCrv_hipTwist_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[426]";
+connectAttr "ikCrv_hipTwist_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[427]";
+connectAttr "ikCrv_hipTwist_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[428]";
+connectAttr "ikCrv_hipTwist_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[429]";
+connectAttr "ikCrv_hipTwist_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[430]";
+connectAttr "ikCrv_kneeTwist_0_R_translateX.o" "Megaman_Rig_GameReadyRN.phl[431]"
 		;
-connectAttr "ikCrv_kneeTwist_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[431]"
+connectAttr "ikCrv_kneeTwist_0_R_translateY.o" "Megaman_Rig_GameReadyRN.phl[432]"
 		;
-connectAttr "ikCrv_kneeTwist_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[432]"
+connectAttr "ikCrv_kneeTwist_0_R_translateZ.o" "Megaman_Rig_GameReadyRN.phl[433]"
 		;
-connectAttr "ikCrv_kneeTwist_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[433]"
+connectAttr "ikCrv_kneeTwist_0_R_visibility.o" "Megaman_Rig_GameReadyRN.phl[434]"
 		;
-connectAttr "ikCrv_kneeTwist_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[434]";
-connectAttr "ikCrv_kneeTwist_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[435]";
-connectAttr "ikCrv_kneeTwist_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[436]";
-connectAttr "ikCrv_kneeTwist_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[437]";
-connectAttr "ikCrv_kneeTwist_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[438]";
-connectAttr "ikCrv_kneeTwist_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[439]";
-connectAttr "ikCrv_hipTwist_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[440]"
+connectAttr "ikCrv_kneeTwist_0_R_rotateX.o" "Megaman_Rig_GameReadyRN.phl[435]";
+connectAttr "ikCrv_kneeTwist_0_R_rotateY.o" "Megaman_Rig_GameReadyRN.phl[436]";
+connectAttr "ikCrv_kneeTwist_0_R_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[437]";
+connectAttr "ikCrv_kneeTwist_0_R_scaleX.o" "Megaman_Rig_GameReadyRN.phl[438]";
+connectAttr "ikCrv_kneeTwist_0_R_scaleY.o" "Megaman_Rig_GameReadyRN.phl[439]";
+connectAttr "ikCrv_kneeTwist_0_R_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[440]";
+connectAttr "ikCrv_hipTwist_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[441]"
 		;
-connectAttr "ikCrv_hipTwist_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[441]"
+connectAttr "ikCrv_hipTwist_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[442]"
 		;
-connectAttr "ikCrv_hipTwist_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[442]"
+connectAttr "ikCrv_hipTwist_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[443]"
 		;
-connectAttr "ikCrv_hipTwist_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[443]"
+connectAttr "ikCrv_hipTwist_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[444]"
 		;
-connectAttr "ikCrv_hipTwist_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[444]";
-connectAttr "ikCrv_hipTwist_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[445]";
-connectAttr "ikCrv_hipTwist_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[446]";
-connectAttr "ikCrv_hipTwist_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[447]";
-connectAttr "ikCrv_hipTwist_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[448]";
-connectAttr "ikCrv_hipTwist_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[449]";
-connectAttr "ikCrv_kneeTwist_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[450]"
+connectAttr "ikCrv_hipTwist_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[445]";
+connectAttr "ikCrv_hipTwist_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[446]";
+connectAttr "ikCrv_hipTwist_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[447]";
+connectAttr "ikCrv_hipTwist_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[448]";
+connectAttr "ikCrv_hipTwist_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[449]";
+connectAttr "ikCrv_hipTwist_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[450]";
+connectAttr "ikCrv_kneeTwist_0_L_translateX.o" "Megaman_Rig_GameReadyRN.phl[451]"
 		;
-connectAttr "ikCrv_kneeTwist_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[451]"
+connectAttr "ikCrv_kneeTwist_0_L_translateY.o" "Megaman_Rig_GameReadyRN.phl[452]"
 		;
-connectAttr "ikCrv_kneeTwist_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[452]"
+connectAttr "ikCrv_kneeTwist_0_L_translateZ.o" "Megaman_Rig_GameReadyRN.phl[453]"
 		;
-connectAttr "ikCrv_kneeTwist_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[453]"
+connectAttr "ikCrv_kneeTwist_0_L_visibility.o" "Megaman_Rig_GameReadyRN.phl[454]"
 		;
-connectAttr "ikCrv_kneeTwist_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[454]";
-connectAttr "ikCrv_kneeTwist_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[455]";
-connectAttr "ikCrv_kneeTwist_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[456]";
-connectAttr "ikCrv_kneeTwist_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[457]";
-connectAttr "ikCrv_kneeTwist_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[458]";
-connectAttr "ikCrv_kneeTwist_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[459]";
-connectAttr "ctl_main_0_N.iog" "Megaman_Rig_GameReadyRN.phl[460]";
+connectAttr "ikCrv_kneeTwist_0_L_rotateX.o" "Megaman_Rig_GameReadyRN.phl[455]";
+connectAttr "ikCrv_kneeTwist_0_L_rotateY.o" "Megaman_Rig_GameReadyRN.phl[456]";
+connectAttr "ikCrv_kneeTwist_0_L_rotateZ.o" "Megaman_Rig_GameReadyRN.phl[457]";
+connectAttr "ikCrv_kneeTwist_0_L_scaleX.o" "Megaman_Rig_GameReadyRN.phl[458]";
+connectAttr "ikCrv_kneeTwist_0_L_scaleY.o" "Megaman_Rig_GameReadyRN.phl[459]";
+connectAttr "ikCrv_kneeTwist_0_L_scaleZ.o" "Megaman_Rig_GameReadyRN.phl[460]";
+connectAttr "ctl_main_0_N.iog" "Megaman_Rig_GameReadyRN.phl[461]";
 connectAttr "polyPlane1.out" "pPlaneShape1.i";
 connectAttr "ctl_main_0_N_JointsVis1.o" "ctl_main_0_N.JointsVis";
 connectAttr "ctl_main_0_N_translateX1.o" "ctl_main_0_N.tx";
@@ -9562,6 +9618,7 @@ connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "_UNKNOWN_REF_NODE_.ur" "Megaman_Rig_GameReadyRN.ur";
 connectAttr "Megaman_Rig_GameReadyRNfosterParent1.msg" "Megaman_Rig_GameReadyRN.fp"
 		;
+connectAttr "layerManager.dli[1]" "Controllers.id";
 connectAttr "trackInfoManager1.msg" ":sequenceManager1.tim";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pPlaneShape1.iog" ":initialShadingGroup.dsm" -na;
