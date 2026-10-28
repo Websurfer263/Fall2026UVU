@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: WalkCycle3.0
-//Last modified: Tue, Oct 27, 2026 06:01:46 PM
+//Last modified: Tue, Oct 27, 2026 08:59:56 PM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Walker_v1_0_1" -rfn "Ultimate_Walker_v1_0_1RN" -op
 		 "VERS|2011|UVER|undef|MADE|undef|CHNG|Tue, Feb 28, 2012 01:19:53 PM|ICON|undef|INFO|undef|OBJN|495|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|TDUR|141120000|"
@@ -17,12 +17,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26300)";
-fileInfo "UUID" "2C1EA1FA-4DC2-4E92-1372-3E937D7F3F7E";
+fileInfo "UUID" "7BB285C9-4E46-4379-8613-03888BCBFD49";
 createNode transform -s -n "persp";
 	rename -uid "FB331708-4828-DCE0-0776-45A4CB26559B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.013287423820359384 2.5052895630510927 -15.34545685790358 ;
-	setAttr ".r" -type "double3" -2.1383527305327674 178.59999999980934 0 ;
+	setAttr ".t" -type "double3" 12.105337547727684 3.7664640603335182 -8.5963752691739987 ;
+	setAttr ".r" -type "double3" -6.9383527305323671 123.79999999980521 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5170C095-4BFF-B7AA-E6A8-DEA8993B508D";
 	setAttr -k off ".v" no;
