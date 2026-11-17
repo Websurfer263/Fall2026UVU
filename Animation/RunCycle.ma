@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: RunCycle.ma
-//Last modified: Tue, Nov 17, 2026 11:13:24 AM
+//Last modified: Tue, Nov 17, 2026 11:19:39 AM
 //Codeset: 1252
 file -rdi 1 -ns "Ultimate_Walker_v1_0_1" -rfn "Ultimate_Walker_v1_0_1RN" -op
 		 "VERS|2011|UVER|undef|MADE|undef|CHNG|Tue, Feb 28, 2012 01:19:53 PM|ICON|undef|INFO|undef|OBJN|495|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|TDUR|141120000|"
@@ -17,21 +17,23 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202604221258-70da84b25e";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "E31949EA-4DBA-4FBF-785B-A4A007FE28B4";
+fileInfo "UUID" "C3F9BE34-4BBA-D1AD-8F03-C891E1CD300A";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "4E39194C-4D6B-2639-2D65-D78BB2283049";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 14.146592984452161 3.2548882476013756 -5.4187218111957964 ;
-	setAttr ".r" -type "double3" -4.5383527296518844 110.19999999994779 0 ;
+	setAttr ".t" -type "double3" -0.050006804995712084 1.8211381228795613 -13.955766312455438 ;
+	setAttr ".r" -type "double3" 0 180.00000000000003 0 ;
+	setAttr ".rpt" -type "double3" 3.9009329808191012e-17 1.7055918440920915e-17 -3.0249577814599302e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "295E850A-4037-EC0F-A584-A39450F49AB7";
 	setAttr -k off ".v" no;
-	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 15.308221012122639;
+	setAttr ".fl" 34.999999999999979;
+	setAttr ".coi" 12.805909312651204;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
+	setAttr ".tp" -type "double3" 1.2780629227625656e-15 1.7511285958855822 -1.1498569998042338 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "BC63F54E-4434-DA13-7759-2CB0AD951443";
@@ -470,9 +472,9 @@ createNode animCurveTL -n "walker_rt_heel_ik_ctrl_translateX";
 	rename -uid "89FED74A-42F6-0719-0259-F49D32C096B2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 8 ".ktv[0:7]"  0 0.12710578443556647 6 0.12710578443556647
-		 8 0.12710578443556647 10 0.12710578443556647 12 0.12710578443556647 14 0.12710578443556647
-		 18 0.12710578443556647 20 0.12710578443556647;
+	setAttr -s 8 ".ktv[0:7]"  0 0.13937994816861471 6 0.13937994816861471
+		 8 0.13937994816861471 10 0.13937994816861471 12 0.13937994816861471 14 0.13937994816861471
+		 18 0.13937994816861471 20 0.13937994816861471;
 createNode animCurveTL -n "walker_rt_heel_ik_ctrl_translateY";
 	rename -uid "FBB474A0-487A-07DF-A53F-838983897D2E";
 	setAttr ".tan" 18;
@@ -729,7 +731,8 @@ createNode displayLayer -n "Controllers";
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
 select -ne :time1;
-	setAttr ".o" 0;
+	setAttr ".o" 20;
+	setAttr ".unw" 20;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
