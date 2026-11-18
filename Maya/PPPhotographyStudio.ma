@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: PPPhotographyStudio.ma
-//Last modified: Wed, Nov 18, 2026 12:24:19 PM
+//Last modified: Wed, Nov 18, 2026 12:32:25 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26300)";
-fileInfo "UUID" "5F16CA58-4926-23A5-B418-B7B7E59E92A8";
+fileInfo "UUID" "176EBD8F-4C18-6FFA-CD11-1699384DBCF0";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "9FA1755A-4457-5562-68A4-B0B7549F603F";
@@ -97,7 +97,7 @@ createNode mesh -n "FloorShape" -p "Floor";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "CharacterCam";
 	rename -uid "25324B82-4F72-AB71-00FF-8591DFF0C357";
-	setAttr ".t" -type "double3" 0.29341290433509704 12.876557907521315 48.97228351922859 ;
+	setAttr ".t" -type "double3" 0.075524305808803149 13.039985640345613 33.368176257523615 ;
 	setAttr ".r" -type "double3" 0.59999999999999698 0.8 7.7657830551886253e-19 ;
 createNode camera -n "CharacterCamShape" -p "CharacterCam";
 	rename -uid "D7791F4A-414C-75C4-0F1F-50B0198D21E8";
@@ -106,7 +106,7 @@ createNode camera -n "CharacterCamShape" -p "CharacterCam";
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".ovr" 1.3;
-	setAttr ".coi" 69.061334774058707;
+	setAttr ".coi" 53.454850624833497;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
